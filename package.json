@@ -1,8 +1,48 @@
 {
   "name": "vite-vue-config-sky",
-  "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "description": "A base project of Vue-Vite",
+  "keywords": [
+    "module",
+    "project",
+    "vite",
+    "vue",
+    "typescript",
+    "eslint",
+    "prettier",
+    "stylelint",
+    "commitlint"
+  ],
+  "homepage": "https://github.com/skyclouds2001/vite-vue-config-sky#readme",
+  "bugs": {
+    "url" : "https://github.com/skyclouds2001/vite-vue-config-sky/issues",
+    "email" : "skyclouds2001@163.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name" : "skyclouds2001",
+    "email" : "skyclouds2001@163.com",
+    "url" : "https://skyclouds2001.github.io/"
+  },
+  "contributors": [
+    "skyclouds2001"
+  ],
+  "files": [
+    "src/",
+    "public/",
+    ".gitattributes",
+    ".gitignore",
+    ".npmignore",
+    "index.html",
+    "tsconfig.json",
+    "tsconfig.node.json",
+    "vite.config.ts"
+  ],
+  "main": "src/main.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skyclouds2001/vite-vue-config-sky.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
@@ -16,5 +56,21 @@
     "typescript": "^4.6.4",
     "vite": "^3.0.7",
     "vue-tsc": "^0.39.5"
-  }
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "os": [
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "ia32",
+    "arm",
+    "mips"
+  ],
+  "private": true,
+  "type": "module"
 }
