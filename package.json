@@ -15,14 +15,14 @@
   ],
   "homepage": "https://github.com/skyclouds2001/vite-vue-config-sky#readme",
   "bugs": {
-    "url" : "https://github.com/skyclouds2001/vite-vue-config-sky/issues",
-    "email" : "skyclouds2001@163.com"
+    "url": "https://github.com/skyclouds2001/vite-vue-config-sky/issues",
+    "email": "skyclouds2001@163.com"
   },
   "license": "MIT",
   "author": {
-    "name" : "skyclouds2001",
-    "email" : "skyclouds2001@163.com",
-    "url" : "https://skyclouds2001.github.io/"
+    "name": "skyclouds2001",
+    "email": "skyclouds2001@163.com",
+    "url": "https://skyclouds2001.github.io/"
   },
   "contributors": [
     "skyclouds2001"
@@ -49,6 +49,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "vue": "^3.2.37"
   },
   "devDependencies": {
