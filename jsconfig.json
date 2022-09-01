@@ -3,7 +3,7 @@
     "noLib": false,
     "target": "esnext",
     "module": "esnext",
-    "moduleResolution": "classic",
+    "moduleResolution": "nodenext",
     "checkJs": true,
     "baseUrl": ".",
     "paths": {
