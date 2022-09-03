@@ -50,6 +50,7 @@ export default defineConfig({
       resolvers: [
         ElementPlusResolver(),
         IconsResolver({
+          prefix: false,
           enabledCollections: ['ep'],
         }),
       ],
