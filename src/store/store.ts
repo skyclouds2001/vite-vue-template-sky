@@ -4,5 +4,9 @@ export default createStore({
   state () {},
   getters: {},
   mutations: {},
-  actions: {}
+  actions: {},
+  modules: {},
+  plugins: [],
+  strict: process.env.NODE_ENV !== 'production',
+  devtools: true
 })
