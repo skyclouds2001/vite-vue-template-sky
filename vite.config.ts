@@ -17,14 +17,34 @@ export default defineConfig({
   plugins: [
     vue(),
     AutoImport({
-      imports: ['vue'],
+      include: [
+        /\.[tj]sx?$/,
+        /\.vue$/,
+        /\.vue\?vue/,
+        /\.md$/,
+      ],
+      imports: [
+        'vue',
+        'vue-router',
+        {
+          'axios': [
+            ['default', 'axios'],
+          ],
+        },
+      ],
       resolvers: [
         ElementPlusResolver(),
         IconsResolver({
           prefix: 'Icon',
         }),
       ],
-      dts: path.resolve(__dirname, 'auto-imports.d.ts'),
+      vueTemplate: true,
+      dts: true,
+      eslintrc: {
+        enabled: true,
+        filepath: path.resolve(__dirname, 'eslintrc-auto-import.json'),
+        globalsPropValue: true,
+      },
     }),
     Components({
       resolvers: [
@@ -33,6 +53,7 @@ export default defineConfig({
           enabledCollections: ['ep'],
         }),
       ],
+      dts: true,
     }),
     Icons({
       autoInstall: true,
