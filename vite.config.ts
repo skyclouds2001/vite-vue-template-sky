@@ -47,6 +47,9 @@ export default defineConfig({
       },
     }),
     Components({
+      dirs: ['src/components'],
+      extensions: ['vue'],
+      deep: true,
       resolvers: [
         ElementPlusResolver(),
         IconsResolver({
@@ -55,6 +58,13 @@ export default defineConfig({
         }),
       ],
       dts: true,
+      directoryAsNamespace: false,
+      globalNamespaces: [],
+      directives: true,
+      importPathTransform: v => v,
+      allowOverrides: false,
+      include: [/\.vue$/, /\.vue\?vue/],
+      exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]\.nuxt[\\/]/],
     }),
     Icons({
       autoInstall: true,
