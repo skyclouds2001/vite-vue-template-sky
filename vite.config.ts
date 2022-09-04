@@ -16,7 +16,13 @@ export default defineConfig({
     },
   },
   plugins: [
-    vue(),
+    vue({
+      include: [/\.vue$/, /\.vue\?vue/],
+      exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/],
+      reactivityTransform: false,
+      customElement: /\.ce\.vue$/,
+      isProduction: false,
+    }),
     AutoImport({
       include: [
         /\.[tj]sx?$/,
@@ -65,7 +71,7 @@ export default defineConfig({
       importPathTransform: v => v,
       allowOverrides: false,
       include: [/\.vue$/, /\.vue\?vue/],
-      exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/, /[\\/]\.nuxt[\\/]/],
+      exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/],
     }),
     Icons({
       autoInstall: true,
