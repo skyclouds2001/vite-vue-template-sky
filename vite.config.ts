@@ -1,6 +1,7 @@
 import path from 'path';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
+import legacy from '@vitejs/plugin-legacy';
 import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
@@ -8,6 +9,7 @@ import ElementPlus from 'unplugin-element-plus/vite';
 import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 import Inspect from 'vite-plugin-inspect';
+import { tr } from 'element-plus/es/locale';
 
 export default defineConfig({
   root: '.',
@@ -110,6 +112,15 @@ export default defineConfig({
       format: 'esm',
       prefix: 'El',
       defaultLocale: 'zh-cn',
+    }),
+    legacy({
+      targets: ['defaults', 'not IE 11'],
+      modernPolyfills: false,
+      renderLegacyChunks: true,
+      externalSystemJS: false,
+      ignoreBrowserslistConfig: false,
+      polyfills: true,
+      additionalLegacyPolyfills: [],
     }),
   ],
 });
