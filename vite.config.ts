@@ -122,4 +122,16 @@ export default defineConfig({
       additionalLegacyPolyfills: [],
     }),
   ],
+  server: {
+    host: 'localhost',
+    port: 5173,
+    strictPort: true,
+    https: false,
+    open: true,
+    cors: true,
+    fs: {
+      strict: true,
+      deny: ['.env', '.env.*', '*.{pem,crt}'],
+    },
+  },
 });
