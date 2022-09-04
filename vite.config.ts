@@ -10,11 +10,38 @@ import IconsResolver from 'unplugin-icons/resolver';
 import Inspect from 'vite-plugin-inspect';
 
 export default defineConfig({
+  root: '.',
+  base: '/',
+  define: {},
+  publicDir: 'public',
+  cacheDir: 'node_modules/.vite',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src'),
     },
+    dedupe: [],
+    conditions: [],
+    mainFields: ['module', 'jsnext:main', 'jsnext'],
+    extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'],
+    preserveSymlinks: false,
   },
+  css: {
+    modules: {},
+    postcss: {},
+    preprocessorOptions: {},
+    devSourcemap: false,
+  },
+  json: {
+    namedExports: true,
+    stringify: true,
+  },
+  esbuild: {},
+  assetsInclude: [],
+  logLevel: 'info',
+  clearScreen: false,
+  envDir: 'root',
+  envPrefix: 'VITE_',
+  appType: 'spa',
   plugins: [
     vue({
       include: [/\.vue$/, /\.vue\?vue/],
