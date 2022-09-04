@@ -9,7 +9,6 @@ import ElementPlus from 'unplugin-element-plus/vite';
 import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 import Inspect from 'vite-plugin-inspect';
-import { tr } from 'element-plus/es/locale';
 
 export default defineConfig({
   root: '.',
