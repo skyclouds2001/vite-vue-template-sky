@@ -32,22 +32,35 @@ module.exports = defineConfig({
   ],
   rules: {
     '@typescript-eslint/no-empty-function': 'warn',
-    'n/no-missing-import': 'warn',
+    'n/no-missing-import': 'off',
     'import/no-unresolved': 'warn',
     '@typescript-eslint/ban-types': 'warn'
+  },
+  settings: {
+    'import/resolver': {
+      alias: {
+        map: [
+          ['@', './src/']
+        ],
+        extensions: ['.ts', '.js', '.jsx', '.json', '.tsx']
+      }
+    }
   },
   overrides: [
     {
       files: [
         'auto-imports.d.ts',
         'components.d.ts',
-        '.eslintrc.cjs'
+        '.eslintrc.cjs',
+        'vite.config.ts'
       ],
       rules: {
         'n/no-extraneous-import': 'off',
         'import/first': 'off',
         'import/named': 'off',
-        '@typescript-eslint/no-var-requires': 'off'
+        '@typescript-eslint/no-var-requires': 'off',
+        'n/no-unpublished-import': 'off',
+        'import/default': 'off'
       }
     }
   ]
