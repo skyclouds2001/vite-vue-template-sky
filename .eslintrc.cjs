@@ -17,7 +17,9 @@ module.exports = defineConfig({
     sourceType: 'module'
   },
   globals: {},
-  plugins: [],
+  plugins: [
+    "prettier"
+  ],
   extends: [
     'eslint:recommended',
     'standard',
@@ -26,9 +28,9 @@ module.exports = defineConfig({
     'plugin:n/recommended',
     'plugin:promise/recommended',
     'plugin:import/recommended',
-    'plugin:import/typescript'
-    // 'prettier',
-    // 'plugin:prettier/recommended',
+    'plugin:import/typescript',
+    'prettier',
+    'plugin:prettier/recommended',
   ],
   rules: {
     '@typescript-eslint/no-empty-function': 'warn',
