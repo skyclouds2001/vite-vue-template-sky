@@ -62,7 +62,8 @@ module.exports = defineConfig({
         'import/named': 'off',
         '@typescript-eslint/no-var-requires': 'off',
         'n/no-unpublished-import': 'off',
-        'import/default': 'off'
+        'import/default': 'off',
+        'prettier/prettier': 'off'
       }
     }
   ]
