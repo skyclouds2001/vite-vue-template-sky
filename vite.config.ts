@@ -1,15 +1,15 @@
-import path from 'path';
-import { defineConfig } from 'vite';
-import vue from '@vitejs/plugin-vue';
-import legacy from '@vitejs/plugin-legacy';
-import AutoImport from 'unplugin-auto-import/vite';
-import Components from 'unplugin-vue-components/vite';
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
-import ElementPlus from 'unplugin-element-plus/vite';
-import Icons from 'unplugin-icons/vite';
-import IconsResolver from 'unplugin-icons/resolver';
-import Inspect from 'vite-plugin-inspect';
-import eslint from 'vite-plugin-eslint';
+import path from 'path'
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import legacy from '@vitejs/plugin-legacy'
+import AutoImport from 'unplugin-auto-import/vite'
+import Components from 'unplugin-vue-components/vite'
+import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import ElementPlus from 'unplugin-element-plus/vite'
+import Icons from 'unplugin-icons/vite'
+import IconsResolver from 'unplugin-icons/resolver'
+import Inspect from 'vite-plugin-inspect'
+import eslint from 'vite-plugin-eslint'
 
 export default defineConfig({
   root: '.',
@@ -19,23 +19,23 @@ export default defineConfig({
   cacheDir: 'node_modules/.vite',
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
+      '@': path.resolve(__dirname, 'src')
     },
     dedupe: [],
     conditions: [],
     mainFields: ['module', 'jsnext:main', 'jsnext'],
     extensions: ['.mjs', '.js', '.ts', '.jsx', '.tsx', '.json'],
-    preserveSymlinks: false,
+    preserveSymlinks: false
   },
   css: {
     modules: {},
     postcss: {},
     preprocessorOptions: {},
-    devSourcemap: false,
+    devSourcemap: false
   },
   json: {
     namedExports: true,
-    stringify: true,
+    stringify: true
   },
   esbuild: {},
   assetsInclude: [],
@@ -50,37 +50,37 @@ export default defineConfig({
       exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/],
       reactivityTransform: false,
       customElement: /\.ce\.vue$/,
-      isProduction: false,
+      isProduction: false
     }),
     AutoImport({
       include: [
         /\.[tj]sx?$/,
         /\.vue$/,
         /\.vue\?vue/,
-        /\.md$/,
+        /\.md$/
       ],
       imports: [
         'vue',
         'vue-router',
         {
-          'axios': [
-            ['default', 'axios'],
-          ],
-        },
+          axios: [
+            ['default', 'axios']
+          ]
+        }
       ],
       resolvers: [
         ElementPlusResolver(),
         IconsResolver({
-          prefix: 'Icon',
-        }),
+          prefix: 'Icon'
+        })
       ],
       vueTemplate: true,
       dts: true,
       eslintrc: {
         enabled: true,
         filepath: path.resolve(__dirname, 'eslintrc-auto-import.json'),
-        globalsPropValue: true,
-      },
+        globalsPropValue: true
+      }
     }),
     Components({
       dirs: ['src/components'],
@@ -90,8 +90,8 @@ export default defineConfig({
         ElementPlusResolver(),
         IconsResolver({
           prefix: false,
-          enabledCollections: ['ep'],
-        }),
+          enabledCollections: ['ep']
+        })
       ],
       dts: true,
       directoryAsNamespace: false,
@@ -100,10 +100,10 @@ export default defineConfig({
       importPathTransform: v => v,
       allowOverrides: false,
       include: [/\.vue$/, /\.vue\?vue/],
-      exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/],
+      exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/]
     }),
     Icons({
-      autoInstall: true,
+      autoInstall: true
     }),
     Inspect(),
     ElementPlus({
@@ -111,7 +111,7 @@ export default defineConfig({
       lib: 'element-plus',
       format: 'esm',
       prefix: 'El',
-      defaultLocale: 'zh-cn',
+      defaultLocale: 'zh-cn'
     }),
     legacy({
       targets: ['defaults', 'not IE 11'],
@@ -120,12 +120,12 @@ export default defineConfig({
       externalSystemJS: false,
       ignoreBrowserslistConfig: false,
       polyfills: true,
-      additionalLegacyPolyfills: [],
+      additionalLegacyPolyfills: []
     }),
     eslint({
       include: ['src/**/*.js', 'src/**/*.vue', 'src/*.js', 'src/*.vue'],
       exclude: ['node_modules', 'test', 'public']
-    }),
+    })
   ],
   server: {
     host: 'localhost',
@@ -136,7 +136,7 @@ export default defineConfig({
     cors: true,
     fs: {
       strict: true,
-      deny: ['.env', '.env.*', '*.{pem,crt}'],
-    },
-  },
-});
+      deny: ['.env', '.env.*', '*.{pem,crt}']
+    }
+  }
+})
