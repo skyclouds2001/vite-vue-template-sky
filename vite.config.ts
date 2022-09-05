@@ -9,6 +9,7 @@ import ElementPlus from 'unplugin-element-plus/vite';
 import Icons from 'unplugin-icons/vite';
 import IconsResolver from 'unplugin-icons/resolver';
 import Inspect from 'vite-plugin-inspect';
+import eslint from 'vite-plugin-eslint';
 
 export default defineConfig({
   root: '.',
@@ -120,6 +121,10 @@ export default defineConfig({
       ignoreBrowserslistConfig: false,
       polyfills: true,
       additionalLegacyPolyfills: [],
+    }),
+    eslint({
+      include: ['src/**/*.js', 'src/**/*.vue', 'src/*.js', 'src/*.vue'],
+      exclude: ['node_modules', 'test', 'public']
     }),
   ],
   server: {
