@@ -25,7 +25,8 @@ module.exports = defineConfig({
     'plugin:@typescript-eslint/recommended',
     'plugin:n/recommended',
     'plugin:promise/recommended',
-    'plugin:import/recommended'
+    'plugin:import/recommended',
+    'plugin:import/typescript'
     // 'prettier',
     // 'plugin:prettier/recommended',
   ],
