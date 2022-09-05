@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const instance = axios.create({
   baseURL: 'http://localhost',
-  timeout: 10000,
+  timeout: 10000
 })
 
 instance.interceptors.request.use(config => config, error => Promise.reject(error))
