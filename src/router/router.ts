@@ -6,7 +6,7 @@ export default createRouter({
     {
       name: 'MainPage',
       path: '/',
-      component: () => import('@/views/MainPage.vue')
-    }
-  ]
+      component: () => import('@/views/MainPage.vue'),
+    },
+  ],
 })
