@@ -6,7 +6,8 @@ module.exports = {
   ],
   plugins: [
     'stylelint-order',
-    'stylelint-scss'
+    'stylelint-scss',
+    "stylelint-less"
   ],
   rules: {
     "order/properties-order": [
