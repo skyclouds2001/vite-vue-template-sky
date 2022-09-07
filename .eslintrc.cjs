@@ -18,8 +18,9 @@ module.exports = defineConfig({
   },
   globals: {},
   plugins: [
-    "prettier",
-    "html"
+    'prettier',
+    'html',
+    'jsdoc'
   ],
   extends: [
     'eslint:recommended',
@@ -31,6 +32,7 @@ module.exports = defineConfig({
     'plugin:import/recommended',
     'plugin:import/typescript',
     'prettier',
+    'plugin:jsdoc/recommended',
     'plugin:prettier/recommended',
   ],
   rules: {
