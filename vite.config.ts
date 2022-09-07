@@ -10,6 +10,9 @@ import Icons from 'unplugin-icons/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import Inspect from 'vite-plugin-inspect'
 import eslint from 'vite-plugin-eslint'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import stylelint from 'vite-plugin-stylelint'
 
 export default defineConfig({
   root: '.',
@@ -97,7 +100,6 @@ export default defineConfig({
       directoryAsNamespace: false,
       globalNamespaces: [],
       directives: true,
-      importPathTransform: v => v,
       allowOverrides: false,
       include: [/\.vue$/, /\.vue\?vue/],
       exclude: [/[\\/]node_modules[\\/]/, /[\\/]\.git[\\/]/]
@@ -125,6 +127,17 @@ export default defineConfig({
     eslint({
       include: ['src/**/*.js', 'src/**/*.vue', 'src/*.js', 'src/*.vue'],
       exclude: ['node_modules', 'test', 'public']
+    }),
+    stylelint({
+      cache: true,
+      include: ['src/**/*.css', 'src/**/*.scss', 'src/**/*.sass', 'src/**/*.less', 'src/**/*.styl', 'src/**/*.vue', 'src/**/*.svelte'],
+      exclude: ['node_modules', 'virtual:'],
+      stylelintPath: 'stylelint',
+      lintOnStart: false,
+      emitError: true,
+      emitErrorAsWarning: false,
+      emitWarning: true,
+      emitWarningAsError: false
     })
   ],
   server: {
