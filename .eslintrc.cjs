@@ -22,6 +22,7 @@ module.exports = defineConfig({
     'jsdoc',
     'import',
     'promise',
+    'json',
     'prettier',
   ],
   extends: [
@@ -34,6 +35,7 @@ module.exports = defineConfig({
     'plugin:import/recommended',
     'plugin:import/typescript',
     'plugin:jsdoc/recommended',
+    'plugin:json/recommended',
     'prettier',
     'plugin:prettier/recommended',
   ],
