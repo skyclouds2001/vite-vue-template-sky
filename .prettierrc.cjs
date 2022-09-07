@@ -18,12 +18,4 @@ module.exports = {
   trailingComma: 'es5',
   useTabs: false,
   vueIndentScriptAndStyle: false,
-  overrides: [
-    {
-      files: '.prettierrc',
-      options: {
-        parser: 'json',
-      },
-    },
-  ],
 };
