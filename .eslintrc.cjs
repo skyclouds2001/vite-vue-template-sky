@@ -14,13 +14,15 @@ module.exports = defineConfig({
   parserOptions: {
     parser: '@typescript-eslint/parser',
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
   },
   globals: {},
   plugins: [
-    'prettier',
     'html',
-    'jsdoc'
+    'jsdoc',
+    'import',
+    'promise',
+    'prettier',
   ],
   extends: [
     'eslint:recommended',
@@ -31,25 +33,25 @@ module.exports = defineConfig({
     'plugin:promise/recommended',
     'plugin:import/recommended',
     'plugin:import/typescript',
-    'prettier',
     'plugin:jsdoc/recommended',
+    'prettier',
     'plugin:prettier/recommended',
   ],
   rules: {
     '@typescript-eslint/no-empty-function': 'warn',
     'n/no-missing-import': 'off',
     'import/no-unresolved': 'warn',
-    '@typescript-eslint/ban-types': 'warn'
+    '@typescript-eslint/ban-types': 'warn',
   },
   settings: {
     'import/resolver': {
       alias: {
         map: [
-          ['@', './src/']
+          ['@', './src/'],
         ],
-        extensions: ['.ts', '.js', '.jsx', '.json', '.tsx']
-      }
-    }
+        extensions: ['.ts', '.js', '.jsx', '.json', '.tsx'],
+      },
+    },
   },
   overrides: [
     {
@@ -57,7 +59,7 @@ module.exports = defineConfig({
         'auto-imports.d.ts',
         'components.d.ts',
         '.eslintrc.cjs',
-        'vite.config.ts'
+        'vite.config.ts',
       ],
       rules: {
         'n/no-extraneous-import': 'off',
@@ -66,8 +68,8 @@ module.exports = defineConfig({
         '@typescript-eslint/no-var-requires': 'off',
         'n/no-unpublished-import': 'off',
         'import/default': 'off',
-        'prettier/prettier': 'off'
-      }
-    }
-  ]
-})
+        'prettier/prettier': 'off',
+      },
+    },
+  ],
+});
