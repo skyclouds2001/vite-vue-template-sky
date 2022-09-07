@@ -18,7 +18,8 @@ module.exports = defineConfig({
   },
   globals: {},
   plugins: [
-    "prettier"
+    "prettier",
+    "html"
   ],
   extends: [
     'eslint:recommended',
