@@ -2,12 +2,13 @@ module.exports = {
   extends: [
     'stylelint-config-standard',
     'stylelint-config-recess-order',
-    'stylelint-prettier/recommended'
+    'stylelint-config-prettier'
   ],
   plugins: [
     'stylelint-order',
     'stylelint-scss',
-    "stylelint-less"
+    "stylelint-less",
+    "stylelint-prettier",
   ],
   rules: {
     "order/properties-order": [
