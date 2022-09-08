@@ -1,11 +1,11 @@
 module.exports = {
   extends: [
     'stylelint-config-standard',
-    "stylelint-config-html",
-    'stylelint-config-recess-order',
     "stylelint-config-standard-scss",
     "stylelint-config-standard-vue",
     "stylelint-config-standard-vue/scss",
+    "stylelint-config-html",
+    'stylelint-config-recess-order',
     'stylelint-config-prettier'
   ],
   plugins: [
