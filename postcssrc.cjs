@@ -4,6 +4,8 @@ const postcssImport = require('postcss-import')
 const cssnano = require('cssnano')
 const postcssLess = require('postcss-less')
 const postcssStyl = require('postcss-styl')
+const postcssSass = require('postcss-sass')
+const postcssScss = require('postcss-scss')
 
 module.exports = (ctx) => ({
   parser: ctx.parser ? 'sugarss' : false,
@@ -15,5 +17,7 @@ module.exports = (ctx) => ({
     cssnano,
     postcssLess,
     postcssStyl,
+    postcssSass,
+    postcssScss
   },
 })
