@@ -125,17 +125,17 @@ export default defineConfig({
       include: ['src/**/*.js', 'src/**/*.vue', 'src/*.js', 'src/*.vue'],
       exclude: ['node_modules', 'test', 'public']
     }),
-    // stylelint({
-    //   cache: true,
-    //   include: ['src/**/*.css', 'src/**/*.scss', 'src/**/*.sass', 'src/**/*.less', 'src/**/*.styl', 'src/**/*.vue', 'src/**/*.svelte'],
-    //   exclude: ['node_modules', 'virtual:'],
-    //   stylelintPath: 'stylelint',
-    //   lintOnStart: false,
-    //   emitError: true,
-    //   emitErrorAsWarning: false,
-    //   emitWarning: true,
-    //   emitWarningAsError: false
-    // })
+    stylelint({
+      cache: true,
+      include: ['src/**/*.css', 'src/**/*.scss', 'src/**/*.sass', 'src/**/*.less', 'src/**/*.styl', 'src/**/*.vue', 'src/**/*.svelte'],
+      exclude: ['node_modules', 'virtual:'],
+      stylelintPath: 'stylelint',
+      lintOnStart: false,
+      emitError: true,
+      emitErrorAsWarning: false,
+      emitWarning: true,
+      emitWarningAsError: false
+    })
   ],
   server: {
     host: 'localhost',

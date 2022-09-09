@@ -20,6 +20,7 @@ module.exports = {
     "stylelint-prettier",
   ],
   rules: {
+    "no-empty-source": "off",
     "order/properties-order": [
       "display",
       "visibility",
