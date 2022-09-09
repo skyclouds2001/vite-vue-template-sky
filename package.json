@@ -90,6 +90,7 @@
     "postcss": "^8.4.16",
     "postcss-html": "^1.5.0",
     "postcss-import": "^15.0.0",
+    "postcss-less": "^6.0.0",
     "postcss-load-config": "^4.0.1",
     "postcss-preset-env": "^7.8.1",
     "prettier": "^2.7.1",
