@@ -3,6 +3,7 @@ const postcssPresetEnv = require('postcss-preset-env')
 const postcssImport = require('postcss-import')
 const cssnano = require('cssnano')
 const postcssLess = require('postcss-less')
+const postcssStyl = require('postcss-styl')
 
 module.exports = (ctx) => ({
   parser: ctx.parser ? 'sugarss' : false,
@@ -13,5 +14,6 @@ module.exports = (ctx) => ({
     postcssPresetEnv,
     cssnano,
     postcssLess,
+    postcssStyl,
   },
 })
