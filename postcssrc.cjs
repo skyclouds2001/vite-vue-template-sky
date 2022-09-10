@@ -7,6 +7,7 @@ const postcssStyl = require('postcss-styl')
 const postcssSass = require('postcss-sass')
 const postcssScss = require('postcss-scss')
 const tailwindcss = require('tailwindcss')
+const postcssPxToViewport = require('postcss-px-to-viewport')
 
 module.exports = (ctx) => ({
   parser: ctx.parser ? 'sugarss' : false,
@@ -20,6 +21,7 @@ module.exports = (ctx) => ({
     postcssStyl,
     postcssSass,
     postcssScss,
-    tailwindcss
+    tailwindcss,
+    postcssPxToViewport
   },
 })
