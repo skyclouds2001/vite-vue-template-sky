@@ -30,7 +30,7 @@ export default defineConfig({
   },
   css: {
     modules: {},
-    postcss: {},
+    postcss: 'postcssrc.cjs',
     preprocessorOptions: {},
     devSourcemap: false
   },
