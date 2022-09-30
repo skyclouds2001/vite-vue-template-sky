@@ -5,7 +5,7 @@ module.exports = {
       2,
       'always',
       [
-        'feature', // 新功能（feature）
+        'feat', // 新功能（feature）
         'bug', // 此项特别针对bug号，用于向测试反馈bug列表的bug修改情况
         'fix', // 修补bug
         'ui', // 更新 ui
