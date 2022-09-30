@@ -50,7 +50,9 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "lint": "eslint src/**/*.{js,jsx,vue,ts,tsx} --fix"
+    "lint": "eslint src/**/*.{js,jsx,vue,ts,tsx} --fix",
+    "commit:comment": "引导设置规范化的提交信息",
+    "commit":"git-cz"
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.9",
@@ -154,5 +156,10 @@
     "mips"
   ],
   "private": true,
-  "type": "module"
+  "type": "module",
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  }
 }
