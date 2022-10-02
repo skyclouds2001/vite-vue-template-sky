@@ -1,9 +1,9 @@
 {
-  "name": "vite-vue-config-sky",
+  "name": "vite-vue-template-sky",
   "version": "0.0.0",
-  "description": "A base project of Vue-Vite",
+  "description": "A template project of Vue-Vite",
   "keywords": [
-    "module",
+    "template",
     "project",
     "vite",
     "vue",
@@ -16,9 +16,9 @@
     "stylelint",
     "commitlint"
   ],
-  "homepage": "https://github.com/skyclouds2001/vite-vue-config-sky#readme",
+  "homepage": "https://github.com/skyclouds2001/vite-vue-template-sky#readme",
   "bugs": {
-    "url": "https://github.com/skyclouds2001/vite-vue-config-sky/issues",
+    "url": "https://github.com/skyclouds2001/vite-vue-template-sky/issues",
     "email": "skyclouds2001@163.com"
   },
   "license": "MIT",
@@ -33,28 +33,19 @@
   "files": [
     "src/",
     "public/",
-    ".gitattributes",
-    ".gitignore",
-    ".npmignore",
-    "index.html",
-    "tsconfig.json",
-    "tsconfig.node.json",
-    "vite.config.ts"
+    "index.html"
   ],
   "main": "src/main.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/skyclouds2001/vite-vue-config-sky.git"
+    "url" :"https://github.com/skyclouds2001/vite-vue-template-sky.git"
   },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "preview": "vite preview",
-    "eslint:comment": "使用 ESLint 检查并自动修复 src 目录下所有扩展名为 .js 和 .vue 的文件",
     "eslint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
-    "prettier:comment": "自动格式化当前目录下的所有文件",
     "prettier": "prettier --write",
-    "commit:comment": "引导设置规范化的提交信息",
     "commit": "git-cz"
   },
   "dependencies": {

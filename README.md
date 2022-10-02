@@ -1,1 +1,1 @@
-# vite-vue-config-sky
+# vite-vue-template-sky
