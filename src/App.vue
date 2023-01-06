@@ -1,8 +1,12 @@
 <script setup lang="ts">
+import { ElConfigProvider } from 'element-plus'
+import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 </script>
 
 <template>
-  <div></div>
+  <ElConfigProvider :locale="zhCn">
+    <div>template</div>
+  </ElConfigProvider>
 </template>
 
 <style scoped>
