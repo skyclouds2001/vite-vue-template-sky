@@ -2,7 +2,59 @@
   "name": "vite-vue-tempalte-sky",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "description": "A template project of Vue-Vite",
+  "keywords": [
+    "template",
+    "project",
+    "vite",
+    "vue",
+    "vue-router",
+    "vuex",
+    "element-plus",
+    "typescript",
+    "eslint",
+    "prettier",
+    "stylelint",
+    "commitlint"
+  ],
+  "homepage": "https://github.com/skyclouds2001/vite-vue-template-sky#readme",
+  "bugs": {
+    "url": "https://github.com/skyclouds2001/vite-vue-template-sky/issues",
+    "email": "skyclouds2001@163.com"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "skyclouds2001",
+    "email": "skyclouds2001@163.com",
+    "url": "https://skyclouds2001.github.io/"
+  },
+  "contributors": [
+    "skyclouds2001"
+  ],
+  "main": "src/main.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skyclouds2001/vite-vue-template-sky.git"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "os": [
+    "linux",
+    "win32"
+  ],
+  "cpu": [
+    "x64",
+    "ia32",
+    "arm",
+    "mips"
+  ],
+  "files": [
+    "src/",
+    "public/",
+    "index.html"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
