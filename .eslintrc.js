@@ -4,22 +4,22 @@ module.exports = {
     browser: true,
     es2021: true,
     node: true,
-    commonjs: true
+    commonjs: true,
   },
   extends: [
     'plugin:vue/vue3-recommended',
     'standard-with-typescript',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
   ],
   overrides: [
   ],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: 'tsconfig.json'
+    project: 'tsconfig.json',
   },
   plugins: [
-    'vue'
+    'vue',
   ],
   rules: {
   },
@@ -29,6 +29,8 @@ module.exports = {
     '.prettierrc.js',
     ".stylelintrc.js",
     'postcss.config.js',
-    'tailwind.config.js'
+    'tailwind.config.js',
+    'commitlint.config.js',
+    'lint-staged.config.js',
   ]
 }
