@@ -7,7 +7,7 @@ module.exports = {
     commonjs: true
   },
   extends: [
-    'plugin:vue/vue3-essential',
+    'plugin:vue/vue3-recommended',
     'standard-with-typescript',
     'plugin:prettier/recommended'
   ],
@@ -27,6 +27,7 @@ module.exports = {
     'vite.config.ts',
     '.eslintrc.js',
     '.prettierrc.js',
+    ".stylelintrc.js",
     'postcss.config.js',
     'tailwind.config.js'
   ]
