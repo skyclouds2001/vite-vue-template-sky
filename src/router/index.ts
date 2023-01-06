@@ -5,9 +5,9 @@ const router = createRouter({
   routes: [
     {
       path: '/login',
-      component: () => import('@/views/MainPage.vue'),
-    },
-  ],
+      component: () => import('@/views/MainPage.vue')
+    }
+  ]
 })
 
 export default router
