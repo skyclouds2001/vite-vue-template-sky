@@ -25,6 +25,9 @@ module.exports = {
   },
   ignorePatterns: [
     'vite.config.ts',
-    '.eslintrc.js'
+    '.eslintrc.js',
+    '.prettierrc.js',
+    'postcss.config.js',
+    'tailwind.config.js'
   ]
 }

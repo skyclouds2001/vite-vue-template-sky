@@ -6,6 +6,10 @@ import ElementPlus from 'unplugin-element-plus/vite'
 
 export default defineConfig({
   plugins: [vue(), legacy(), ElementPlus()],
+  css: {
+    postcss: 'postcss.config.js',
+    devSourcemap: true,
+  },
   resolve: {
     alias: {
       '@': path.resolve(__dirname, 'src/')

@@ -4,7 +4,7 @@ import { SERVER_HOST } from '@/config'
 const instance = axios.create({
   baseURL: SERVER_HOST,
   timeout: 10000,
-  withCredentials: true
+  withCredentials: true,
 })
 
 instance.interceptors.request.use(

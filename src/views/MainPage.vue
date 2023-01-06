@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div>main</div>
+  <div class="w-10">main</div>
 </template>
 
 <style scoped>
