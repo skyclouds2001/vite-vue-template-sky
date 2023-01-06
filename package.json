@@ -9,7 +9,7 @@
     "vite",
     "vue",
     "vue-router",
-    "vuex",
+    "pinia",
     "element-plus",
     "typescript",
     "eslint",
@@ -23,6 +23,7 @@
     "email": "skyclouds2001@163.com"
   },
   "license": "MIT",
+  "packageManager": "pnpm@7.22.0",
   "author": {
     "name": "skyclouds2001",
     "email": "skyclouds2001@163.com",
