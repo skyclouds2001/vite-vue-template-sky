@@ -1,7 +1,8 @@
 import axios from 'axios'
+import { SERVER_HOST } from '@/config'
 
 const instance = axios.create({
-  baseURL: 'http://localhost:8080',
+  baseURL: SERVER_HOST,
   timeout: 10000,
   withCredentials: true
 })
