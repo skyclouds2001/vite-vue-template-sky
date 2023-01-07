@@ -1,5 +1,5 @@
 module.exports = {
-  arrowParens: 'avoid',
+  arrowParens: 'always',
   bracketSameLine: false,
   bracketSpacing: true,
   embeddedLanguageFormatting: 'auto',
@@ -7,7 +7,6 @@ module.exports = {
   htmlWhitespaceSensitivity: 'css',
   insertPragma: false,
   jsxSingleQuote: false,
-  printWidth: 1000,
   proseWrap: 'preserve',
   quoteProps: 'as-needed',
   requirePragma: false,
@@ -18,4 +17,4 @@ module.exports = {
   trailingComma: 'es5',
   useTabs: false,
   vueIndentScriptAndStyle: false,
-};
+}

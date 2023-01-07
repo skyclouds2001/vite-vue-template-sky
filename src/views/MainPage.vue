@@ -1,13 +1,9 @@
-<template>
-  <div>main</div>
-</template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'MainPage',
-})
+<script setup lang="ts">
 </script>
 
-<style></style>
+<template>
+  <div class="w-10">main</div>
+</template>
+
+<style scoped>
+</style>

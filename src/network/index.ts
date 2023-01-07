@@ -1,12 +1,16 @@
 import axios from 'axios'
+import { SERVER_HOST } from '@/config'
 
 const instance = axios.create({
-  baseURL: 'http://localhost',
+  baseURL: SERVER_HOST,
   timeout: 10000,
+  withCredentials: true,
 })
 
 instance.interceptors.request.use(
-  config => config,
+  config => {
+    return config
+  },
   error => Promise.reject(error)
 )
 
