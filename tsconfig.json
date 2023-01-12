@@ -12,6 +12,7 @@
     "lib": ["ESNext", "DOM", "WebWorker"],
     "skipLibCheck": true,
     "noEmit": true,
+    "types": ["vite/client"],
     "paths": {
       "@/*": ["./src/*"]
     }

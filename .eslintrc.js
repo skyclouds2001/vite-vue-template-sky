@@ -2,21 +2,32 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    es2021: true,
+    es2022: true,
     node: true,
     commonjs: true,
+    'shared-node-browser': true,
   },
   extends: [
     'plugin:vue/vue3-recommended',
     'standard-with-typescript',
+    // 'plugin:n/recommended',
+    'plugin:promise/recommended',
+    // 'plugin:import/recommended',
+    'plugin:security/recommended',
     'plugin:prettier/recommended',
   ],
   overrides: [
   ],
+  // parser: 'vue-eslint-parser',
   parserOptions: {
+    // parser: '@typescript-eslint/parser',
     ecmaVersion: 'latest',
     sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
     project: 'tsconfig.json',
+    extraFileExtensions: ['.vue'],
   },
   plugins: [
     'vue',
