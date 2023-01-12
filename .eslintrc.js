@@ -26,6 +26,7 @@ module.exports = {
   ignorePatterns: [
     'vite.config.ts',
     'vitest.config.ts',
+    'playwright.config.ts',
     '.eslintrc.js',
     '.prettierrc.js',
     ".stylelintrc.js",

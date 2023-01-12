@@ -59,7 +59,8 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development vite",
     "build": "cross-env NODE_ENV=production vue-tsc && vite build",
-    "test": "cross-env NODE_ENV=test vitest",
+    "test:unit": "cross-env NODE_ENV=test vitest",
+    "test:e2e": "cross-env NODE_ENV=test playwright test",
     "preview": "vite preview",
     "prepare": "husky install"
   },
@@ -74,6 +75,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.4.0",
     "@commitlint/config-conventional": "^17.4.0",
+    "@playwright/test": "^1.29.2",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/line-clamp": "^0.4.2",

@@ -16,6 +16,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/*.js", "src/**/*.jsx", "test/**/*.test.js", "test/**/*.test.ts"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/*.js", "src/**/*.jsx", "test/**/*.test.js", "test/**/*.test.ts", "test/**/*.spec.js", "test/**/*.spec.ts"],
   "exclude": ["node_modules", "dist"]
 }
