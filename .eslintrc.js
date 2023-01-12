@@ -27,10 +27,10 @@ module.exports = {
       jsx: true,
     },
     project: 'tsconfig.json',
+    tsconfigRootDir: '.',
     extraFileExtensions: ['.vue'],
   },
   plugins: [
-    'vue',
   ],
   rules: {
   },
