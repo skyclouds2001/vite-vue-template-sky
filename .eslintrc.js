@@ -12,7 +12,7 @@ module.exports = {
     'standard-with-typescript',
     // 'plugin:n/recommended',
     'plugin:promise/recommended',
-    // 'plugin:import/recommended',
+    'plugin:import/recommended',
     'plugin:security/recommended',
     'plugin:prettier/recommended',
   ],
@@ -45,5 +45,12 @@ module.exports = {
     'tailwind.config.js',
     'commitlint.config.js',
     'lint-staged.config.js',
-  ]
+  ],
+  settings: {
+    'import/resolver': {
+      typescript: {
+        directory: 'tsconfig.json',
+      },
+    },
+  },
 }
