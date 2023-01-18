@@ -17,9 +17,9 @@
     "stylelint",
     "commitlint"
   ],
-  "homepage": "https://github.com/skyclouds2001/vite-vue-template-sky#readme",
+  "homepage": "https://github.com/skyclouds2001/vite-vue-template-config-sky#readme",
   "bugs": {
-    "url": "https://github.com/skyclouds2001/vite-vue-template-sky/issues",
+    "url": "https://github.com/skyclouds2001/vite-vue-template-config-sky/issues",
     "email": "skyclouds2001@163.com"
   },
   "license": "MIT",
@@ -35,7 +35,7 @@
   "main": "src/main.ts",
   "repository": {
     "type": "git",
-    "url": "https://github.com/skyclouds2001/vite-vue-template-sky.git"
+    "url": "git+https://github.com/skyclouds2001/vite-vue-template-config-sky.git"
   },
   "engines": {
     "node": ">=14.0.0",
