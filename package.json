@@ -53,8 +53,10 @@
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.10",
     "axios": "^1.2.2",
+    "dayjs": "^1.11.7",
     "element-plus": "^2.2.28",
     "pinia": "^2.0.28",
+    "qs": "^6.11.0",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
@@ -68,6 +70,7 @@
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.9",
     "@types/node": "^18.11.18",
+    "@types/qs": "^6.9.7",
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "@typescript-eslint/parser": "^5.48.1",
     "@vitejs/plugin-legacy": "^3.0.1",
