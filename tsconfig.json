@@ -13,10 +13,11 @@
     "skipLibCheck": true,
     "noEmit": true,
     "types": ["vite/client"],
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "src/**/*.js", "src/**/*.jsx", "tests/**/*.test.js", "tests/**/*.test.ts", "tests/**/*.spec.js", "tests/**/*.spec.ts"],
+  "include": ["**/*.js", "**/*.jsx", "/**/*.ts", "**/*.tsx", "**/*.vue"],
   "exclude": ["node_modules", "dist"]
 }
