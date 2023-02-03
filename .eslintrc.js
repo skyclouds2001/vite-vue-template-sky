@@ -6,21 +6,12 @@ module.exports = {
     node: true,
     commonjs: true,
     'shared-node-browser': true,
+    worker: true,
   },
-  extends: [
-    'plugin:vue/vue3-recommended',
-    'standard-with-typescript',
-    // 'plugin:n/recommended',
-    'plugin:promise/recommended',
-    'plugin:import/recommended',
-    'plugin:security/recommended',
-    'plugin:prettier/recommended',
-  ],
-  overrides: [
-  ],
-  // parser: 'vue-eslint-parser',
+  extends: ['eslint:recommended', 'plugin:vue/vue3-recommended', 'plugin:@typescript-eslint/recommended', 'plugin:n/recommended', 'plugin:promise/recommended', 'plugin:import/recommended', 'plugin:security/recommended', 'plugin:jsdoc/recommended', 'plugin:jsx-a11y/recommended', 'plugin:json/recommended', 'plugin:markdown/recommended', 'plugin:prettier/recommended'],
+  parser: 'vue-eslint-parser',
   parserOptions: {
-    // parser: '@typescript-eslint/parser',
+    parser: '@typescript-eslint/parser',
     ecmaVersion: 'latest',
     sourceType: 'module',
     ecmaFeatures: {
@@ -28,29 +19,27 @@ module.exports = {
     },
     project: 'tsconfig.json',
     tsconfigRootDir: '.',
-    extraFileExtensions: ['.vue'],
+    extraFileExtensions: ['.vue', '.json', '.html', '.md', '.mdx'],
   },
-  plugins: [
-  ],
-  rules: {
-  },
-  ignorePatterns: [
-    'vite.config.ts',
-    'vitest.config.ts',
-    'playwright.config.ts',
-    '.eslintrc.js',
-    '.prettierrc.js',
-    ".stylelintrc.js",
-    'postcss.config.js',
-    'tailwind.config.js',
-    'commitlint.config.js',
-    'lint-staged.config.js',
-  ],
+  plugins: ['@typescript-eslint', 'html', 'tsdoc'],
+  globals: {},
+  rules: {},
   settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
     'import/resolver': {
       typescript: {
+        alwaysTryTypes: true,
         directory: 'tsconfig.json',
       },
     },
   },
+  overrides: [
+    {
+      files: ['**/tests/**/*.[jt]s?(x)'],
+      extends: ['plugin:testing-library/vue', 'plugin:playwright/playwright-test'],
+      plugins: ['vitest'],
+    },
+  ],
 }
