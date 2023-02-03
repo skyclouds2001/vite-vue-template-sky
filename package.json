@@ -15,15 +15,19 @@
     "eslint",
     "prettier",
     "stylelint",
-    "commitlint"
+    "commitlint",
+    "lint-staged"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skyclouds2001/vite-vue-template-config-sky.git"
+  },
   "homepage": "https://github.com/skyclouds2001/vite-vue-template-config-sky#readme",
   "bugs": {
     "url": "https://github.com/skyclouds2001/vite-vue-template-config-sky/issues",
     "email": "skyclouds2001@163.com"
   },
   "license": "MIT",
-  "packageManager": "pnpm@7.22.0",
   "author": {
     "name": "skyclouds2001",
     "email": "skyclouds2001@163.com",
@@ -33,29 +37,11 @@
     "skyclouds2001"
   ],
   "main": "src/main.ts",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/skyclouds2001/vite-vue-template-config-sky.git"
-  },
+  "packageManager": "pnpm@7.22.0",
   "engines": {
     "node": ">=14.0.0",
     "npm": ">=6.0.0"
   },
-  "os": [
-    "linux",
-    "win32"
-  ],
-  "cpu": [
-    "x64",
-    "ia32",
-    "arm",
-    "mips"
-  ],
-  "files": [
-    "src/",
-    "public/",
-    "index.html"
-  ],
   "scripts": {
     "dev": "cross-env NODE_ENV=development vite",
     "build": "cross-env NODE_ENV=production vue-tsc && vite build",
