@@ -18,6 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["**/*.js", "**/*.jsx", "/**/*.ts", "**/*.tsx", "**/*.vue"],
+  "include": ["**/*.js", "**/*.jsx", "**/*.ts", "**/*.tsx", "**/*.vue"],
   "exclude": ["node_modules", "dist"]
 }
