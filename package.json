@@ -45,7 +45,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development vite",
     "build": "cross-env NODE_ENV=production vue-tsc && vite build",
-    "test:unit": "cross-env NODE_ENV=test vitest",
+    "test:unit": "cross-env NODE_ENV=test vitest --coverage",
     "test:e2e": "cross-env NODE_ENV=test playwright test",
     "preview": "vite preview",
     "prepare": "husky install"
@@ -70,6 +70,7 @@
     "@tailwindcss/forms": "^0.5.3",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@tailwindcss/typography": "^0.5.9",
+    "@testing-library/vue": "^6.6.1",
     "@types/lodash-es": "^4.17.6",
     "@types/node": "^18.11.18",
     "@types/qs": "^6.9.7",
@@ -78,6 +79,9 @@
     "@vitejs/plugin-legacy": "^4.0.1",
     "@vitejs/plugin-vue": "^4.0.0",
     "@vitejs/plugin-vue-jsx": "^3.0.0",
+    "@vitest/coverage-c8": "^0.28.4",
+    "@vitest/ui": "^0.28.4",
+    "@vue/compiler-sfc": "^3.2.47",
     "cross-env": "^7.0.3",
     "cssnano": "^5.1.14",
     "eslint": "^8.33.0",

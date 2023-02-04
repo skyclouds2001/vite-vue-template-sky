@@ -16,7 +16,13 @@ export default defineConfig({
     },
   },
   test: {
+    root: '.',
     environment: 'jsdom',
-    include: ['tests/unit/**/*.{test,spec}.{js,jsx,ts,tsx}'],
+    include: ['tests/{unit,components}/**/*.{test,spec}.{js,jsx,ts,tsx}'],
+    reporters: ['default', 'html'],
+    coverage: {
+      provider: 'c8',
+      reporter: ['text', 'html'],
+    },
   },
 })
