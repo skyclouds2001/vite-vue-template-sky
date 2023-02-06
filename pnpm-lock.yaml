@@ -4,7 +4,6 @@ specifiers:
   '@commitlint/cli': ^17.4.2
   '@commitlint/config-conventional': ^17.4.2
   '@element-plus/icons-vue': ^2.0.10
-  '@playwright/test': ^1.30.0
   '@stylelint/postcss-css-in-js': ^0.38.0
   '@tailwindcss/aspect-ratio': ^0.4.2
   '@tailwindcss/forms': ^0.5.3
@@ -102,7 +101,6 @@ dependencies:
 devDependencies:
   '@commitlint/cli': 17.4.2
   '@commitlint/config-conventional': 17.4.2
-  '@playwright/test': 1.30.0
   '@stylelint/postcss-css-in-js': 0.38.0_64375vj2stjdn6gyt55zwvoboa
   '@tailwindcss/aspect-ratio': 0.4.2_tailwindcss@3.2.4
   '@tailwindcss/forms': 0.5.3_tailwindcss@3.2.4
@@ -2171,15 +2169,6 @@ packages:
       picocolors: 1.0.0
       tiny-glob: 0.2.9
       tslib: 2.5.0
-    dev: true
-
-  /@playwright/test/1.30.0:
-    resolution: { integrity: sha512-SVxkQw1xvn/Wk/EvBnqWIq6NLo1AppwbYOjNLmyU0R1RoQ3rLEBtmjTnElcnz8VEtn11fptj1ECxK0tgURhajw== }
-    engines: { node: '>=14' }
-    hasBin: true
-    dependencies:
-      '@types/node': 18.11.18
-      playwright-core: 1.30.0
     dev: true
 
   /@polka/url/1.0.0-next.21:
@@ -7446,12 +7435,6 @@ packages:
       jsonc-parser: 3.2.0
       mlly: 1.1.0
       pathe: 1.1.0
-    dev: true
-
-  /playwright-core/1.30.0:
-    resolution: { integrity: sha512-7AnRmTCf+GVYhHbLJsGUtskWTE33SwMZkybJ0v6rqR1boxq2x36U7p1vDRV7HO2IwTZgmycracLxPEJI49wu4g== }
-    engines: { node: '>=14' }
-    hasBin: true
     dev: true
 
   /pnpm/7.25.0:
