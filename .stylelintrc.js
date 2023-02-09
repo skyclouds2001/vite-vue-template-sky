@@ -1,6 +1,13 @@
 module.exports = {
   extends: ['stylelint-config-standard', 'stylelint-config-rational-order', 'stylelint-prettier/recommended'],
-  rules: {},
+  rules: {
+    'at-rule-no-unknown': [
+      true,
+      {
+        ignoreAtRules: ['tailwind', 'layer', 'apply', 'variants', 'responsive', 'screen'],
+      },
+    ],
+  },
   plugins: ['stylelint-order'],
   overrides: [
     {
