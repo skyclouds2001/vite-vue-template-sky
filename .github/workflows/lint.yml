@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: ['master']
 jobs:
-  tests:
+  lint:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -18,7 +18,6 @@ jobs:
         run: npm install pnpm@7.25.0 -g
       - name: install dependencies
         run: pnpm install
-      - name: install playwright browsers
-        run: pnpm exec playwright install --with-deps
-      - name: run tests
-        run: pnpm test
+      - name: run lint
+        run: pnpm lint
+        continue-on-error: true

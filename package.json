@@ -45,6 +45,7 @@
   "scripts": {
     "dev": "cross-env NODE_ENV=development vite",
     "build": "cross-env NODE_ENV=production vue-tsc && vite build",
+    "lint": "pnpm exec eslint && pnpm exec stylelint",
     "test": "pnpm test:unit && pnpm test:e2e",
     "test:unit": "cross-env NODE_ENV=test vitest --coverage",
     "test:e2e": "cross-env NODE_ENV=test playwright test",
