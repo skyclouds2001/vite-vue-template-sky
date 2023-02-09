@@ -23,7 +23,9 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'html', 'tsdoc'],
   globals: {},
-  rules: {},
+  rules: {
+    'n/no-missing-import': 'off',
+  },
   settings: {
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx'],
