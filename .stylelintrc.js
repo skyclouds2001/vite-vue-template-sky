@@ -1,5 +1,6 @@
 module.exports = {
-  extends: ['stylelint-config-standard', 'stylelint-config-rational-order', 'stylelint-prettier/recommended'],
+  extends: ['stylelint-config-standard', 'stylelint-config-recess-order', 'stylelint-prettier/recommended'],
+  plugins: ['stylelint-order'],
   rules: {
     'at-rule-no-unknown': [
       true,
@@ -8,7 +9,6 @@ module.exports = {
       },
     ],
   },
-  plugins: ['stylelint-order'],
   overrides: [
     {
       files: ['**/*.md'],
