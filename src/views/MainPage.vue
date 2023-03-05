@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ElButton, ElIcon } from 'element-plus'
 import { User } from '@element-plus/icons-vue'
+import { Icon } from '@iconify/vue'
 import { useMainStore } from '@/store'
 
 const store = useMainStore()
@@ -15,9 +16,12 @@ const decrease = () => {
 </script>
 
 <template>
-  <div class="w-10">main</div>
+  <div class="w-10">Main</div>
   <div>
     <el-icon><User /></el-icon>
+  </div>
+  <div>
+    <Icon icon="mdi-light:home" />
   </div>
   <el-button type="primary">Default</el-button>
   <div>
