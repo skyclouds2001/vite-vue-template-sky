@@ -20,3 +20,4 @@
 - Vitest and Vue Testing Library for unit test and component test
 - Playwright for e2e test
 - GitHub Actions for lint and test
+- With support for Docker on deploying to nginx
