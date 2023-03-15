@@ -20,11 +20,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/skyclouds2001/vite-vue-template-config-sky.git"
+    "url": "git+https://github.com/skyclouds2001/vite-vue-template-sky.git"
   },
-  "homepage": "https://github.com/skyclouds2001/vite-vue-template-config-sky#readme",
+  "homepage": "https://github.com/skyclouds2001/vite-vue-template-sky#readme",
   "bugs": {
-    "url": "https://github.com/skyclouds2001/vite-vue-template-config-sky/issues",
+    "url": "https://github.com/skyclouds2001/vite-vue-template-sky/issues",
     "email": "skyclouds2001@163.com"
   },
   "license": "MIT",
