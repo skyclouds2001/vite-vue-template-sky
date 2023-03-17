@@ -50,6 +50,7 @@ specifiers:
   eslint-plugin-tsdoc: ^0.2.17
   eslint-plugin-vitest: ^0.0.54
   eslint-plugin-vue: ^9.9.0
+  git-cz: ^4.9.0
   husky: ^8.0.3
   jsdom: ^21.1.0
   less: ^4.1.3
@@ -156,6 +157,7 @@ devDependencies:
   eslint-plugin-tsdoc: 0.2.17
   eslint-plugin-vitest: 0.0.54_ycpbpc6yetojsgtrx3mwntkhsu
   eslint-plugin-vue: 9.9.0_eslint@8.35.0
+  git-cz: 4.9.0
   husky: 8.0.3
   jsdom: 21.1.0
   less: 4.1.3
@@ -5259,6 +5261,11 @@ packages:
 
   /get-tsconfig/4.4.0:
     resolution: {integrity: sha512-0Gdjo/9+FzsYhXCEFueo2aY1z1tpXrxWZzP7k8ul9qt1U5o8rYJwTJYmaeHdrVosYIVYkOy2iwCJ9FdpocJhPQ==}
+    dev: true
+
+  /git-cz/4.9.0:
+    resolution: {integrity: sha512-cSRL8IIOXU7UFLdbziCYqg8f8InwLwqHezkiRHNSph7oZqGv0togId1kMTfKil6gzK0VaSXeVBb4oDl0fQCHiw==}
+    hasBin: true
     dev: true
 
   /git-raw-commits/2.0.11:
