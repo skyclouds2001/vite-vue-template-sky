@@ -16,7 +16,9 @@
 - Add Sass, SCSS, Less, Stylus support
 - Using postcss-preset-env, postcss-import and cssnano for transform styles
 - Husky and lint-staged for make lint when create commit
-- ESLint, Prettier, Stylelint, CommitLint and MarkdownLint for lint and enforce code style
+- ESLint, Prettier, Stylelint and MarkdownLint for lint and enforce code style
+- CommitLint and Commitizen for enforce commit format
+- Changeset for generate CHANGELOG document
 - Vitest and Vue Testing Library for unit test and component test
 - Playwright for e2e test
 - GitHub Actions for lint and test
