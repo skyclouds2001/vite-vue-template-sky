@@ -1,0 +1,28 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "daily"
+    allow:
+      - dependency-type: "all"
+    ignore:
+      - dependency-name: "pnpm"
+    labels:
+      - "dependencies"
+    open-pull-requests-limit: 10
+    pull-request-branch-name:
+      separator: "-"
+    target-branch: "dev"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    allow:
+      - dependency-type: "all"
+    labels:
+      - "dependencies"
+    open-pull-requests-limit: 10
+    pull-request-branch-name:
+      separator: "-"
+    target-branch: "dev"
