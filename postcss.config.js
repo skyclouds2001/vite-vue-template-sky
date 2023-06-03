@@ -1,7 +1,8 @@
 module.exports = {
   plugins: {
-    tailwindcss: {},
+    'postcss-url': {},
     'postcss-import': {},
+    tailwindcss: {},
     'postcss-preset-env': {},
     cssnano: {},
   },
