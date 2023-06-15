@@ -103,8 +103,8 @@ devDependencies:
     specifier: ^0.32.0
     version: 0.32.0(vitest@0.32.0)
   '@vitest/ui':
-    specifier: ^0.31.4
-    version: 0.31.4(vitest@0.32.0)
+    specifier: ^0.32.0
+    version: 0.32.0(vitest@0.32.0)
   '@vue/compiler-sfc':
     specifier: ^3.3.4
     version: 3.3.4
@@ -314,7 +314,7 @@ devDependencies:
     version: 4.0.0
   vitest:
     specifier: ^0.32.0
-    version: 0.32.0(@vitest/ui@0.31.4)(jsdom@22.1.0)(less@4.1.3)(sass@1.62.1)(stylus@0.59.0)(sugarss@4.0.1)(terser@5.17.7)
+    version: 0.32.0(@vitest/ui@0.32.0)(jsdom@22.1.0)(less@4.1.3)(sass@1.62.1)(stylus@0.59.0)(sugarss@4.0.1)(terser@5.17.7)
   vue-tsc:
     specifier: ^1.6.5
     version: 1.6.5(typescript@5.1.3)
@@ -3292,7 +3292,7 @@ packages:
       magic-string: 0.30.0
       picocolors: 1.0.0
       std-env: 3.3.3
-      vitest: 0.32.0(@vitest/ui@0.31.4)(jsdom@22.1.0)(less@4.1.3)(sass@1.62.1)(stylus@0.59.0)(sugarss@4.0.1)(terser@5.17.7)
+      vitest: 0.32.0(@vitest/ui@0.32.0)(jsdom@22.1.0)(less@4.1.3)(sass@1.62.1)(stylus@0.59.0)(sugarss@4.0.1)(terser@5.17.7)
     dev: true
 
   /@vitest/expect@0.32.0:
@@ -3326,27 +3326,19 @@ packages:
       tinyspy: 2.1.1
     dev: true
 
-  /@vitest/ui@0.31.4(vitest@0.32.0):
-    resolution: {integrity: sha512-sKM16ITX6HrNFF+lNZ2AQAen4/6Bx2i6KlBfIvkUjcTgc5YII/j2ltcX14oCUv4EA0OTWGQuGhO3zDoAsTENGA==}
+  /@vitest/ui@0.32.0(vitest@0.32.0):
+    resolution: {integrity: sha512-55gugh6+owrOqW83RCgLm9q+o3SlzvFVgl1lyfnr0WB8ABxLoM+3pgusEjosscgEYGzTjTXaZY6xLd4qlfH/RQ==}
     peerDependencies:
       vitest: '>=0.30.1 <1'
     dependencies:
-      '@vitest/utils': 0.31.4
+      '@vitest/utils': 0.32.0
       fast-glob: 3.2.12
       fflate: 0.7.4
       flatted: 3.2.7
       pathe: 1.1.1
       picocolors: 1.0.0
       sirv: 2.0.3
-      vitest: 0.32.0(@vitest/ui@0.31.4)(jsdom@22.1.0)(less@4.1.3)(sass@1.62.1)(stylus@0.59.0)(sugarss@4.0.1)(terser@5.17.7)
-    dev: true
-
-  /@vitest/utils@0.31.4:
-    resolution: {integrity: sha512-DobZbHacWznoGUfYU8XDPY78UubJxXfMNY1+SUdOp1NsI34eopSA6aZMeaGu10waSOeYwE8lxrd/pLfT0RMxjQ==}
-    dependencies:
-      concordance: 5.0.4
-      loupe: 2.3.6
-      pretty-format: 27.5.1
+      vitest: 0.32.0(@vitest/ui@0.32.0)(jsdom@22.1.0)(less@4.1.3)(sass@1.62.1)(stylus@0.59.0)(sugarss@4.0.1)(terser@5.17.7)
     dev: true
 
   /@vitest/utils@0.32.0:
@@ -8510,8 +8502,8 @@ packages:
       postcss-selector-parser: 6.0.13
     dev: true
 
-  /postcss-nesting@11.2.2(postcss@8.4.24):
-    resolution: {integrity: sha512-aOTiUniAB1bcPE6GGiynWRa6PZFPhOTAm5q3q5cem6QeSijIHHkWr6gs65ukCZMXeak8yXeZVbBJET3VM+HlhA==}
+  /postcss-nesting@11.3.0(postcss@8.4.24):
+    resolution: {integrity: sha512-JlS10AQm/RzyrUGgl5irVkAlZYTJ99mNueUl+Qab+TcHhVedLiylWVkKBhRale+rS9yWIJK48JVzQlq3LcSdeA==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.4
@@ -8713,7 +8705,7 @@ packages:
       postcss-initial: 4.0.1(postcss@8.4.24)
       postcss-lab-function: 5.2.3(postcss@8.4.24)
       postcss-logical: 6.2.0(postcss@8.4.24)
-      postcss-nesting: 11.2.2(postcss@8.4.24)
+      postcss-nesting: 11.3.0(postcss@8.4.24)
       postcss-opacity-percentage: 2.0.0(postcss@8.4.24)
       postcss-overflow-shorthand: 4.0.1(postcss@8.4.24)
       postcss-page-break: 3.0.4(postcss@8.4.24)
@@ -10693,7 +10685,7 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /vitest@0.32.0(@vitest/ui@0.31.4)(jsdom@22.1.0)(less@4.1.3)(sass@1.62.1)(stylus@0.59.0)(sugarss@4.0.1)(terser@5.17.7):
+  /vitest@0.32.0(@vitest/ui@0.32.0)(jsdom@22.1.0)(less@4.1.3)(sass@1.62.1)(stylus@0.59.0)(sugarss@4.0.1)(terser@5.17.7):
     resolution: {integrity: sha512-SW83o629gCqnV3BqBnTxhB10DAwzwEx3z+rqYZESehUB+eWsJxwcBQx7CKy0otuGMJTYh7qCVuUX23HkftGl/Q==}
     engines: {node: '>=v14.18.0'}
     hasBin: true
@@ -10731,7 +10723,7 @@ packages:
       '@vitest/runner': 0.32.0
       '@vitest/snapshot': 0.32.0
       '@vitest/spy': 0.32.0
-      '@vitest/ui': 0.31.4(vitest@0.32.0)
+      '@vitest/ui': 0.32.0(vitest@0.32.0)
       '@vitest/utils': 0.32.0
       acorn: 8.8.2
       acorn-walk: 8.2.0
