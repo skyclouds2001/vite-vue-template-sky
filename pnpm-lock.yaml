@@ -100,8 +100,8 @@ devDependencies:
     specifier: ^3.0.1
     version: 3.0.1(vite@4.3.9)(vue@3.3.4)
   '@vitest/coverage-c8':
-    specifier: ^0.32.0
-    version: 0.32.0(vitest@0.32.0)
+    specifier: ^0.32.1
+    version: 0.32.1(vitest@0.32.0)
   '@vitest/ui':
     specifier: ^0.32.0
     version: 0.32.0(vitest@0.32.0)
@@ -3477,8 +3477,8 @@ packages:
       vue: 3.3.4
     dev: true
 
-  /@vitest/coverage-c8@0.32.0(vitest@0.32.0):
-    resolution: {integrity: sha512-FeTzRN5VCL7B6YTRK5ZPQO2iwJzl2x7/mTQ/2uEeKZatAYBtvczeAYnzSUhCPev7p99+5skxMQZwqVcFTrVCdg==}
+  /@vitest/coverage-c8@0.32.1(vitest@0.32.0):
+    resolution: {integrity: sha512-In76s7bYSABEO2cM7ykLbrlyu7WxpPiSV1rwfme58ZNOoDrRHt5avLtBpBpNfxlzWgQIWVqne10wEc8mhf3BwA==}
     peerDependencies:
       vitest: '>=0.30.0 <1'
     dependencies:
