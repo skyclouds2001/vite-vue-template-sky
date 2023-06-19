@@ -99,7 +99,7 @@
     "@vitejs/plugin-legacy": "^4.0.4",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vitejs/plugin-vue-jsx": "^3.0.1",
-    "@vitest/coverage-c8": "^0.32.0",
+    "@vitest/coverage-c8": "^0.32.2",
     "@vitest/ui": "^0.32.0",
     "@vue/compiler-sfc": "^3.3.4",
     "commitizen": "^4.3.0",
