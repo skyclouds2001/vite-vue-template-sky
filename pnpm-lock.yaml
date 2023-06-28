@@ -11,8 +11,8 @@ dependencies:
     specifier: ^1.11.8
     version: 1.11.8
   element-plus:
-    specifier: ^2.3.6
-    version: 2.3.6(vue@3.3.4)
+    specifier: ^2.3.7
+    version: 2.3.7(vue@3.3.4)
   lodash-es:
     specifier: ^4.17.21
     version: 4.17.21
@@ -5292,8 +5292,8 @@ packages:
     resolution: {integrity: sha512-m232JTVmCawA2vG+1azVxhKZ9Sv1Q//xxNv5PkP5rWxGgQE8c3CiZFrh8Xnp+d1NmNxlu3QQrGIfdeW5TtXX5w==}
     dev: true
 
-  /element-plus@2.3.6(vue@3.3.4):
-    resolution: {integrity: sha512-GLz0pXUYI2zRfIgyI6W7SWmHk6dSEikP9yR++hsQUyy63+WjutoiGpA3SZD4cGPSXUzRFeKfVr8CnYhK5LqXZw==}
+  /element-plus@2.3.7(vue@3.3.4):
+    resolution: {integrity: sha512-h6TxclbaLUJxg/Bv5j/ZKsK+K5yadQliw5+R30HWyE69pXlqXTX24oYx+yw3pA4Dy+lqEDi5501FQ0CORk3OSA==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
