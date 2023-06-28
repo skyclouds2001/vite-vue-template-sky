@@ -32,7 +32,7 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "jsx": "preserve",
-    "lib": ["ESNext"],
+    "lib": ["ESNext", "DOM", "WebWorker"],
     "target": "ESNext",
     "useDefineForClassFields": false,
 
