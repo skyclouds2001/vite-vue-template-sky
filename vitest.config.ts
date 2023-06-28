@@ -6,6 +6,7 @@ import legacy from '@vitejs/plugin-legacy'
 import { viteMockServe as mock } from 'vite-plugin-mock'
 import mkcert from 'vite-plugin-mkcert'
 import svgLoader from 'vite-svg-loader'
+// @ts-expect-error can't find type definition file
 import ElementPlus from 'unplugin-element-plus/vite'
 
 export default defineConfig({

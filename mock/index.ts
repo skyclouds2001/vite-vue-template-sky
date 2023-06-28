@@ -5,14 +5,14 @@ const mocks: Mock[] = [
     url: '/api/test',
     method: 'get',
     statusCode: 200,
-    response: {
+    response: () => ({
       success: true,
       code: 0,
       message: 'success',
       data: {
         name: 'hello',
       },
-    },
+    }),
   },
 ]
 
