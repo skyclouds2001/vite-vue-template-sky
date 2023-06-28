@@ -14,8 +14,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-size-adjust: 100%;
-  background-color: #242424;
   color-scheme: light dark;
+  background-color: #242424;
 }
 
 #app {
