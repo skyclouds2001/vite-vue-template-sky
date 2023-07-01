@@ -292,8 +292,8 @@ devDependencies:
     specifier: ^0.6.1
     version: 0.6.1(eslint@8.43.0)(stylelint@15.9.0)(typescript@5.1.6)(vite@4.3.9)(vue-tsc@1.8.3)
   vite-plugin-inspect:
-    specifier: ^0.7.30
-    version: 0.7.30(rollup@3.25.3)(vite@4.3.9)
+    specifier: ^0.7.31
+    version: 0.7.31(rollup@3.25.3)(vite@4.3.9)
   vite-plugin-mkcert:
     specifier: ^1.16.0
     version: 1.16.0(vite@4.3.9)
@@ -10833,8 +10833,8 @@ packages:
       vue-tsc: 1.8.3(typescript@5.1.6)
     dev: true
 
-  /vite-plugin-inspect@0.7.30(rollup@3.25.3)(vite@4.3.9):
-    resolution: {integrity: sha512-4z3bxULL9KGsSu2Gt+Z/lYQB2APpODG+2eHDGWK9NE4IGnwKfbz0lzJqVJGFtLGhvdwzGjt01aPgpMLYb/bibw==}
+  /vite-plugin-inspect@0.7.31(rollup@3.25.3)(vite@4.3.9):
+    resolution: {integrity: sha512-wbe3/dJWaGIQPNL+wBIL6A4bNZ3F1uw4hXPrM475pRo71zaP9KKSMHdDupcKE9hQ6ZcjxlnVCP1atPsgWzFVtw==}
     engines: {node: '>=14'}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0
