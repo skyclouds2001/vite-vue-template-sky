@@ -241,32 +241,32 @@ devDependencies:
     specifier: ^1.63.6
     version: 1.63.6
   stylelint:
-    specifier: ^15.9.0
-    version: 15.9.0
+    specifier: ^15.10.0
+    version: 15.10.0
   stylelint-config-html:
     specifier: ^1.1.0
-    version: 1.1.0(postcss-html@1.5.0)(stylelint@15.9.0)
+    version: 1.1.0(postcss-html@1.5.0)(stylelint@15.10.0)
   stylelint-config-prettier-scss:
     specifier: ^1.0.0
-    version: 1.0.0(stylelint@15.9.0)
+    version: 1.0.0(stylelint@15.10.0)
   stylelint-config-recess-order:
     specifier: ^4.2.0
-    version: 4.2.0(stylelint@15.9.0)
+    version: 4.2.0(stylelint@15.10.0)
   stylelint-config-recommended-less:
     specifier: ^1.0.4
     version: 1.0.4
   stylelint-config-standard:
     specifier: ^33.0.0
-    version: 33.0.0(stylelint@15.9.0)
+    version: 33.0.0(stylelint@15.10.0)
   stylelint-config-standard-scss:
     specifier: ^10.0.0
-    version: 10.0.0(postcss@8.4.24)(stylelint@15.9.0)
+    version: 10.0.0(postcss@8.4.24)(stylelint@15.10.0)
   stylelint-config-standard-vue:
     specifier: ^1.0.0
-    version: 1.0.0(postcss-html@1.5.0)(stylelint@15.9.0)
+    version: 1.0.0(postcss-html@1.5.0)(stylelint@15.10.0)
   stylelint-stylus:
     specifier: ^0.18.0
-    version: 0.18.0(stylelint@15.9.0)
+    version: 0.18.0(stylelint@15.10.0)
   stylus:
     specifier: ^0.59.0
     version: 0.59.0
@@ -290,7 +290,7 @@ devDependencies:
     version: 4.3.9(@types/node@20.3.3)(less@4.1.3)(sass@1.63.6)(stylus@0.59.0)(sugarss@4.0.1)(terser@5.18.2)
   vite-plugin-checker:
     specifier: ^0.6.1
-    version: 0.6.1(eslint@8.43.0)(stylelint@15.9.0)(typescript@5.1.6)(vite@4.3.9)(vue-tsc@1.8.3)
+    version: 0.6.1(eslint@8.43.0)(stylelint@15.10.0)(typescript@5.1.6)(vite@4.3.9)(vue-tsc@1.8.3)
   vite-plugin-inspect:
     specifier: ^0.7.31
     version: 0.7.31(rollup@3.25.3)(vite@4.3.9)
@@ -1957,14 +1957,14 @@ packages:
       '@jridgewell/trace-mapping': 0.3.9
     dev: true
 
-  /@csstools/cascade-layer-name-parser@1.0.2(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1):
+  /@csstools/cascade-layer-name-parser@1.0.2(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1):
     resolution: {integrity: sha512-xm7Mgwej/wBfLoK0K5LfntmPJzoULayl1XZY9JYgQgT29JiqNw++sLnx95u5y9zCihblzkyaRYJrsRMhIBzRdg==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       '@csstools/css-parser-algorithms': ^2.1.1
       '@csstools/css-tokenizer': ^2.1.1
     dependencies:
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
     dev: true
 
@@ -1973,18 +1973,18 @@ packages:
     engines: {node: ^14 || ^16 || >=18}
     dev: true
 
-  /@csstools/css-calc@1.1.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1):
+  /@csstools/css-calc@1.1.1(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1):
     resolution: {integrity: sha512-Nh+iLCtjlooTzuR0lpmB8I6hPX/VupcGQ3Z1U2+wgJJ4fa8+cWkub+lCsbZcYPzBGsZLEL8fQAg+Na5dwEFJxg==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       '@csstools/css-parser-algorithms': ^2.1.1
       '@csstools/css-tokenizer': ^2.1.1
     dependencies:
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
     dev: true
 
-  /@csstools/css-color-parser@1.2.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1):
+  /@csstools/css-color-parser@1.2.1(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1):
     resolution: {integrity: sha512-NcmaoJIEycIH0HnzZRrwRcBljPh1AWcXl4CNL8MAD3+Zy8XyIpdTtTMaY/phnLHHIYkyjaoSTdxAecss6+PCcg==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
@@ -1992,13 +1992,13 @@ packages:
       '@csstools/css-tokenizer': ^2.1.1
     dependencies:
       '@csstools/color-helpers': 2.1.0
-      '@csstools/css-calc': 1.1.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-calc': 1.1.1(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
     dev: true
 
-  /@csstools/css-parser-algorithms@2.2.0(@csstools/css-tokenizer@2.1.1):
-    resolution: {integrity: sha512-9BoQ/jSrPq4vv3b9jjLW+PNNv56KlDH5JMx5yASSNrCtvq70FCNZUjXRvbCeR9hYj9ZyhURtqpU/RFIgg6kiOw==}
+  /@csstools/css-parser-algorithms@2.3.0(@csstools/css-tokenizer@2.1.1):
+    resolution: {integrity: sha512-dTKSIHHWc0zPvcS5cqGP+/TPFUJB0ekJ9dGKvMAFoNuBFhDPBt9OMGNZiIA5vTiNdGHHBeScYPXIGBMnVOahsA==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       '@csstools/css-tokenizer': ^2.1.1
@@ -2011,14 +2011,14 @@ packages:
     engines: {node: ^14 || ^16 || >=18}
     dev: true
 
-  /@csstools/media-query-list-parser@2.1.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1):
-    resolution: {integrity: sha512-pUjtFbaKbiFNjJo8pprrIaXLvQvWIlwPiFnRI4sEnc4F0NIGTOsw8kaJSR3CmZAKEvV8QYckovgAnWQC0bgLLQ==}
+  /@csstools/media-query-list-parser@2.1.2(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1):
+    resolution: {integrity: sha512-M8cFGGwl866o6++vIY7j1AKuq9v57cf+dGepScwCcbut9ypJNr4Cj+LLTWligYUZ0uyhEoJDKt5lvyBfh2L3ZQ==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
-      '@csstools/css-parser-algorithms': ^2.2.0
+      '@csstools/css-parser-algorithms': ^2.3.0
       '@csstools/css-tokenizer': ^2.1.1
     dependencies:
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
     dev: true
 
@@ -2039,8 +2039,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/css-color-parser': 1.2.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-color-parser': 1.2.1(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
       '@csstools/postcss-progressive-custom-properties': 2.3.0(postcss@8.4.24)
       postcss: 8.4.24
@@ -2052,8 +2052,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/css-color-parser': 1.2.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-color-parser': 1.2.1(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
       '@csstools/postcss-progressive-custom-properties': 2.3.0(postcss@8.4.24)
       postcss: 8.4.24
@@ -2075,8 +2075,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/css-color-parser': 1.2.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-color-parser': 1.2.1(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
       '@csstools/postcss-progressive-custom-properties': 2.3.0(postcss@8.4.24)
       postcss: 8.4.24
@@ -2088,8 +2088,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/css-color-parser': 1.2.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-color-parser': 1.2.1(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
       postcss: 8.4.24
     dev: true
@@ -2151,10 +2151,10 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/css-calc': 1.1.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-calc': 1.1.1(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
-      '@csstools/media-query-list-parser': 2.1.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/media-query-list-parser': 2.1.2(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
       postcss: 8.4.24
     dev: true
 
@@ -2164,9 +2164,9 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
-      '@csstools/media-query-list-parser': 2.1.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/media-query-list-parser': 2.1.2(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
       postcss: 8.4.24
     dev: true
 
@@ -2196,8 +2196,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/css-color-parser': 1.2.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-color-parser': 1.2.1(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
       '@csstools/postcss-progressive-custom-properties': 2.3.0(postcss@8.4.24)
       postcss: 8.4.24
@@ -2219,8 +2219,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/css-color-parser': 1.2.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-color-parser': 1.2.1(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
       '@csstools/postcss-progressive-custom-properties': 2.3.0(postcss@8.4.24)
       postcss: 8.4.24
@@ -2242,8 +2242,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/css-calc': 1.1.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-calc': 1.1.1(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
       postcss: 8.4.24
     dev: true
@@ -2265,8 +2265,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/css-calc': 1.1.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-calc': 1.1.1(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
       postcss: 8.4.24
     dev: true
@@ -2285,6 +2285,15 @@ packages:
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss-selector-parser: ^6.0.10
+    dependencies:
+      postcss-selector-parser: 6.0.13
+    dev: true
+
+  /@csstools/selector-specificity@3.0.0(postcss-selector-parser@6.0.13):
+    resolution: {integrity: sha512-hBI9tfBtuPIi885ZsZ32IMEU/5nlZH/KOVYJCOh7gyMxaVLGmLedYqFN6Ui1LXkI8JlC8IsuC0rF0btcRZKd5g==}
+    engines: {node: ^14 || ^16 || >=18}
+    peerDependencies:
+      postcss-selector-parser: ^6.0.13
     dependencies:
       postcss-selector-parser: 6.0.13
     dev: true
@@ -3046,7 +3055,7 @@ packages:
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
     dependencies:
       cross-spawn: 7.0.3
-      fast-glob: 3.2.12
+      fast-glob: 3.3.0
       is-glob: 4.0.3
       open: 9.1.0
       picocolors: 1.0.0
@@ -5953,6 +5962,17 @@ packages:
       micromatch: 4.0.5
     dev: true
 
+  /fast-glob@3.3.0:
+    resolution: {integrity: sha512-ChDuvbOypPuNjO8yIDf36x7BlZX1smcUMTTcyoIjycexOxd6DFsKsg21qVBzEmr3G7fUKIRy2/psii+CIUt7FA==}
+    engines: {node: '>=8.6.0'}
+    dependencies:
+      '@nodelib/fs.stat': 2.0.5
+      '@nodelib/fs.walk': 1.2.8
+      glob-parent: 5.1.2
+      merge2: 1.4.1
+      micromatch: 4.0.5
+    dev: true
+
   /fast-json-stable-stringify@2.1.0:
     resolution: {integrity: sha512-lhd/wF+Lk98HZoTCtlVraHtfh5XYijIjalXck7saUtuanSDyLMxnHhSXEDJqHxD7msR8D0uCmqlkwjCV8xvwHw==}
     dev: true
@@ -6381,7 +6401,7 @@ packages:
     dependencies:
       array-union: 2.1.0
       dir-glob: 3.0.1
-      fast-glob: 3.2.12
+      fast-glob: 3.3.0
       ignore: 5.2.4
       merge2: 1.4.1
       slash: 3.0.0
@@ -6392,7 +6412,7 @@ packages:
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       dir-glob: 3.0.1
-      fast-glob: 3.2.12
+      fast-glob: 3.3.0
       ignore: 5.2.4
       merge2: 1.4.1
       slash: 4.0.0
@@ -8424,10 +8444,10 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/cascade-layer-name-parser': 1.0.2(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/cascade-layer-name-parser': 1.0.2(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
-      '@csstools/media-query-list-parser': 2.1.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/media-query-list-parser': 2.1.2(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
       postcss: 8.4.24
     dev: true
 
@@ -8437,8 +8457,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/cascade-layer-name-parser': 1.0.2(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/cascade-layer-name-parser': 1.0.2(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
       postcss: 8.4.24
       postcss-value-parser: 4.2.0
@@ -8450,8 +8470,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/cascade-layer-name-parser': 1.0.2(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/cascade-layer-name-parser': 1.0.2(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
       postcss: 8.4.24
       postcss-selector-parser: 6.0.13
@@ -8607,8 +8627,8 @@ packages:
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/css-color-parser': 1.2.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-color-parser': 1.2.1(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
       '@csstools/postcss-progressive-custom-properties': 2.3.0(postcss@8.4.24)
       postcss: 8.4.24
@@ -9895,7 +9915,7 @@ packages:
       postcss-selector-parser: 6.0.13
     dev: true
 
-  /stylelint-config-html@1.1.0(postcss-html@1.5.0)(stylelint@15.9.0):
+  /stylelint-config-html@1.1.0(postcss-html@1.5.0)(stylelint@15.10.0):
     resolution: {integrity: sha512-IZv4IVESjKLumUGi+HWeb7skgO6/g4VMuAYrJdlqQFndgbj6WJAXPhaysvBiXefX79upBdQVumgYcdd17gCpjQ==}
     engines: {node: ^12 || >=14}
     peerDependencies:
@@ -9903,26 +9923,26 @@ packages:
       stylelint: '>=14.0.0'
     dependencies:
       postcss-html: 1.5.0
-      stylelint: 15.9.0
+      stylelint: 15.10.0
     dev: true
 
-  /stylelint-config-prettier-scss@1.0.0(stylelint@15.9.0):
+  /stylelint-config-prettier-scss@1.0.0(stylelint@15.10.0):
     resolution: {integrity: sha512-Gr2qLiyvJGKeDk0E/+awNTrZB/UtNVPLqCDOr07na/sLekZwm26Br6yYIeBYz3ulsEcQgs5j+2IIMXCC+wsaQA==}
     engines: {node: 14.* || 16.* || >= 18}
     hasBin: true
     peerDependencies:
       stylelint: '>=15.0.0'
     dependencies:
-      stylelint: 15.9.0
+      stylelint: 15.10.0
     dev: true
 
-  /stylelint-config-recess-order@4.2.0(stylelint@15.9.0):
+  /stylelint-config-recess-order@4.2.0(stylelint@15.10.0):
     resolution: {integrity: sha512-cWC66tUx74OgurUQaTAH4iJ4JbyisMwlJH8BO/oxglDLZBUNFggjwPFVtgsmd8rS+bUfm7sPlRrF00iAihESwA==}
     peerDependencies:
       stylelint: '>=15'
     dependencies:
-      stylelint: 15.9.0
-      stylelint-order: 6.0.3(stylelint@15.9.0)
+      stylelint: 15.10.0
+      stylelint-order: 6.0.3(stylelint@15.10.0)
     dev: true
 
   /stylelint-config-recommended-less@1.0.4:
@@ -9935,7 +9955,7 @@ packages:
       - supports-color
     dev: true
 
-  /stylelint-config-recommended-scss@12.0.0(postcss@8.4.24)(stylelint@15.9.0):
+  /stylelint-config-recommended-scss@12.0.0(postcss@8.4.24)(stylelint@15.10.0):
     resolution: {integrity: sha512-5Bb2mlGy6WLa30oNeKpZvavv2lowJUsUJO25+OA68GFTemlwd1zbFsL7q0bReKipOSU3sG47hKneZ6Nd+ctrFA==}
     peerDependencies:
       postcss: ^8.3.3
@@ -9946,12 +9966,12 @@ packages:
     dependencies:
       postcss: 8.4.24
       postcss-scss: 4.0.6(postcss@8.4.24)
-      stylelint: 15.9.0
-      stylelint-config-recommended: 12.0.0(stylelint@15.9.0)
-      stylelint-scss: 5.0.1(stylelint@15.9.0)
+      stylelint: 15.10.0
+      stylelint-config-recommended: 12.0.0(stylelint@15.10.0)
+      stylelint-scss: 5.0.1(stylelint@15.10.0)
     dev: true
 
-  /stylelint-config-recommended-vue@1.4.0(postcss-html@1.5.0)(stylelint@15.9.0):
+  /stylelint-config-recommended-vue@1.4.0(postcss-html@1.5.0)(stylelint@15.10.0):
     resolution: {integrity: sha512-DVJqyX2KvMCn9U0+keL12r7xlsH26K4Vg8NrIZuq5MoF7g82DpMp326Om4E0Q+Il1o+bTHuUyejf2XAI0iD04Q==}
     engines: {node: ^12 || >=14}
     peerDependencies:
@@ -9960,17 +9980,17 @@ packages:
     dependencies:
       postcss-html: 1.5.0
       semver: 7.5.3
-      stylelint: 15.9.0
-      stylelint-config-html: 1.1.0(postcss-html@1.5.0)(stylelint@15.9.0)
-      stylelint-config-recommended: 12.0.0(stylelint@15.9.0)
+      stylelint: 15.10.0
+      stylelint-config-html: 1.1.0(postcss-html@1.5.0)(stylelint@15.10.0)
+      stylelint-config-recommended: 12.0.0(stylelint@15.10.0)
     dev: true
 
-  /stylelint-config-recommended@12.0.0(stylelint@15.9.0):
+  /stylelint-config-recommended@12.0.0(stylelint@15.10.0):
     resolution: {integrity: sha512-x6x8QNARrGO2sG6iURkzqL+Dp+4bJorPMMRNPScdvaUK8PsynriOcMW7AFDKqkWAS5wbue/u8fUT/4ynzcmqdQ==}
     peerDependencies:
       stylelint: ^15.5.0
     dependencies:
-      stylelint: 15.9.0
+      stylelint: 15.10.0
     dev: true
 
   /stylelint-config-recommended@6.0.0(stylelint@14.16.1):
@@ -9981,7 +10001,7 @@ packages:
       stylelint: 14.16.1
     dev: true
 
-  /stylelint-config-standard-scss@10.0.0(postcss@8.4.24)(stylelint@15.9.0):
+  /stylelint-config-standard-scss@10.0.0(postcss@8.4.24)(stylelint@15.10.0):
     resolution: {integrity: sha512-bChBEo1p3xUVWh/wenJI+josoMk21f2yuLDGzGjmKYcALfl2u3DFltY+n4UHswYiXghqXaA8mRh+bFy/q1hQlg==}
     peerDependencies:
       postcss: ^8.3.3
@@ -9991,12 +10011,12 @@ packages:
         optional: true
     dependencies:
       postcss: 8.4.24
-      stylelint: 15.9.0
-      stylelint-config-recommended-scss: 12.0.0(postcss@8.4.24)(stylelint@15.9.0)
-      stylelint-config-standard: 33.0.0(stylelint@15.9.0)
+      stylelint: 15.10.0
+      stylelint-config-recommended-scss: 12.0.0(postcss@8.4.24)(stylelint@15.10.0)
+      stylelint-config-standard: 33.0.0(stylelint@15.10.0)
     dev: true
 
-  /stylelint-config-standard-vue@1.0.0(postcss-html@1.5.0)(stylelint@15.9.0):
+  /stylelint-config-standard-vue@1.0.0(postcss-html@1.5.0)(stylelint@15.10.0):
     resolution: {integrity: sha512-wAzU7p6DSlo04pWfCbOcaMq09Nojt0FEsbdxhCBTdC7IguD9ZVl7FP/bvyA0HAHjZGC4JkW7m6WiQaoVMDSuFw==}
     engines: {node: ^12 || >=14}
     peerDependencies:
@@ -10004,19 +10024,19 @@ packages:
       stylelint: '>=14.0.0'
     dependencies:
       postcss-html: 1.5.0
-      stylelint: 15.9.0
-      stylelint-config-html: 1.1.0(postcss-html@1.5.0)(stylelint@15.9.0)
-      stylelint-config-recommended-vue: 1.4.0(postcss-html@1.5.0)(stylelint@15.9.0)
-      stylelint-config-standard: 33.0.0(stylelint@15.9.0)
+      stylelint: 15.10.0
+      stylelint-config-html: 1.1.0(postcss-html@1.5.0)(stylelint@15.10.0)
+      stylelint-config-recommended-vue: 1.4.0(postcss-html@1.5.0)(stylelint@15.10.0)
+      stylelint-config-standard: 33.0.0(stylelint@15.10.0)
     dev: true
 
-  /stylelint-config-standard@33.0.0(stylelint@15.9.0):
+  /stylelint-config-standard@33.0.0(stylelint@15.10.0):
     resolution: {integrity: sha512-eyxnLWoXImUn77+ODIuW9qXBDNM+ALN68L3wT1lN2oNspZ7D9NVGlNHb2QCUn4xDug6VZLsh0tF8NyoYzkgTzg==}
     peerDependencies:
       stylelint: ^15.5.0
     dependencies:
-      stylelint: 15.9.0
-      stylelint-config-recommended: 12.0.0(stylelint@15.9.0)
+      stylelint: 15.10.0
+      stylelint-config-recommended: 12.0.0(stylelint@15.10.0)
     dev: true
 
   /stylelint-less@1.0.6(stylelint@14.16.1):
@@ -10029,17 +10049,17 @@ packages:
       stylelint: 14.16.1
     dev: true
 
-  /stylelint-order@6.0.3(stylelint@15.9.0):
+  /stylelint-order@6.0.3(stylelint@15.10.0):
     resolution: {integrity: sha512-1j1lOb4EU/6w49qZeT2SQVJXm0Ht+Qnq9GMfUa3pMwoyojIWfuA+JUDmoR97Bht1RLn4ei0xtLGy87M7d29B1w==}
     peerDependencies:
       stylelint: ^14.0.0 || ^15.0.0
     dependencies:
       postcss: 8.4.24
       postcss-sorting: 8.0.2(postcss@8.4.24)
-      stylelint: 15.9.0
+      stylelint: 15.10.0
     dev: true
 
-  /stylelint-scss@5.0.1(stylelint@15.9.0):
+  /stylelint-scss@5.0.1(stylelint@15.10.0):
     resolution: {integrity: sha512-n87iCRZrr2J7//I/QFsDXxFLnHKw633U4qvWZ+mOW6KDAp/HLj06H+6+f9zOuTYy+MdGdTuCSDROCpQIhw5fvQ==}
     peerDependencies:
       stylelint: ^14.5.1 || ^15.0.0
@@ -10048,10 +10068,10 @@ packages:
       postcss-resolve-nested-selector: 0.1.1
       postcss-selector-parser: 6.0.13
       postcss-value-parser: 4.2.0
-      stylelint: 15.9.0
+      stylelint: 15.10.0
     dev: true
 
-  /stylelint-stylus@0.18.0(stylelint@15.9.0):
+  /stylelint-stylus@0.18.0(stylelint@15.10.0):
     resolution: {integrity: sha512-n3zjLFLonPOUYY3UIUtSKzZzPB9GQo+BvtmcEQfI+4QHiNsHpfr9QrznkWT8sUB+S11dr3JRCzZ45K9lRQviSg==}
     engines: {node: ^12 || >=14}
     peerDependencies:
@@ -10069,8 +10089,8 @@ packages:
       postcss-selector-parser: 6.0.13
       postcss-styl: 0.12.3
       style-search: 0.1.0
-      stylelint: 15.9.0
-      stylelint-config-html: 1.1.0(postcss-html@1.5.0)(stylelint@15.9.0)
+      stylelint: 15.10.0
+      stylelint-config-html: 1.1.0(postcss-html@1.5.0)(stylelint@15.10.0)
       svg-tags: 1.0.0
     transitivePeerDependencies:
       - supports-color
@@ -10087,7 +10107,7 @@ packages:
       cosmiconfig: 7.1.0
       css-functions-list: 3.1.0
       debug: 4.3.4
-      fast-glob: 3.2.12
+      fast-glob: 3.3.0
       fastest-levenshtein: 1.0.16
       file-entry-cache: 6.0.1
       global-modules: 2.0.0
@@ -10123,22 +10143,22 @@ packages:
       - supports-color
     dev: true
 
-  /stylelint@15.9.0:
-    resolution: {integrity: sha512-sXtAZi64CllWr6A+8ymDWnlIaYwuAa7XRmGnJxLQXFNnLjd3Izm4HAD+loKVaZ7cpK6SLxhAUX1lwPJKGCn0mg==}
+  /stylelint@15.10.0:
+    resolution: {integrity: sha512-uDCwoZA+C2Ee29wEFi8irICpH+wie1Ku/57QrWKqtKh+ZE1LuVDkUQUg9Zp3WlWMu8IABXxFaFj3/szy+SRc0Q==}
     engines: {node: ^14.13.1 || >=16.0.0}
     hasBin: true
     dependencies:
-      '@csstools/css-parser-algorithms': 2.2.0(@csstools/css-tokenizer@2.1.1)
+      '@csstools/css-parser-algorithms': 2.3.0(@csstools/css-tokenizer@2.1.1)
       '@csstools/css-tokenizer': 2.1.1
-      '@csstools/media-query-list-parser': 2.1.1(@csstools/css-parser-algorithms@2.2.0)(@csstools/css-tokenizer@2.1.1)
-      '@csstools/selector-specificity': 2.2.0(postcss-selector-parser@6.0.13)
+      '@csstools/media-query-list-parser': 2.1.2(@csstools/css-parser-algorithms@2.3.0)(@csstools/css-tokenizer@2.1.1)
+      '@csstools/selector-specificity': 3.0.0(postcss-selector-parser@6.0.13)
       balanced-match: 2.0.0
       colord: 2.9.3
       cosmiconfig: 8.2.0
       css-functions-list: 3.1.0
       css-tree: 2.3.1
       debug: 4.3.4
-      fast-glob: 3.2.12
+      fast-glob: 3.3.0
       fastest-levenshtein: 1.0.16
       file-entry-cache: 6.0.1
       global-modules: 2.0.0
@@ -10156,7 +10176,6 @@ packages:
       normalize-path: 3.0.0
       picocolors: 1.0.0
       postcss: 8.4.24
-      postcss-media-query-parser: 0.2.3
       postcss-resolve-nested-selector: 0.1.1
       postcss-safe-parser: 6.0.0(postcss@8.4.24)
       postcss-selector-parser: 6.0.13
@@ -10778,7 +10797,7 @@ packages:
       - terser
     dev: true
 
-  /vite-plugin-checker@0.6.1(eslint@8.43.0)(stylelint@15.9.0)(typescript@5.1.6)(vite@4.3.9)(vue-tsc@1.8.3):
+  /vite-plugin-checker@0.6.1(eslint@8.43.0)(stylelint@15.10.0)(typescript@5.1.6)(vite@4.3.9)(vue-tsc@1.8.3):
     resolution: {integrity: sha512-4fAiu3W/IwRJuJkkUZlWbLunSzsvijDf0eDN6g/MGh6BUK4SMclOTGbLJCPvdAcMOQvVmm8JyJeYLYd4//8CkA==}
     engines: {node: '>=14.16'}
     peerDependencies:
@@ -10822,7 +10841,7 @@ packages:
       npm-run-path: 4.0.1
       semver: 7.5.3
       strip-ansi: 6.0.1
-      stylelint: 15.9.0
+      stylelint: 15.10.0
       tiny-invariant: 1.3.1
       typescript: 5.1.6
       vite: 4.3.9(@types/node@20.3.3)(less@4.1.3)(sass@1.63.6)(stylus@0.59.0)(sugarss@4.0.1)(terser@5.18.2)
