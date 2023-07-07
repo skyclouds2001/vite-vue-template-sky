@@ -3573,8 +3573,8 @@ packages:
       '@volar/language-core': 1.8.0
     dev: true
 
-  /@vue/babel-helper-vue-transform-on@1.1.4:
-    resolution: {integrity: sha512-i/+rx6NIx1SeqA6sJJCv0tRPAU/F6lOnxjV9v1DJVGT7rH0CWOluaYfb+ifODVHFj2cEw85X2U6fU0n466ng0Q==}
+  /@vue/babel-helper-vue-transform-on@1.1.5:
+    resolution: {integrity: sha512-SgUymFpMoAyWeYWLAY+MkCK3QEROsiUnfaw5zxOVD/M64KQs8D/4oK6Q5omVA2hnvEOE0SCkH2TZxs/jnnUj7w==}
     dev: true
 
   /@vue/babel-plugin-jsx@1.1.4(@babel/core@7.22.5):
@@ -3588,7 +3588,7 @@ packages:
       '@babel/template': 7.22.5
       '@babel/traverse': 7.22.5
       '@babel/types': 7.22.5
-      '@vue/babel-helper-vue-transform-on': 1.1.4
+      '@vue/babel-helper-vue-transform-on': 1.1.5
       camelcase: 6.3.0
       html-tags: 3.3.1
       svg-tags: 1.0.0
