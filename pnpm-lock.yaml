@@ -283,8 +283,8 @@ devDependencies:
     specifier: ^5.1.6
     version: 5.1.6
   unplugin-element-plus:
-    specifier: ^0.7.1
-    version: 0.7.1(rollup@3.25.3)
+    specifier: ^0.7.2
+    version: 0.7.2(rollup@3.25.3)
   vite:
     specifier: ^4.3.9
     version: 4.3.9(@types/node@20.3.3)(less@4.1.3)(sass@1.63.6)(stylus@0.59.0)(sugarss@4.0.1)(terser@5.18.2)
@@ -3513,7 +3513,7 @@ packages:
   /@vitest/snapshot@0.32.4:
     resolution: {integrity: sha512-IRpyqn9t14uqsFlVI2d7DFMImGMs1Q9218of40bdQQgMePwVdmix33yMNnebXcTzDU5eiV3eUsoxxH5v0x/IQA==}
     dependencies:
-      magic-string: 0.30.0
+      magic-string: 0.30.1
       pathe: 1.1.1
       pretty-format: 29.6.0
     dev: true
@@ -3660,7 +3660,7 @@ packages:
       '@vue/compiler-core': 3.3.4
       '@vue/shared': 3.3.4
       estree-walker: 2.0.2
-      magic-string: 0.30.0
+      magic-string: 0.30.1
 
   /@vue/reactivity@3.3.4:
     resolution: {integrity: sha512-kLTDLwd0B1jG08NBF3R5rqULtv/f8x3rOFByTDz4J53ttIQEDmALqKqXY0J+XQeN0aV2FBxY8nJDf88yvOPAqQ==}
@@ -7515,6 +7515,12 @@ packages:
     dependencies:
       '@jridgewell/sourcemap-codec': 1.4.15
 
+  /magic-string@0.30.1:
+    resolution: {integrity: sha512-mbVKXPmS0z0G4XqFDCTllmDQ6coZzn94aMlb0o/A4HEHJCKcanlDZwYJgwnkmgD3jyWhUgj9VsPrfd972yPffA==}
+    engines: {node: '>=12'}
+    dependencies:
+      '@jridgewell/sourcemap-codec': 1.4.15
+
   /make-dir@2.1.0:
     resolution: {integrity: sha512-LS9X+dc8KLxXCb8dni79fLIIUA5VyZoyjSMCwTluaXA0o27cCK0bhXkpgw+sTXVpPy/lSO57ilRixqk0vDmtRA==}
     engines: {node: '>=6'}
@@ -10775,20 +10781,20 @@ packages:
     engines: {node: '>= 0.8'}
     dev: true
 
-  /unplugin-element-plus@0.7.1(rollup@3.25.3):
-    resolution: {integrity: sha512-qzvPyVUdwVMkWGYHFhVm6hTqmP/juQa8tR+RzY/T1YLEk9o69FGQD8G9fOPzXLeYXJi6MjkIrBye9YUYvLMiKg==}
+  /unplugin-element-plus@0.7.2(rollup@3.25.3):
+    resolution: {integrity: sha512-A73dCu0fIMRodx1OoAZ4JruyAoenzTVFWMdukq3q7xR+vtcAy3B9uO1g3+WJMA1A9hWxo7iO5tVRGaD2lFNlWA==}
     engines: {node: '>=14.19.0'}
     dependencies:
       '@rollup/pluginutils': 5.0.2(rollup@3.25.3)
       es-module-lexer: 1.3.0
-      magic-string: 0.30.0
-      unplugin: 1.3.1
+      magic-string: 0.30.1
+      unplugin: 1.3.2
     transitivePeerDependencies:
       - rollup
     dev: true
 
-  /unplugin@1.3.1:
-    resolution: {integrity: sha512-h4uUTIvFBQRxUKS2Wjys6ivoeofGhxzTe2sRWlooyjHXVttcVfV/JiavNd3d4+jty0SVV0dxGw9AkY9MwiaCEw==}
+  /unplugin@1.3.2:
+    resolution: {integrity: sha512-Lh7/2SryjXe/IyWqx9K7IKwuKhuOFZEhotiBquOODsv2IVyDkI9lv/XhgfjdXf/xdbv32txmnBNnC/JVTDJlsA==}
     dependencies:
       acorn: 8.9.0
       chokidar: 3.5.3
