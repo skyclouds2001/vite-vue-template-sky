@@ -4642,8 +4642,8 @@ packages:
       postcss-selector-parser: 6.0.13
     dev: true
 
-  /css-declaration-sorter@6.4.0(postcss@8.4.24):
-    resolution: {integrity: sha512-jDfsatwWMWN0MODAFuHszfjphEXfNw9JUAhmY4pLu3TyTU+ohUpsbVtbU+1MZn4a47D9kqh03i4eyOm+74+zew==}
+  /css-declaration-sorter@6.4.1(postcss@8.4.24):
+    resolution: {integrity: sha512-rtdthzxKuyq6IzqX6jEcIzQF/YqccluefyCYheovBOLhFT/drQA9zj/UbRAa9J7C0o6EG6u3E6g+vKkay7/k3g==}
     engines: {node: ^10 || ^12 || >=14}
     peerDependencies:
       postcss: ^8.0.9
@@ -4732,7 +4732,7 @@ packages:
     peerDependencies:
       postcss: ^8.2.15
     dependencies:
-      css-declaration-sorter: 6.4.0(postcss@8.4.24)
+      css-declaration-sorter: 6.4.1(postcss@8.4.24)
       cssnano-utils: 4.0.0(postcss@8.4.24)
       postcss: 8.4.24
       postcss-calc: 9.0.1(postcss@8.4.24)
