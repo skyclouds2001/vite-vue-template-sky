@@ -91,7 +91,7 @@
     "@testing-library/vue": "^7.0.0",
     "@types/lodash-es": "^4.17.7",
     "@types/mockjs": "^1.0.7",
-    "@types/node": "^20.3.3",
+    "@types/node": "^20.4.1",
     "@typescript-eslint/eslint-plugin": "^5.61.0",
     "@typescript-eslint/parser": "^5.61.0",
     "@vitejs/plugin-legacy": "^4.1.0",
