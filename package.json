@@ -144,7 +144,7 @@
     "rimraf": "^5.0.1",
     "rollup-plugin-visualizer": "^5.9.2",
     "sass": "^1.63.6",
-    "stylelint": "^15.10.1",
+    "stylelint": "^15.10.2",
     "stylelint-config-html": "^1.1.0",
     "stylelint-config-prettier-scss": "^1.0.0",
     "stylelint-config-recess-order": "^4.3.0",
