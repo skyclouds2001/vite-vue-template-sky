@@ -1810,7 +1810,7 @@ packages:
     engines: {node: '>=v14'}
     dependencies:
       '@commitlint/is-ignored': 17.6.6
-      '@commitlint/parse': 17.6.5
+      '@commitlint/parse': 17.6.7
       '@commitlint/rules': 17.6.5
       '@commitlint/types': 17.4.4
     dev: true
@@ -1843,8 +1843,8 @@ packages:
     engines: {node: '>=v14'}
     dev: true
 
-  /@commitlint/parse@17.6.5:
-    resolution: {integrity: sha512-0zle3bcn1Hevw5Jqpz/FzEWNo2KIzUbc1XyGg6WrWEoa6GH3A1pbqNF6MvE6rjuy6OY23c8stWnb4ETRZyN+Yw==}
+  /@commitlint/parse@17.6.7:
+    resolution: {integrity: sha512-ibO03BgEns+JJpohpBZYD49mCdSNMg6fTv7vA5yqzEFWkBQk5NWhEBw2yG+Z1UClStIRkMkAYyI2HzoQG9tCQQ==}
     engines: {node: '>=v14'}
     dependencies:
       '@commitlint/types': 17.4.4
