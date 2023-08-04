@@ -280,8 +280,8 @@ devDependencies:
     specifier: ^0.6.1
     version: 0.6.1(eslint@8.46.0)(stylelint@15.10.2)(typescript@5.1.6)(vite@4.4.7)(vue-tsc@1.8.8)
   vite-plugin-inspect:
-    specifier: ^0.7.33
-    version: 0.7.33(vite@4.4.7)
+    specifier: ^0.7.35
+    version: 0.7.35(vite@4.4.7)
   vite-plugin-mkcert:
     specifier: ^1.16.0
     version: 1.16.0(vite@4.4.7)
@@ -10851,11 +10851,15 @@ packages:
       vue-tsc: 1.8.8(typescript@5.1.6)
     dev: true
 
-  /vite-plugin-inspect@0.7.33(vite@4.4.7):
-    resolution: {integrity: sha512-cQRLQKa/+Ua++5hN0IZfqNn1JYXBg2eCQOSUatPTwhXMO7nwfSvhhSc45E1nXfBBEhzLLOxgr1OdbDu55PiDDA==}
+  /vite-plugin-inspect@0.7.35(vite@4.4.7):
+    resolution: {integrity: sha512-e5w5dJAj3vDcHTxn8hHbiH+mVqYs17gaW00f3aGuMTXiqUog+T1Lsxr9Jb4WRiip84cpuhR0KFFBT1egtXboiA==}
     engines: {node: '>=14'}
     peerDependencies:
+      '@nuxt/kit': '*'
       vite: ^3.1.0 || ^4.0.0
+    peerDependenciesMeta:
+      '@nuxt/kit':
+        optional: true
     dependencies:
       '@antfu/utils': 0.7.5
       '@rollup/pluginutils': 5.0.2

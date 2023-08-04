@@ -159,7 +159,7 @@
     "unplugin-element-plus": "^0.7.2",
     "vite": "^4.4.7",
     "vite-plugin-checker": "^0.6.1",
-    "vite-plugin-inspect": "^0.7.33",
+    "vite-plugin-inspect": "^0.7.35",
     "vite-plugin-mkcert": "^1.16.0",
     "vite-plugin-mock": "^3.0.0",
     "vite-svg-loader": "^4.0.0",
