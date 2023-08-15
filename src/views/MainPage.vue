@@ -6,11 +6,11 @@ import { useMainStore } from '@/store'
 
 const store = useMainStore()
 
-const increase = () => {
+const increase = (): void => {
   store.increase()
 }
 
-const decrease = () => {
+const decrease = (): void => {
   store.decrease()
 }
 </script>
