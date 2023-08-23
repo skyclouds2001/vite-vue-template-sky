@@ -6,7 +6,6 @@ import legacy from '@vitejs/plugin-legacy'
 import { viteMockServe as mock } from 'vite-plugin-mock'
 import mkcert from 'vite-plugin-mkcert'
 import svgLoader from 'vite-svg-loader'
-// @ts-expect-error can't find type definition file
 import ElementPlus from 'unplugin-element-plus/vite'
 import visualizer from 'rollup-plugin-visualizer'
 import inspect from 'vite-plugin-inspect'
@@ -35,7 +34,7 @@ export default defineConfig({
         lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx,vue}"',
       },
       stylelint: {
-        lintCommand: 'stylelint ./src/**/*.{vue,css,sass,scss,less,styl,stylus}',
+        lintCommand: 'stylelint "./src/**/*.{vue,css,sass,scss,less,styl,stylus}"',
       },
     }),
   ],
