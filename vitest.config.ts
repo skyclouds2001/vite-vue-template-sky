@@ -15,23 +15,6 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src/'),
     },
   },
-  css: {
-    devSourcemap: true,
-  },
-  server: {
-    host: '0.0.0.0',
-    port: 5173,
-    strictPort: true,
-    https: true,
-    open: true,
-  },
-  preview: {
-    host: '0.0.0.0',
-    port: 4173,
-    strictPort: true,
-    https: true,
-    open: true,
-  },
   test: {
     root: '.',
     watch: false,
