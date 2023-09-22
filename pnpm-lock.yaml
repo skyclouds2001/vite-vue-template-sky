@@ -166,8 +166,8 @@ devDependencies:
     specifier: ^0.31.1
     version: 0.31.1
   markdownlint-cli:
-    specifier: ^0.36.0
-    version: 0.36.0
+    specifier: ^0.37.0
+    version: 0.37.0
   only-allow:
     specifier: ^1.1.1
     version: 1.1.1
@@ -1768,7 +1768,7 @@ packages:
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
       resolve-from: 5.0.0
-      ts-node: 10.9.1(@types/node@20.6.2)(typescript@5.2.2)
+      ts-node: 10.9.1(@types/node@20.4.7)(typescript@5.2.2)
       typescript: 5.2.2
     transitivePeerDependencies:
       - '@swc/core'
@@ -4398,7 +4398,7 @@ packages:
     dependencies:
       '@types/node': 20.4.7
       cosmiconfig: 8.3.6(typescript@5.2.2)
-      ts-node: 10.9.1(@types/node@20.6.2)(typescript@5.2.2)
+      ts-node: 10.9.1(@types/node@20.4.7)(typescript@5.2.2)
       typescript: 5.2.2
     dev: true
 
@@ -7223,8 +7223,8 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
-  /markdownlint-cli@0.36.0:
-    resolution: {integrity: sha512-h4WdqOam3+QOVOcJSOQuG8KvvN8dlS0OiJhbPwYWBk7VMZR40UtSSMIOpSP5B4EHPHg3W3ILSQUvqg1HNpTCxA==}
+  /markdownlint-cli@0.37.0:
+    resolution: {integrity: sha512-hNKAc0bWBBuVhJbSWbUhRzavstiB4o1jh3JeSpwC4/dt6eJ54lRfYHRxVdzVp4qGWBKbeE6Pg490PFEfrKjqSg==}
     engines: {node: '>=16'}
     hasBin: true
     dependencies:
@@ -7234,7 +7234,7 @@ packages:
       ignore: 5.2.4
       js-yaml: 4.1.0
       jsonc-parser: 3.2.0
-      markdownlint: 0.30.0
+      markdownlint: 0.31.1
       minimatch: 9.0.3
       run-con: 1.3.2
     dev: true
@@ -7242,14 +7242,6 @@ packages:
   /markdownlint-micromark@0.1.7:
     resolution: {integrity: sha512-BbRPTC72fl5vlSKv37v/xIENSRDYL/7X/XoFzZ740FGEbs9vZerLrIkFRY0rv7slQKxDczToYuMmqQFN61fi4Q==}
     engines: {node: '>=16'}
-    dev: true
-
-  /markdownlint@0.30.0:
-    resolution: {integrity: sha512-nInuFvI/rEzanAOArW5490Ez4EYpB5ODqVM0mcDYCPx9DKJWCQqCgejjiCvbSeE7sjbDscVtZmwr665qpF5xGA==}
-    engines: {node: '>=16'}
-    dependencies:
-      markdown-it: 13.0.1
-      markdownlint-micromark: 0.1.7
     dev: true
 
   /markdownlint@0.31.1:
@@ -7445,11 +7437,6 @@ packages:
 
   /minimist@1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
-    dev: true
-
-  /minipass@6.0.2:
-    resolution: {integrity: sha512-MzWSV5nYVT7mVyWCwn2o7JH13w2TBRmmSqSRCKzTw+lmft9X4z+3wjvs06Tzijo5z4W/kahUCDpRXTF+ZrmF/w==}
-    engines: {node: '>=16 || 14 >=14.17'}
     dev: true
 
   /minipass@7.0.3:
@@ -7896,7 +7883,7 @@ packages:
     engines: {node: '>=16 || 14 >=14.17'}
     dependencies:
       lru-cache: 10.0.1
-      minipass: 6.0.2
+      minipass: 7.0.3
     dev: true
 
   /path-to-regexp@6.2.1:
@@ -10042,6 +10029,37 @@ packages:
 
   /ts-interface-checker@0.1.13:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
+    dev: true
+
+  /ts-node@10.9.1(@types/node@20.4.7)(typescript@5.2.2):
+    resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
+    hasBin: true
+    peerDependencies:
+      '@swc/core': '>=1.2.50'
+      '@swc/wasm': '>=1.2.50'
+      '@types/node': '*'
+      typescript: '>=2.7'
+    peerDependenciesMeta:
+      '@swc/core':
+        optional: true
+      '@swc/wasm':
+        optional: true
+    dependencies:
+      '@cspotcode/source-map-support': 0.8.1
+      '@tsconfig/node10': 1.0.9
+      '@tsconfig/node12': 1.0.11
+      '@tsconfig/node14': 1.0.3
+      '@tsconfig/node16': 1.0.4
+      '@types/node': 20.4.7
+      acorn: 8.10.0
+      acorn-walk: 8.2.0
+      arg: 4.1.3
+      create-require: 1.1.1
+      diff: 4.0.2
+      make-error: 1.3.6
+      typescript: 5.2.2
+      v8-compile-cache-lib: 3.0.1
+      yn: 3.1.1
     dev: true
 
   /ts-node@10.9.1(@types/node@20.6.2)(typescript@5.2.2):
