@@ -33,7 +33,7 @@
     "experimentalDecorators": true,
     "jsx": "preserve",
     "jsxImportSource": "vue",
-    "lib": ["ESNext", "DOM", "WebWorker"],
+    "lib": ["ESNext", "DOM", "DOM.Iterable", "WebWorker", "WebWorker.ImportScripts", "Webworker.Iterable"],
     "target": "ESNext",
     "useDefineForClassFields": false,
 
