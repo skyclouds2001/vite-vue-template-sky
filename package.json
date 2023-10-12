@@ -90,7 +90,7 @@
     "@types/lodash-es": "^4.17.9",
     "@types/mockjs": "^1.0.8",
     "@types/node": "^20.8.0",
-    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/eslint-plugin": "^6.7.5",
     "@typescript-eslint/parser": "^6.7.3",
     "@vitejs/plugin-legacy": "^4.1.1",
     "@vitejs/plugin-vue": "^4.3.4",
