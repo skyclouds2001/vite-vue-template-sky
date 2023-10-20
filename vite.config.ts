@@ -50,20 +50,14 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173,
     strictPort: true,
-    https: {
-      key: fs.readFileSync(path.resolve(__dirname, './serve/localhost+1-key.pem')),
-      cert: fs.readFileSync(path.resolve(__dirname, './serve/localhost+1.pem')),
-    },
+    https: true,
     open: true,
   },
   preview: {
     host: '0.0.0.0',
     port: 4173,
     strictPort: true,
-    https: {
-      key: fs.readFileSync(path.resolve(__dirname, './serve/localhost+1-key.pem')),
-      cert: fs.readFileSync(path.resolve(__dirname, './serve/localhost+1.pem')),
-    },
+    https: true,
     open: true,
   },
 })
