@@ -1,4 +1,4 @@
-# vite-vue-tempalte-sky
+# vite-vue-template-sky
 
 ## 0.0.0
 
