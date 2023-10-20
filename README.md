@@ -1,25 +1,27 @@
 # vite-vue-template-sky
 
+An opinionated vite starter template for Vue.
+
 ## Features
 
-- Vite with Vue, TypeScript and JSX support
-- Vue Router for route
-- Pinia for store
-- Element for providing UI component with unplugin-element-plus for auto import style for element-plus
-- Iconify for providing icons source
-- TailwindCSS or CSS modules for providing CSS style support
+- Vite with Vue and TypeScript
+- Vue Router for router
+- Pinia for intuitive store
+- Element Plus for providing UI components library
+- Iconify for providing rich icons source
+- TailwindCSS for providing atomic CSS style support
 - Axios for making network request
 - Dayjs for Date support
 - Lodash-es for providing tool methods
 - Mock support with mockjs and vite-plugin-mock
-- Using project inside package manager - pnpm and using only-allow for limit package manager type
-- Add Sass, SCSS, Less, Stylus support
-- Using postcss-preset-env, postcss-import and cssnano for transform styles
-- Husky and lint-staged for make lint when create commit
-- ESLint, Prettier, Stylelint and MarkdownLint for lint and enforce code style
-- CommitLint and Commitizen for enforce commit format
-- Changeset for generate CHANGELOG document
-- Vitest and Playwright for test
-- GitHub Actions for lint and test
-- With support for deploying on Docker
-- With support for deploying on vercel
+- Using pnpm as package manager and using only-allow for limit package manager type
+- Support for SCSS as the css extension
+- Postcss for transform styles
+- Husky and lint-staged for run lint when making commit
+- ESLint, Prettier, Stylelint and MarkdownLint for lint and enforce code or documentation style
+- CommitLint and Commitizen for enforce git commit format
+- Changeset for automatically generate CHANGELOG document
+- Vitest and Playwright for unit, component and e2e test
+- Basic Configuration GitHub Actions for lint and test
+- Support for deploying on Docker
+- Support for deploying on vercel
