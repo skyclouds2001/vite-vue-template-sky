@@ -1,4 +1,4 @@
-# sky-admin
+# vite-vue-tempalte-sky
 
 ## 0.0.0
 
