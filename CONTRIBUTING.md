@@ -1,3 +1,3 @@
-# Contributing to SkyAdmin
+# Contributing to vite-vue-template-sky
 
-Thanks for your interest in contributing to SkyAdmin!
+Thanks for your interest in contributing to vite-vue-template-sky!
