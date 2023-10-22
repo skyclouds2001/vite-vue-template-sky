@@ -171,9 +171,6 @@ devDependencies:
   pnpm:
     specifier: 8.6.12
     version: 8.6.12
-  postcss:
-    specifier: ^8.4.29
-    version: 8.4.29
   postcss-import:
     specifier: ^15.1.0
     version: 15.1.0(postcss@8.4.29)
