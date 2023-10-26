@@ -14,7 +14,7 @@ RUN pnpm build
 
 FROM nginx:latest as serve
 
-COPY serve/nginx.conf /etc/nginx/conf.d/default.conf
+COPY deploy/nginx.conf /etc/nginx/conf.d/default.conf
 
 COPY --from=compile /app/dist /usr/share/nginx/html/
 

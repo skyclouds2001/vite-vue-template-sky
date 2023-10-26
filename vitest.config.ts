@@ -9,12 +9,6 @@ import ElementPlus from 'unplugin-element-plus/vite'
 
 export default defineConfig({
   plugins: [vue(), vueJsx(), legacy(), mock(), svgLoader(), ElementPlus({})],
-  resolve: {
-    alias: {
-      '~': __dirname,
-      '@': path.resolve(__dirname, './src/'),
-    },
-  },
   test: {
     root: '.',
     include: ['**/?(*.){test,spec}.?(c|m)[jt]s?(x)'],
@@ -25,6 +19,10 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       enabled: true,
+    },
+    alias: {
+      '~': __dirname,
+      '@': path.resolve(__dirname, 'src'),
     },
     cache: {},
   },

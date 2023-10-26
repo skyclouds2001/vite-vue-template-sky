@@ -8,7 +8,7 @@ module.exports = {
     'shared-node-browser': true,
     worker: true,
   },
-  extends: ['eslint:recommended', 'standard-with-typescript', 'plugin:vue/vue3-recommended', 'plugin:@typescript-eslint/recommended', 'plugin:n/recommended', 'plugin:promise/recommended', 'plugin:import/recommended', 'plugin:jsdoc/recommended', 'plugin:jsx-a11y/recommended', 'plugin:prettier/recommended'],
+  extends: ['eslint:recommended', 'standard-with-typescript', 'plugin:vue/vue3-recommended', 'plugin:@typescript-eslint/recommended', 'plugin:n/recommended', 'plugin:promise/recommended', 'plugin:import/recommended', 'plugin:import/typescript', 'plugin:jsdoc/recommended', 'plugin:jsx-a11y/recommended', 'plugin:prettier/recommended'],
   parser: 'vue-eslint-parser',
   parserOptions: {
     parser: '@typescript-eslint/parser',
@@ -27,13 +27,6 @@ module.exports = {
   rules: {
     'n/no-missing-import': 'off',
     'n/no-missing-require': 'off',
-    'import/no-unresolved': [
-      'error',
-      {
-        commonjs: true,
-        amd: true,
-      },
-    ],
   },
   settings: {
     'import/parsers': {
