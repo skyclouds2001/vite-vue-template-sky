@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@element-plus/icons-vue':
     specifier: ^2.1.0
@@ -169,8 +173,8 @@ devDependencies:
     specifier: ^1.2.1
     version: 1.2.1
   pnpm:
-    specifier: 8.9.0
-    version: 8.9.0
+    specifier: 8.10.0
+    version: 8.10.0
   postcss-import:
     specifier: ^15.1.0
     version: 15.1.0(postcss@8.4.31)
@@ -7868,8 +7872,8 @@ packages:
       fsevents: 2.3.2
     dev: true
 
-  /pnpm@8.9.0:
-    resolution: {integrity: sha512-74hZk44fBTe5/PAwkEQxE5Lzs4s0QXbmzU/e4hsiVSSwrCobCK4q4t3Vs/9LjKSW1neOlQ8+fJ9VW4EyWYJEHA==}
+  /pnpm@8.10.0:
+    resolution: {integrity: sha512-nCy4Pyts9qJdjFgwC/mRl8fvO+hM8+dm8pBUtAuDtC+Kq6b8wxSp7PJ8APfOgKdXu0xgiADnrb4tKdxccFb1vg==}
     engines: {node: '>=16.14'}
     hasBin: true
     dev: true
