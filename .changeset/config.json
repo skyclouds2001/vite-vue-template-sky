@@ -3,7 +3,7 @@
   "changelog": [
     "@changesets/changelog-github",
     {
-      "repo": "skyclouds2001/SkyAdmin"
+      "repo": "skyclouds2001/vite-vue-template-sky"
     }
   ],
   "commit": false,

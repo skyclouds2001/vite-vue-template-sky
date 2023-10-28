@@ -33,14 +33,14 @@ export default defineConfig({
         lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx,vue}"',
       },
       stylelint: {
-        lintCommand: 'stylelint "./src/**/*.{vue,css,sass,scss,less,styl,stylus}"',
+        lintCommand: 'stylelint ./src/**/*.{vue,css,scss}',
       },
     }),
   ],
   resolve: {
     alias: {
       '~': __dirname,
-      '@': path.resolve(__dirname, './src/'),
+      '@': path.resolve(__dirname, 'src'),
     },
   },
   css: {
@@ -50,20 +50,14 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173,
     strictPort: true,
-    https: {
-      key: fs.readFileSync(path.resolve(__dirname, './serve/localhost+1-key.pem')),
-      cert: fs.readFileSync(path.resolve(__dirname, './serve/localhost+1.pem')),
-    },
+    https: true,
     open: true,
   },
   preview: {
     host: '0.0.0.0',
     port: 4173,
     strictPort: true,
-    https: {
-      key: fs.readFileSync(path.resolve(__dirname, './serve/localhost+1-key.pem')),
-      cert: fs.readFileSync(path.resolve(__dirname, './serve/localhost+1.pem')),
-    },
+    https: true,
     open: true,
   },
 })
