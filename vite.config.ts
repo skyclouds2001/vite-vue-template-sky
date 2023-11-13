@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite'
 import path from 'node:path'
-import fs from 'node:fs'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import legacy from '@vitejs/plugin-legacy'
