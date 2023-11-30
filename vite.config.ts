@@ -17,7 +17,6 @@ export default defineConfig({
     mock(),
     svgLoader(),
     ElementPlus({}),
-    visualizer(),
     checker({
       vueTsc: true,
       eslint: {
@@ -27,6 +26,7 @@ export default defineConfig({
         lintCommand: 'stylelint ./src/**/*.{vue,css,scss}',
       },
     }),
+    visualizer(),
   ],
   resolve: {
     alias: {
