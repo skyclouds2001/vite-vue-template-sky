@@ -7,7 +7,6 @@ import { viteMockServe as mock } from 'vite-plugin-mock'
 import svgLoader from 'vite-svg-loader'
 import ElementPlus from 'unplugin-element-plus/vite'
 import visualizer from 'rollup-plugin-visualizer'
-import inspect from 'vite-plugin-inspect'
 import checker from 'vite-plugin-checker'
 
 export default defineConfig({
@@ -25,7 +24,6 @@ export default defineConfig({
       gzipSize: true,
       brotliSize: true,
     }),
-    inspect(),
     checker({
       vueTsc: true,
       eslint: {
