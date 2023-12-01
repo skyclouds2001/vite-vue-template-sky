@@ -15,6 +15,7 @@ An opinionated vite starter template for Vue.
 - [Axios](https://axios-http.com/) for making HTTP requests
 - [Dayjs](https://day.js.org/) for Date support
 - [Lodash-es](https://lodash.com/) for providing tool methods
+- PWA support via [vite-plugin-pwa](https://vite-pwa-org.netlify.app/)
 - Mock support with [mockjs](http://mockjs.com/) and vite-plugin-mock
 - Using [pnpm](https://pnpm.io/) as the package manager and using only-allow for limit package manager type
 - Support for [SCSS](https://sass-lang.com/) as the css extension
