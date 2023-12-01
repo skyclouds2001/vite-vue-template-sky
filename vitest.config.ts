@@ -4,11 +4,10 @@ import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import legacy from '@vitejs/plugin-legacy'
 import { viteMockServe as mock } from 'vite-plugin-mock'
-import svgLoader from 'vite-svg-loader'
 import ElementPlus from 'unplugin-element-plus/vite'
 
 export default defineConfig({
-  plugins: [vue(), vueJsx(), legacy(), mock(), svgLoader(), ElementPlus({})],
+  plugins: [vue(), vueJsx(), legacy(), mock(), ElementPlus({})],
   test: {
     root: '.',
     include: ['**/?(*.){test,spec}.?(c|m)[jt]s?(x)'],

@@ -4,7 +4,6 @@ import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import legacy from '@vitejs/plugin-legacy'
 import { viteMockServe as mock } from 'vite-plugin-mock'
-import svgLoader from 'vite-svg-loader'
 import ElementPlus from 'unplugin-element-plus/vite'
 import visualizer from 'rollup-plugin-visualizer'
 import checker from 'vite-plugin-checker'
@@ -15,7 +14,6 @@ export default defineConfig({
     vueJsx(),
     legacy(),
     mock(),
-    svgLoader(),
     ElementPlus({}),
     checker({
       vueTsc: true,
