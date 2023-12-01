@@ -1,5 +1,7 @@
 # vite-vue-template-sky
 
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+
 An opinionated vite starter template for Vue.
 
 ## Features
@@ -25,3 +27,51 @@ An opinionated vite starter template for Vue.
 - Basic Configuration GitHub Actions for lint and test
 - Support for deploying on [Docker](https://www.docker.com/)
 - Support for deploying on [Vercel](https://vercel.com/)
+
+## Getting Started
+
+- Get code
+
+```bash
+git clone https://github.com/skyclouds2001/vite-vue-template-sky.git
+```
+
+- Install dependencies
+
+```bash
+pnpm install
+```
+
+- Run
+
+```bash
+pnpm dev
+```
+
+- Build
+
+```bash
+pnpm build
+```
+
+- Preview
+
+```bash
+pnpm preview
+```
+
+## Changelog
+
+[Changelog](CHANGELOG.md)
+
+## Contribution
+
+[Contribution](CONTRIBUTING.md)
+
+## Code of Conduct
+
+[Code of Conduct](CODE_OF_CONDUCT.md)
+
+## License
+
+[MIT](LICENSE) © skyclouds2001
