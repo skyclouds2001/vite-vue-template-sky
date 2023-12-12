@@ -1,5 +1,7 @@
 # vite-vue-template-sky
 
+[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+
 An opinionated vite starter template for Vue.
 
 ## Features
@@ -13,6 +15,7 @@ An opinionated vite starter template for Vue.
 - [Axios](https://axios-http.com/) for making HTTP requests
 - [Dayjs](https://day.js.org/) for Date support
 - [Lodash-es](https://lodash.com/) for providing tool methods
+- PWA support via [vite-plugin-pwa](https://vite-pwa-org.netlify.app/)
 - Mock support with [mockjs](http://mockjs.com/) and vite-plugin-mock
 - Using [pnpm](https://pnpm.io/) as the package manager and using only-allow for limit package manager type
 - Support for [SCSS](https://sass-lang.com/) as the css extension
@@ -25,3 +28,51 @@ An opinionated vite starter template for Vue.
 - Basic Configuration GitHub Actions for lint and test
 - Support for deploying on [Docker](https://www.docker.com/)
 - Support for deploying on [Vercel](https://vercel.com/)
+
+## Getting Started
+
+- Get code
+
+```bash
+git clone https://github.com/skyclouds2001/vite-vue-template-sky.git
+```
+
+- Install dependencies
+
+```bash
+pnpm install
+```
+
+- Run
+
+```bash
+pnpm dev
+```
+
+- Build
+
+```bash
+pnpm build
+```
+
+- Preview
+
+```bash
+pnpm preview
+```
+
+## Changelog
+
+[Changelog](CHANGELOG.md)
+
+## Contribution
+
+[Contribution](CONTRIBUTING.md)
+
+## Code of Conduct
+
+[Code of Conduct](CODE_OF_CONDUCT.md)
+
+## License
+
+[MIT](LICENSE) © skyclouds2001
