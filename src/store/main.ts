@@ -1,10 +1,11 @@
 import { defineStore } from 'pinia'
 
 export const useMainStore = defineStore('main', {
-  state() {
-    return {
-      count: 0,
-    }
+  state: () => ({
+    count: 0,
+  }),
+  getters: {
+    doubleCount: (state) => state.count * 2,
   },
   actions: {
     increase() {
