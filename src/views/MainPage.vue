@@ -2,6 +2,7 @@
 import { ElButton, ElIcon } from 'element-plus'
 import { User } from '@element-plus/icons-vue'
 import { Icon } from '@iconify/vue'
+import { MainComponent } from '@/components'
 import { useMainStore } from '@/store'
 
 const store = useMainStore()
@@ -17,6 +18,7 @@ const decrease = (): void => {
 
 <template>
   <div class="w-10">Main</div>
+  <main-component />
   <div>
     <el-icon><User /></el-icon>
   </div>
