@@ -3481,7 +3481,7 @@ packages:
     dependencies:
       js-beautify: 1.14.11
       vue: 3.3.12(typescript@5.3.3)
-      vue-component-type-helpers: 1.8.25
+      vue-component-type-helpers: 1.8.26
     dev: true
 
   /@vueuse/core@9.13.0(vue@3.3.12):
@@ -10681,8 +10681,8 @@ packages:
     resolution: {integrity: sha512-AyFQ0EVmsOZOlAnxoFOGOq1SQDWAB7C6aqMGS23svWAllfOaxbuFvcT8D1i8z3Gyn8fraVeZNNmN6e9bxxXkKw==}
     dev: true
 
-  /vue-component-type-helpers@1.8.25:
-    resolution: {integrity: sha512-NCA6sekiJIMnMs4DdORxATXD+/NRkQpS32UC+I1KQJUasx+Z7MZUb3Y+MsKsFmX+PgyTYSteb73JW77AibaCCw==}
+  /vue-component-type-helpers@1.8.26:
+    resolution: {integrity: sha512-CIwb7s8cqUuPpHDk+0DY8EJ/x8tzdzqw8ycX8hhw1GnbngTgSsIceHAqrrLjmv8zXi+j5XaiqYRQMw8sKyyjkw==}
     dev: true
 
   /vue-demi@0.14.6(vue@3.3.12):
