@@ -141,7 +141,7 @@
     "prettier-plugin-tailwindcss": "^0.5.9",
     "rimraf": "^5.0.5",
     "rollup-plugin-visualizer": "^5.11.0",
-    "sass": "^1.69.5",
+    "sass": "^1.69.6",
     "stylelint": "^16.0.2",
     "stylelint-config-prettier-scss": "^1.0.0",
     "stylelint-config-recess-order": "^4.4.0",
