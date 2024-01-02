@@ -1899,6 +1899,11 @@ packages:
     engines: {node: ^14 || ^16 || >=18}
     dev: true
 
+  /@csstools/css-tokenizer@2.2.3:
+    resolution: {integrity: sha512-pp//EvZ9dUmGuGtG1p+n17gTHEOqu9jO+FiCUjNN3BDmyhdA2Jq9QsVeR7K8/2QCK17HSsioPlTW9ZkzoWb3Lg==}
+    engines: {node: ^14 || ^16 || >=18}
+    dev: true
+
   /@csstools/media-query-list-parser@2.1.6(@csstools/css-parser-algorithms@2.4.0)(@csstools/css-tokenizer@2.2.2):
     resolution: {integrity: sha512-R6AKl9vaU0It7D7TR2lQn0pre5aQfdeqHRePlaRCY8rHL3l9eVlNRpsEVDKFi/zAjzv68CxH2M5kqbhPFPKjvw==}
     engines: {node: ^14 || ^16 || >=18}
@@ -2074,13 +2079,13 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
-  /@csstools/postcss-logical-viewport-units@2.0.4(postcss@8.4.32):
-    resolution: {integrity: sha512-jetp/ArGAniWbjWBh5UQ07ztawfSbqCFd0QelX4R4pVIxrXahUEhz5VZHebMPVCg02J8GsQn0br6fdRpY6t7lw==}
+  /@csstools/postcss-logical-viewport-units@2.0.5(postcss@8.4.32):
+    resolution: {integrity: sha512-2fjSamKN635DSW6fEoyNd2Bkpv3FVblUpgk5cpghIgPW1aDHZE2SYfZK5xQALvjMYZVjfqsD5EbXA7uDVBQVQA==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/css-tokenizer': 2.2.2
+      '@csstools/css-tokenizer': 2.2.3
       postcss: 8.4.32
     dev: true
 
@@ -8462,7 +8467,7 @@ packages:
       '@csstools/postcss-logical-overflow': 1.0.1(postcss@8.4.32)
       '@csstools/postcss-logical-overscroll-behavior': 1.0.1(postcss@8.4.32)
       '@csstools/postcss-logical-resize': 2.0.1(postcss@8.4.32)
-      '@csstools/postcss-logical-viewport-units': 2.0.4(postcss@8.4.32)
+      '@csstools/postcss-logical-viewport-units': 2.0.5(postcss@8.4.32)
       '@csstools/postcss-media-minmax': 1.1.1(postcss@8.4.32)
       '@csstools/postcss-media-queries-aspect-ratio-number-values': 2.0.4(postcss@8.4.32)
       '@csstools/postcss-nested-calc': 3.0.1(postcss@8.4.32)
