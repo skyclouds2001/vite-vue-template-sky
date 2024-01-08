@@ -1710,6 +1710,7 @@ packages:
   /@commitlint/config-validator@18.4.3:
     resolution: {integrity: sha512-FPZZmTJBARPCyef9ohRC9EANiQEKSWIdatx5OlgeHKu878dWwpyeFauVkhzuBRJFcCA4Uvz/FDtlDKs008IHcA==}
     engines: {node: '>=v18'}
+    requiresBuild: true
     dependencies:
       '@commitlint/types': 18.4.3
       ajv: 8.12.0
@@ -1730,6 +1731,7 @@ packages:
   /@commitlint/execute-rule@18.4.3:
     resolution: {integrity: sha512-t7FM4c+BdX9WWZCPrrbV5+0SWLgT3kCq7e7/GhHCreYifg3V8qyvO127HF796vyFql75n4TFF+5v1asOOWkV1Q==}
     engines: {node: '>=v18'}
+    requiresBuild: true
     dev: true
 
   /@commitlint/format@18.4.3:
@@ -1806,6 +1808,7 @@ packages:
   /@commitlint/resolve-extends@18.4.3:
     resolution: {integrity: sha512-30sk04LZWf8+SDgJrbJCjM90gTg2LxsD9cykCFeFu+JFHvBFq5ugzp2eO/DJGylAdVaqxej3c7eTSE64hR/lnw==}
     engines: {node: '>=v18'}
+    requiresBuild: true
     dependencies:
       '@commitlint/config-validator': 18.4.3
       '@commitlint/types': 18.4.3
@@ -2981,6 +2984,7 @@ packages:
 
   /@types/node@18.19.4:
     resolution: {integrity: sha512-xNzlUhzoHotIsnFoXmJB+yWmBvFZgKCI9TtPIEdYIMM1KWfwuY8zh7wvc1u1OAXlC7dlf6mZVx/s+Y5KfFz19A==}
+    requiresBuild: true
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -4308,6 +4312,7 @@ packages:
   /cosmiconfig-typescript-loader@5.0.0(@types/node@18.19.4)(cosmiconfig@8.3.6)(typescript@5.3.3):
     resolution: {integrity: sha512-+8cK7jRAReYkMwMiG+bxhcNKiHJDM6bR9FD/nGBXOWdMLuYawjF5cGrtLilJ+LGd3ZjCXnJjR5DkfWPoIVlqJA==}
     engines: {node: '>=v16'}
+    requiresBuild: true
     peerDependencies:
       '@types/node': '*'
       cosmiconfig: '>=8.2'
@@ -4322,6 +4327,7 @@ packages:
   /cosmiconfig@8.3.6(typescript@5.3.3):
     resolution: {integrity: sha512-kcZ6+W5QzcJ3P1Mt+83OUv/oHFqZHIx8DuxG6eZ5RGMERoLqp4BuGjhHLYGK+Kf5XVkQvqBSmAy/nGWN3qDgEA==}
     engines: {node: '>=14'}
+    requiresBuild: true
     peerDependencies:
       typescript: '>=4.9.5'
     peerDependenciesMeta:
@@ -4484,7 +4490,7 @@ packages:
       postcss-discard-empty: 6.0.1(postcss@8.4.32)
       postcss-discard-overridden: 6.0.1(postcss@8.4.32)
       postcss-merge-longhand: 6.0.1(postcss@8.4.32)
-      postcss-merge-rules: 6.0.2(postcss@8.4.32)
+      postcss-merge-rules: 6.0.3(postcss@8.4.32)
       postcss-minify-font-values: 6.0.1(postcss@8.4.32)
       postcss-minify-gradients: 6.0.1(postcss@8.4.32)
       postcss-minify-params: 6.0.1(postcss@8.4.32)
@@ -7037,6 +7043,7 @@ packages:
 
   /lodash.mergewith@4.6.2:
     resolution: {integrity: sha512-GK3g5RPZWTRSeLSpgP8Xhra+pnjBC56q9FZYe1d5RN3TJ35dbkGy3YqBSMbyCrlbi+CM9Z3Jk5yTL7RCsqboyQ==}
+    requiresBuild: true
     dev: true
 
   /lodash.pick@4.4.0:
@@ -8225,8 +8232,8 @@ packages:
       stylehacks: 6.0.1(postcss@8.4.32)
     dev: true
 
-  /postcss-merge-rules@6.0.2(postcss@8.4.32):
-    resolution: {integrity: sha512-6lm8bl0UfriSfxI+F/cezrebqqP8w702UC6SjZlUlBYwuRVNbmgcJuQU7yePIvD4MNT53r/acQCUAyulrpgmeQ==}
+  /postcss-merge-rules@6.0.3(postcss@8.4.32):
+    resolution: {integrity: sha512-yfkDqSHGohy8sGYIJwBmIGDv4K4/WrJPX355XrxQb/CSsT4Kc/RxDi6akqn5s9bap85AWgv21ArcUWwWdGNSHA==}
     engines: {node: ^14 || ^16 || >=18.0}
     peerDependencies:
       postcss: ^8.4.31
