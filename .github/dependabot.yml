@@ -6,8 +6,6 @@ updates:
       interval: 'daily'
     allow:
       - dependency-type: 'all'
-    ignore:
-      - dependency-name: 'pnpm'
     labels:
       - 'dependencies'
     open-pull-requests-limit: 50
