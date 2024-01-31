@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { type Plugin, defineConfig } from 'vite'
 import path from 'node:path'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
@@ -44,7 +44,7 @@ export default defineConfig({
         lintCommand: 'stylelint ./src/**/*.{vue,css,scss}',
       },
     }),
-    visualizer(),
+    visualizer() as unknown as Plugin,
   ],
   resolve: {
     alias: {
