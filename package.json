@@ -102,7 +102,7 @@
     "@types/mockjs": "^1.0.10",
     "@types/node": "^20.11.0",
     "@typescript-eslint/eslint-plugin": "^6.18.1",
-    "@typescript-eslint/parser": "^6.18.1",
+    "@typescript-eslint/parser": "^6.21.0",
     "@vitejs/plugin-legacy": "^5.2.0",
     "@vitejs/plugin-vue": "^5.0.3",
     "@vitejs/plugin-vue-jsx": "^3.1.0",
