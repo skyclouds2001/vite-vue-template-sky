@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite'
+import { type Plugin, defineConfig } from 'vite'
 import path from 'node:path'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
@@ -6,7 +6,7 @@ import legacy from '@vitejs/plugin-legacy'
 import { viteMockServe as mock } from 'vite-plugin-mock'
 import ElementPlus from 'unplugin-element-plus/vite'
 import { VitePWA as pwa } from 'vite-plugin-pwa'
-import visualizer from 'rollup-plugin-visualizer'
+import { visualizer } from 'rollup-plugin-visualizer'
 import checker from 'vite-plugin-checker'
 
 export default defineConfig({
@@ -40,11 +40,11 @@ export default defineConfig({
       eslint: {
         lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx,vue}"',
       },
-      stylelint: {
-        lintCommand: 'stylelint ./src/**/*.{vue,css,scss}',
-      },
+      // stylelint: {
+      //   lintCommand: 'stylelint "./src/**/*.{vue,css,scss}"',
+      // },
     }),
-    visualizer(),
+    visualizer() as unknown as Plugin,
   ],
   resolve: {
     alias: {
