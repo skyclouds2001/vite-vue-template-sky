@@ -2152,6 +2152,16 @@ packages:
       postcss-value-parser: 4.2.0
     dev: true
 
+  /@csstools/postcss-progressive-custom-properties@3.1.0(postcss@8.4.34):
+    resolution: {integrity: sha512-Mfb1T1BHa6pktLI+poMEHI7Q+VYvAsdwJZPFsSkIB2ZUsawCiPxXLw06BKSVPITxFlaY/FEUzfpyOTfX9YCE2w==}
+    engines: {node: ^14 || ^16 || >=18}
+    peerDependencies:
+      postcss: ^8.4
+    dependencies:
+      postcss: 8.4.34
+      postcss-value-parser: 4.2.0
+    dev: true
+
   /@csstools/postcss-relative-color-syntax@2.0.9(postcss@8.4.34):
     resolution: {integrity: sha512-2UoaRd2iIuzUGtYgteN5fJ0s+OfCiV7PvCnw8MCh3om8+SeVinfG8D5sqBOvImxFVfrp6k60XF5RFlH6oc//fg==}
     engines: {node: ^14 || ^16 || >=18}
@@ -2226,6 +2236,15 @@ packages:
       postcss-selector-parser: ^6.0.13
     dependencies:
       postcss-selector-parser: 6.0.15
+    dev: true
+
+  /@csstools/utilities@1.0.0(postcss@8.4.34):
+    resolution: {integrity: sha512-tAgvZQe/t2mlvpNosA4+CkMiZ2azISW5WPAcdSalZlEjQvUfghHxfQcrCiK/7/CrfAWVxyM88kGFYO82heIGDg==}
+    engines: {node: ^14 || ^16 || >=18}
+    peerDependencies:
+      postcss: ^8.4
+    dependencies:
+      postcss: 8.4.34
     dev: true
 
   /@ctrl/tinycolor@3.6.1:
@@ -8143,13 +8162,14 @@ packages:
       postcss: 8.4.34
     dev: true
 
-  /postcss-double-position-gradients@5.0.3(postcss@8.4.34):
-    resolution: {integrity: sha512-QKYpwmaSm6HcdS0ndAuWSNNMv78R1oSySoh3mYBmctHWr2KWcwPJVakdOyU4lvFVW0GRu9wfIQwGeM4p3xU9ow==}
+  /postcss-double-position-gradients@5.0.4(postcss@8.4.34):
+    resolution: {integrity: sha512-xOH2QhazCPeYR+ziYaDcGlpo7Bpw8PVoggOFfU/xPkmBRUQH8MR2eWoPY1CZM93CB0WKs2mxq3ORo83QGIooLw==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/postcss-progressive-custom-properties': 3.0.3(postcss@8.4.34)
+      '@csstools/postcss-progressive-custom-properties': 3.1.0(postcss@8.4.34)
+      '@csstools/utilities': 1.0.0(postcss@8.4.34)
       postcss: 8.4.34
       postcss-value-parser: 4.2.0
     dev: true
@@ -8566,7 +8586,7 @@ packages:
       postcss-custom-properties: 13.3.4(postcss@8.4.34)
       postcss-custom-selectors: 7.1.6(postcss@8.4.34)
       postcss-dir-pseudo-class: 8.0.1(postcss@8.4.34)
-      postcss-double-position-gradients: 5.0.3(postcss@8.4.34)
+      postcss-double-position-gradients: 5.0.4(postcss@8.4.34)
       postcss-focus-visible: 9.0.1(postcss@8.4.34)
       postcss-focus-within: 8.0.1(postcss@8.4.34)
       postcss-font-variant: 5.0.0(postcss@8.4.34)
@@ -10989,6 +11009,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
