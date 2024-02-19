@@ -2026,13 +2026,13 @@ packages:
       postcss: 8.4.34
     dev: true
 
-  /@csstools/postcss-is-pseudo-class@4.0.4(postcss@8.4.34):
-    resolution: {integrity: sha512-vTVO/uZixpTVAOQt3qZRUFJ/K1L03OfNkeJ8sFNDVNdVy/zW0h1L5WT7HIPMDUkvSrxQkFaCCybTZkUP7UESlQ==}
+  /@csstools/postcss-is-pseudo-class@4.0.5(postcss@8.4.34):
+    resolution: {integrity: sha512-qG3MI7IN3KY9UwdaE9E7G7sFydscVW7nAj5OGwaBP9tQPEEVdxXTGI+l1ZW5EUpZFSj+u3q/22fH5+8HI72+Bg==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss: ^8.4
     dependencies:
-      '@csstools/selector-specificity': 3.0.1(postcss-selector-parser@6.0.15)
+      '@csstools/selector-specificity': 3.0.2(postcss-selector-parser@6.0.15)
       postcss: 8.4.34
       postcss-selector-parser: 6.0.15
     dev: true
@@ -2221,6 +2221,15 @@ packages:
 
   /@csstools/selector-specificity@3.0.1(postcss-selector-parser@6.0.15):
     resolution: {integrity: sha512-NPljRHkq4a14YzZ3YD406uaxh7s0g6eAq3L9aLOWywoqe8PkYamAvtsh7KNX6c++ihDrJ0RiU+/z7rGnhlZ5ww==}
+    engines: {node: ^14 || ^16 || >=18}
+    peerDependencies:
+      postcss-selector-parser: ^6.0.13
+    dependencies:
+      postcss-selector-parser: 6.0.15
+    dev: true
+
+  /@csstools/selector-specificity@3.0.2(postcss-selector-parser@6.0.15):
+    resolution: {integrity: sha512-RpHaZ1h9LE7aALeQXmXrJkRG84ZxIsctEN2biEUmFyKpzFM3zZ35eUMcIzZFsw/2olQE6v69+esEqU2f1MKycg==}
     engines: {node: ^14 || ^16 || >=18}
     peerDependencies:
       postcss-selector-parser: ^6.0.13
@@ -8532,7 +8541,7 @@ packages:
       '@csstools/postcss-hwb-function': 3.0.8(postcss@8.4.34)
       '@csstools/postcss-ic-unit': 3.0.3(postcss@8.4.34)
       '@csstools/postcss-initial': 1.0.1(postcss@8.4.34)
-      '@csstools/postcss-is-pseudo-class': 4.0.4(postcss@8.4.34)
+      '@csstools/postcss-is-pseudo-class': 4.0.5(postcss@8.4.34)
       '@csstools/postcss-logical-float-and-clear': 2.0.1(postcss@8.4.34)
       '@csstools/postcss-logical-overflow': 1.0.1(postcss@8.4.34)
       '@csstools/postcss-logical-overscroll-behavior': 1.0.1(postcss@8.4.34)
@@ -10989,6 +10998,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
