@@ -91,7 +91,7 @@
     "@changesets/changelog-github": "^0.5.0",
     "@changesets/cli": "^2.27.1",
     "@commitlint/cli": "^19.0.2",
-    "@commitlint/config-conventional": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.3",
     "@iconify/vue": "^4.1.1",
     "@playwright/test": "^1.42.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
