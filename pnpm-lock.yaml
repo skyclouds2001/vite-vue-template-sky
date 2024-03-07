@@ -4850,7 +4850,7 @@ packages:
       postcss-minify-params: 6.0.3(postcss@8.4.35)
       postcss-minify-selectors: 6.0.2(postcss@8.4.35)
       postcss-normalize-charset: 6.0.1(postcss@8.4.35)
-      postcss-normalize-display-values: 6.0.1(postcss@8.4.35)
+      postcss-normalize-display-values: 6.0.2(postcss@8.4.35)
       postcss-normalize-positions: 6.0.1(postcss@8.4.35)
       postcss-normalize-repeat-style: 6.0.1(postcss@8.4.35)
       postcss-normalize-string: 6.0.1(postcss@8.4.35)
@@ -8754,8 +8754,8 @@ packages:
       postcss: 8.4.35
     dev: true
 
-  /postcss-normalize-display-values@6.0.1(postcss@8.4.35):
-    resolution: {integrity: sha512-mc3vxp2bEuCb4LgCcmG1y6lKJu1Co8T+rKHrcbShJwUmKJiEl761qb/QQCfFwlrvSeET3jksolCR/RZuMURudw==}
+  /postcss-normalize-display-values@6.0.2(postcss@8.4.35):
+    resolution: {integrity: sha512-8H04Mxsb82ON/aAkPeq8kcBbAtI5Q2a64X/mnRRfPXBq7XeogoQvReqxEfc0B4WPq1KimjezNC8flUtC3Qz6jg==}
     engines: {node: ^14 || ^16 || >=18.0}
     peerDependencies:
       postcss: ^8.4.31
@@ -11338,6 +11338,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
