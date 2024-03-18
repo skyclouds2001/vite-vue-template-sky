@@ -73,7 +73,7 @@
     "changeset": "changeset",
     "bump": "changeset version",
     "commit": "cz",
-    "prepare": "is-ci || husky init",
+    "prepare": "is-ci || husky",
     "preinstall": "only-allow pnpm"
   },
   "dependencies": {
