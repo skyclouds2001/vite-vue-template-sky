@@ -1305,8 +1305,8 @@ packages:
       '@babel/helper-plugin-utils': 7.24.0
     dev: true
 
-  /@babel/plugin-transform-unicode-property-regex@7.23.3(@babel/core@7.24.0):
-    resolution: {integrity: sha512-KcLIm+pDZkWZQAFJ9pdfmh89EwVfmNovFBcXko8szpBeF8z68kWIPeKlmSOkT9BXJxs2C0uk+5LxoxIv62MROA==}
+  /@babel/plugin-transform-unicode-property-regex@7.24.1(@babel/core@7.24.0):
+    resolution: {integrity: sha512-Ss4VvlfYV5huWApFsF8/Sq0oXnGO+jB+rijFEFugTd3cwSObUSnUi88djgR5528Csl0uKlrI331kRqe56Ov2Ng==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -1416,7 +1416,7 @@ packages:
       '@babel/plugin-transform-template-literals': 7.23.3(@babel/core@7.24.0)
       '@babel/plugin-transform-typeof-symbol': 7.23.3(@babel/core@7.24.0)
       '@babel/plugin-transform-unicode-escapes': 7.23.3(@babel/core@7.24.0)
-      '@babel/plugin-transform-unicode-property-regex': 7.23.3(@babel/core@7.24.0)
+      '@babel/plugin-transform-unicode-property-regex': 7.24.1(@babel/core@7.24.0)
       '@babel/plugin-transform-unicode-regex': 7.23.3(@babel/core@7.24.0)
       '@babel/plugin-transform-unicode-sets-regex': 7.23.3(@babel/core@7.24.0)
       '@babel/preset-modules': 0.1.6-no-external-plugins(@babel/core@7.24.0)
@@ -11411,6 +11411,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
