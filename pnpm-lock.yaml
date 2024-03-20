@@ -562,8 +562,8 @@ packages:
     dependencies:
       '@babel/types': 7.24.0
 
-  /@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression@7.23.3(@babel/core@7.24.0):
-    resolution: {integrity: sha512-iRkKcCqb7iGnq9+3G6rZ+Ciz5VywC4XNRHe57lKM+jOeYAoR0lVqdeeDRfh0tQcTfw/+vBhHn926FmQhLtlFLQ==}
+  /@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression@7.24.1(@babel/core@7.24.0):
+    resolution: {integrity: sha512-y4HqEnkelJIOQGd+3g1bTeKsA5c6qM7eOn7VggGVbBc0y8MLSKHacwcIE2PplNlQSj0PqS9rrXL/nkPVK+kUNg==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0
@@ -1349,7 +1349,7 @@ packages:
       '@babel/helper-compilation-targets': 7.23.6
       '@babel/helper-plugin-utils': 7.24.0
       '@babel/helper-validator-option': 7.23.5
-      '@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression': 7.23.3(@babel/core@7.24.0)
+      '@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression': 7.24.1(@babel/core@7.24.0)
       '@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining': 7.23.3(@babel/core@7.24.0)
       '@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly': 7.23.7(@babel/core@7.24.0)
       '@babel/plugin-proposal-private-property-in-object': 7.21.0-placeholder-for-preset-env.2(@babel/core@7.24.0)
@@ -11411,6 +11411,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
