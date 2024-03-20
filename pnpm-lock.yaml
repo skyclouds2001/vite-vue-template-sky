@@ -920,8 +920,8 @@ packages:
       '@babel/helper-plugin-utils': 7.24.0
     dev: true
 
-  /@babel/plugin-transform-duplicate-keys@7.23.3(@babel/core@7.24.0):
-    resolution: {integrity: sha512-RrqQ+BQmU3Oyav3J+7/myfvRCq7Tbz+kKLLshUmMwNlDHExbGL7ARhajvoBJEvc+fCguPPu887N+3RRXBVKZUA==}
+  /@babel/plugin-transform-duplicate-keys@7.24.1(@babel/core@7.24.0):
+    resolution: {integrity: sha512-msyzuUnvsjsaSaocV6L7ErfNsa5nDWL1XKNnDePLgmz+WdU4w/J8+AxBMrWfi9m4IxfL5sZQKUPQKDQeeAT6lA==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -1382,7 +1382,7 @@ packages:
       '@babel/plugin-transform-computed-properties': 7.23.3(@babel/core@7.24.0)
       '@babel/plugin-transform-destructuring': 7.23.3(@babel/core@7.24.0)
       '@babel/plugin-transform-dotall-regex': 7.23.3(@babel/core@7.24.0)
-      '@babel/plugin-transform-duplicate-keys': 7.23.3(@babel/core@7.24.0)
+      '@babel/plugin-transform-duplicate-keys': 7.24.1(@babel/core@7.24.0)
       '@babel/plugin-transform-dynamic-import': 7.23.4(@babel/core@7.24.0)
       '@babel/plugin-transform-exponentiation-operator': 7.23.3(@babel/core@7.24.0)
       '@babel/plugin-transform-export-namespace-from': 7.23.4(@babel/core@7.24.0)
@@ -11411,6 +11411,7 @@ packages:
 
   /workbox-google-analytics@7.0.0:
     resolution: {integrity: sha512-MEYM1JTn/qiC3DbpvP2BVhyIH+dV/5BjHk756u9VbwuAhu0QHyKscTnisQuz21lfRpOwiS9z4XdqeVAKol0bzg==}
+    deprecated: It is not compatible with newer versions of GA starting with v4, as long as you are using GAv3 it should be ok, but the package is not longer being maintained
     dependencies:
       workbox-background-sync: 7.0.0
       workbox-core: 7.0.0
