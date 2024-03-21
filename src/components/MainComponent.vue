@@ -4,4 +4,4 @@
   <div>main-component</div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped></style>
