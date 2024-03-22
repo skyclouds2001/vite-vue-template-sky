@@ -48,7 +48,7 @@
   ],
   "main": "src/main.ts",
   "type": "module",
-  "packageManager": "pnpm@8.14.0",
+  "packageManager": "pnpm@8.15.5",
   "engines": {
     "node": ">=18.13.0",
     "npm": ">=9.6.0",
@@ -133,7 +133,7 @@
     "markdownlint": "^0.34.0",
     "markdownlint-cli": "^0.39.0",
     "only-allow": "^1.2.1",
-    "pnpm": "8.14.0",
+    "pnpm": "8.15.5",
     "postcss-import": "^16.1.0",
     "postcss-preset-env": "^9.5.2",
     "postcss-url": "^10.1.3",
