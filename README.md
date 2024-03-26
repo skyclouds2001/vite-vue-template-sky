@@ -2,6 +2,7 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
+[![ci](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/ci.yml/badge.svg)](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/ci.yml)
 
 An opinionated vite starter template for Vue.
 
@@ -17,12 +18,11 @@ An opinionated vite starter template for Vue.
 - [Dayjs](https://day.js.org/) for Date support
 - [Lodash-es](https://lodash.com/) for providing tool methods
 - PWA support via [vite-plugin-pwa](https://vite-pwa-org.netlify.app/)
-- Mock support with [mockjs](http://mockjs.com/) and vite-plugin-mock
-- Using [pnpm](https://pnpm.io/) as the package manager and using only-allow for limit package manager type
-- Support for [SCSS](https://sass-lang.com/) as the css extension
+- Mock support using [mockjs](http://mockjs.com/) and vite-plugin-mock
+- Using [pnpm](https://pnpm.io/) as the package manager and using only-allow to limit package manager
 - [Postcss](https://postcss.org/) for transform styles
 - [Husky](https://typicode.github.io/husky/) and lint-staged for run lint when commits
-- [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [Stylelint](https://stylelint.io/) and MarkdownLint for lint and enforce code or documentation style
+- [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [Stylelint](https://stylelint.io/) and MarkdownLint for lint and enforce code and documentation style
 - [Commitlint](https://commitlint.js.org/) and [Commitizen](https://commitizen-tools.github.io/commitizen/) for enforce git commit format
 - Changeset for automatically generate CHANGELOG document
 - [Vitest](https://vitest.dev/) and [Playwright](https://playwright.dev/) for unit, component and e2e test

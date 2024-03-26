@@ -14,7 +14,11 @@ export default defineConfig({
     exclude: ['**/node_modules/**', '**/dist/**', '**/.{idea,fleet,vscode,git}/**', '**/{vite,vitest}.config.*'],
     watch: false,
     environment: 'jsdom',
-    reporters: ['default', 'html'],
+    reporters: ['default', 'json', 'html'],
+    outputFile: {
+      json: './vitest-report/report.json',
+      html: './vitest-report/report.html',
+    },
     coverage: {
       provider: 'v8',
       enabled: true,
@@ -23,6 +27,5 @@ export default defineConfig({
       '~': __dirname,
       '@': path.resolve(__dirname, 'src'),
     },
-    cache: {},
   },
 })

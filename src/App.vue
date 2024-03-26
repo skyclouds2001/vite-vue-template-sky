@@ -14,4 +14,4 @@ locale('zh-cn')
   </el-config-provider>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped></style>

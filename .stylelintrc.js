@@ -12,10 +12,6 @@ export default {
   plugins: [],
   overrides: [
     {
-      files: ['**/*.scss'],
-      extends: ['stylelint-config-standard-scss', 'stylelint-config-prettier-scss'],
-    },
-    {
       files: ['**/*.vue'],
       extends: ['stylelint-config-standard-vue'],
       rules: {
