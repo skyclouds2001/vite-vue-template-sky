@@ -2,6 +2,7 @@
 
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
+[![ci](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/ci.yml/badge.svg)](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/ci.yml)
 
 An opinionated vite starter template for Vue.
 
