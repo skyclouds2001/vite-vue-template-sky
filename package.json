@@ -1,7 +1,7 @@
 {
   "name": "vite-vue-template-sky",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "an opinionated vite starter template for vue",
   "keywords": [
     "template",
