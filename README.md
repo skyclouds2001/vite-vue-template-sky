@@ -60,7 +60,6 @@ An opinionated vite starter template for Vue.
 - [Dayjs](https://day.js.org/) for Date support
 - [Lodash-es](https://lodash.com/) for providing tool methods
 - PWA support via [vite-plugin-pwa](https://vite-pwa-org.netlify.app/)
-- Mock support using [mockjs](http://mockjs.com/) and vite-plugin-mock
 - Using [pnpm](https://pnpm.io/) as the package manager and using only-allow to limit package manager
 - [Postcss](https://postcss.org/) for transform styles
 - [Husky](https://typicode.github.io/husky/) and lint-staged for run lint when commits

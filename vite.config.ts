@@ -3,7 +3,6 @@ import path from 'node:path'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import legacy from '@vitejs/plugin-legacy'
-import { viteMockServe as mock } from 'vite-plugin-mock'
 import ElementPlus from 'unplugin-element-plus/vite'
 import { VitePWA as pwa } from 'vite-plugin-pwa'
 import { visualizer } from 'rollup-plugin-visualizer'
@@ -14,7 +13,6 @@ export default defineConfig({
     vue(),
     vueJsx(),
     legacy(),
-    mock(),
     ElementPlus({}),
     pwa({
       registerType: 'autoUpdate',
