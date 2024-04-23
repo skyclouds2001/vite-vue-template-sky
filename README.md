@@ -42,6 +42,8 @@
 
 ![Node Current](https://img.shields.io/node/v/%40sky-fly%2Fvite-template)
 [![ci](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/ci.yml/badge.svg)](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/ci.yml)
+[![labeler](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/labeler.yml/badge.svg)](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/labeler.yml)
+[![stale](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/stale.yml/badge.svg)](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/stale.yml)
 [![wakatime](https://wakatime.com/badge/user/bfadeccb-56c3-4aa2-abb0-89cf5f9b89be/project/f55cfd82-5efd-4c1a-b798-fac0f65900f7.svg)](https://wakatime.com/badge/user/bfadeccb-56c3-4aa2-abb0-89cf5f9b89be/project/f55cfd82-5efd-4c1a-b798-fac0f65900f7)
 
 An opinionated vite starter template for Vue.
