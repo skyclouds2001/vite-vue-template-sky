@@ -11,7 +11,8 @@ permissions:
   pull-requests: write
 
 jobs:
-  stale:
+  labeler:
+    if: github.repository == 'skyclouds2001/vite-vue-template-sky'
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:

@@ -10,6 +10,7 @@ on:
 
 jobs:
   lint:
+    if: github.repository == 'skyclouds2001/vite-vue-template-sky'
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -27,6 +28,7 @@ jobs:
       - name: Run lint
         run: pnpm lint
   tests:
+    if: github.repository == 'skyclouds2001/vite-vue-template-sky'
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
