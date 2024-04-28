@@ -8,6 +8,11 @@ on:
     branches:
       - master
 
+permissions:
+  contents: read
+  issues: none
+  pull-requests: none
+
 jobs:
   lint:
     if: github.repository == 'skyclouds2001/vite-vue-template-sky'
