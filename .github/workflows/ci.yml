@@ -8,8 +8,14 @@ on:
     branches:
       - master
 
+permissions:
+  contents: read
+  issues: none
+  pull-requests: none
+
 jobs:
   lint:
+    if: github.repository == 'skyclouds2001/vite-vue-template-sky'
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -23,10 +29,11 @@ jobs:
           node-version: 20
           cache: pnpm
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
       - name: Run lint
         run: pnpm lint
   tests:
+    if: github.repository == 'skyclouds2001/vite-vue-template-sky'
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
@@ -40,7 +47,7 @@ jobs:
           node-version: 20
           cache: pnpm
       - name: Install dependencies
-        run: pnpm install
+        run: pnpm install --frozen-lockfile
       - name: Install playwright browsers
         run: pnpm dlx playwright install --with-deps
       - name: Run tests
