@@ -19,7 +19,7 @@ updates:
     open-pull-requests-limit: 5
     pull-request-branch-name:
       separator: '-'
-    target-branch: 'dev'
+    target-branch: 'master'
     groups:
       all:
         patterns:
@@ -43,7 +43,7 @@ updates:
     open-pull-requests-limit: 5
     pull-request-branch-name:
       separator: '-'
-    target-branch: 'dev'
+    target-branch: 'master'
     groups:
       all:
         patterns:
