@@ -61,7 +61,7 @@
     "lint": "pnpm lint:eslint && pnpm lint:prettier && pnpm lint:stylelint && pnpm lint:markdownlint && pnpm lint:type",
     "lint:eslint": "eslint --fix .",
     "lint:prettier": "prettier --write .",
-    "lint:stylelint": "stylelint --fix",
+    "lint:stylelint": "stylelint --fix \"**/*.{vue,css}\"",
     "lint:markdownlint": "markdownlint --fix **/*.md",
     "lint:type": "vue-tsc --noEmit",
     "test": "pnpm test:unit && pnpm test:e2e",

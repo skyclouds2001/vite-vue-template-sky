@@ -10,6 +10,12 @@ export default {
   },
   extends: ['stylelint-config-standard', 'stylelint-config-recess-order'],
   plugins: [],
+  reportDescriptionlessDisables: true,
+  reportInvalidScopeDisables: true,
+  reportNeedlessDisables: true,
+  allowEmptyInput: true,
+  cache: true,
+  fix: true,
   overrides: [
     {
       files: ['**/*.vue'],
@@ -19,7 +25,4 @@ export default {
       },
     },
   ],
-  allowEmptyInput: true,
-  cache: true,
-  fix: true,
 }
