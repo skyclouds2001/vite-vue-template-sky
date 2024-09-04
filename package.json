@@ -47,7 +47,7 @@
   ],
   "main": "src/main.ts",
   "type": "module",
-  "packageManager": "pnpm@9.5.0",
+  "packageManager": "pnpm@9.9.0",
   "engines": {
     "node": ">=18.13.0",
     "npm": ">=9.6.0",
