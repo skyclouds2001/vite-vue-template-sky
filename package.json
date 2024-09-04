@@ -89,6 +89,7 @@
     "@changesets/cli": "^2.27.7",
     "@commitlint/cli": "^19.4.1",
     "@commitlint/config-conventional": "^19.4.1",
+    "@commitlint/types": "^19.0.3",
     "@iconify/vue": "^4.1.2",
     "@playwright/test": "^1.46.1",
     "@tailwindcss/aspect-ratio": "^0.4.2",
