@@ -3,7 +3,7 @@ import { ElButton, ElIcon } from 'element-plus'
 import { User } from '@element-plus/icons-vue'
 import { Icon } from '@iconify/vue'
 import { MainComponent } from '@/components'
-import { useMainStore } from 'src/stores'
+import { useMainStore } from '@/stores'
 
 const store = useMainStore()
 
