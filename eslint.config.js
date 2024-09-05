@@ -28,7 +28,7 @@ export default [
   prettier,
   {
     name: 'custom',
-    files: ['**/*.{js,mjs,cjs,ts,mts,cts,vue}'],
+    files: ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue}'],
     ignores: [],
     languageOptions: {
       ecmaVersion: 'latest',
@@ -79,7 +79,7 @@ export default [
   },
   {
     name: 'custom-test-unit',
-    files: ['**/tests/unit/*.{js,mjs,cjs,ts,mts,cts}'],
+    files: ['**/tests/unit/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
     settings: {
       vitest: {
         typecheck: true,
@@ -89,7 +89,7 @@ export default [
   },
   {
     name: 'custom-test-component',
-    files: ['**/tests/components/*.{js,mjs,cjs,ts,mts,cts}'],
+    files: ['**/tests/components/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
     settings: {
       vitest: {
         typecheck: true,
@@ -100,7 +100,7 @@ export default [
   },
   {
     name: 'custom-test-e2e',
-    files: ['**/tests/e2e/*.{js,mjs,cjs,ts,mts,cts}'],
+    files: ['**/tests/e2e/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
     // ...playwrightPlugin.configs.recommended,
   },
 ]
