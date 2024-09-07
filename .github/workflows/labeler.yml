@@ -19,7 +19,7 @@ jobs:
       - name: Label for PR content
         uses: actions/labeler@v5
         with:
-          repo-token: "${{ secrets.GITHUB_TOKEN }}"
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
   labeler-size:
     if: github.repository == 'skyclouds2001/vite-vue-template-sky'
     timeout-minutes: 60
@@ -41,7 +41,7 @@ jobs:
           xl_label: size/xl
           fail_if_xl: false
           message_if_xl: ''
-          files_to_ignore: 'package-lock.json *.lock'
+          files_to_ignore: 'package-lock.json yarn.lock pnpm-lock.yaml'
   label-rebase-needed:
     if: github.repository == 'skyclouds2001/vite-vue-template-sky'
     timeout-minutes: 60
@@ -51,6 +51,6 @@ jobs:
         uses: eps1lon/actions-label-merge-conflict@v3
         with:
           dirtyLabel: merge conflicts
-          repoToken: "${{ secrets.GITHUB_TOKEN }}"
-          commentOnDirty: "This pull request has conflicts, please resolve those before we can evaluate the pull request."
-          commentOnClean: "Conflicts have been resolved. A maintainer will review the pull request shortly."
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          commentOnDirty: 'This pull request has conflicts, please resolve those before we can evaluate the pull request.'
+          commentOnClean: 'Conflicts have been resolved. A maintainer will review the pull request shortly.'

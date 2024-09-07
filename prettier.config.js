@@ -1,5 +1,6 @@
 /** @type {import("prettier").Config} */
 export default {
+  experimentalTernaries: true,
   printWidth: 1000,
   tabWidth: 2,
   useTabs: false,

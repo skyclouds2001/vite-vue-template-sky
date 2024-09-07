@@ -4,12 +4,24 @@ export default {
     'at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: ['tailwind', 'layer', 'apply', 'variants', 'responsive', 'screen'],
+        ignoreAtRules: ['tailwind', 'layer', 'apply', 'config'],
+      },
+    ],
+    'function-no-unknown': [
+      true,
+      {
+        ignoreFunctions: ['theme'],
       },
     ],
   },
   extends: ['stylelint-config-standard', 'stylelint-config-recess-order'],
   plugins: [],
+  reportDescriptionlessDisables: true,
+  reportInvalidScopeDisables: true,
+  reportNeedlessDisables: true,
+  allowEmptyInput: true,
+  cache: true,
+  fix: true,
   overrides: [
     {
       files: ['**/*.vue'],
@@ -19,7 +31,4 @@ export default {
       },
     },
   ],
-  allowEmptyInput: true,
-  cache: true,
-  fix: true,
 }

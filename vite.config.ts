@@ -37,6 +37,7 @@ export default defineConfig({
       vueTsc: true,
       eslint: {
         lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx,vue}"',
+        useFlatConfig: true,
       },
       stylelint: {
         lintCommand: 'stylelint "./src/**/*.{vue,css}"',
@@ -52,6 +53,10 @@ export default defineConfig({
   },
   css: {
     devSourcemap: true,
+  },
+  json: {
+    namedExports: false,
+    stringify: true,
   },
   server: {
     host: '0.0.0.0',
