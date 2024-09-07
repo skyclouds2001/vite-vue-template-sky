@@ -3,7 +3,6 @@ export default {
     'postcss-import': {},
     'tailwindcss/nesting': {},
     tailwindcss: {},
-    'postcss-url': {},
     'postcss-preset-env': {
       features: {
         'nesting-rules': false,
