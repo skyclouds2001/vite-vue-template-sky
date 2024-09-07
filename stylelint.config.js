@@ -1,10 +1,15 @@
-/** @type {import('stylelint').Config} */
 export default {
   rules: {
     'at-rule-no-unknown': [
       true,
       {
-        ignoreAtRules: ['tailwind', 'layer', 'apply', 'variants', 'responsive', 'screen'],
+        ignoreAtRules: ['tailwind', 'layer', 'apply', 'config'],
+      },
+    ],
+    'function-no-unknown': [
+      true,
+      {
+        ignoreFunctions: ['theme'],
       },
     ],
   },
