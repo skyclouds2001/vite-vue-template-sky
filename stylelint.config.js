@@ -1,3 +1,4 @@
+/** @type {import('stylelint').Config} */
 export default {
   rules: {
     'at-rule-no-unknown': [
