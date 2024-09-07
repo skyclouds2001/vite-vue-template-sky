@@ -54,6 +54,10 @@ export default defineConfig({
   css: {
     devSourcemap: true,
   },
+  json: {
+    namedExports: false,
+    stringify: true,
+  },
   server: {
     host: '0.0.0.0',
     port: 5173,
