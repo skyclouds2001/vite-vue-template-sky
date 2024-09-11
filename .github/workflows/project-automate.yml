@@ -1,0 +1,24 @@
+name: Add bugs to bugs project
+
+on:
+    issues:
+        types:
+            - opened
+            - reopened
+            - transferred
+    pull_request:
+        types:
+            - opened
+            - reopened
+
+jobs:
+    add-to-project:
+        name: Add issue or pull request to project
+        if: github.repository == 'skyclouds2001/vite-vue-template-sky'
+        timeout-minutes: 60
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/add-to-project@v1.0.0
+              with:
+                  project-url: https://github.com/users/skyclouds2001/projects/2
+                  github-token: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
