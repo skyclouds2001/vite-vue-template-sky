@@ -4,6 +4,10 @@ on:
   pull_request:
     branches:
       - master
+    types:
+      - reopened
+      - opened
+      - synchronize
 
 permissions:
   contents: read
@@ -11,22 +15,22 @@ permissions:
   pull-requests: write
 
 jobs:
-  labeler:
+  labeler-content:
+    name: Label for PR content
     if: github.repository == 'skyclouds2001/vite-vue-template-sky'
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - name: Label for PR content
-        uses: actions/labeler@v5
+      - uses: actions/labeler@v5.0.0
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
   labeler-size:
+    name: Label for PR size
     if: github.repository == 'skyclouds2001/vite-vue-template-sky'
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - name: Label for PR size
-        uses: codelytv/pr-size-labeler@v1
+      - uses: codelytv/pr-size-labeler@v1.10.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           github_api_url: https://api.github.com
@@ -40,15 +44,18 @@ jobs:
           l_max_size: 1000
           xl_label: size/xl
           fail_if_xl: false
-          message_if_xl: ''
+          message_if_xl: |
+            This PR exceeds the recommended size of 1000 lines.
+            Please make sure you are NOT addressing multiple issues with one PR.
+            Note this PR might be rejected due to its size.
           files_to_ignore: 'package-lock.json yarn.lock pnpm-lock.yaml'
   label-rebase-needed:
+    name: Label for PR merge conflict
     if: github.repository == 'skyclouds2001/vite-vue-template-sky'
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - name: Label for PR merge conflict
-        uses: eps1lon/actions-label-merge-conflict@v3
+      - uses: eps1lon/actions-label-merge-conflict@v3.0.2
         with:
           dirtyLabel: merge conflicts
           repoToken: ${{ secrets.GITHUB_TOKEN }}
