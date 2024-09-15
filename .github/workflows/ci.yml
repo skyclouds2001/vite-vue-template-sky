@@ -61,3 +61,4 @@ jobs:
           path: |
             playwright-report/
             vitest-report/
+            coverage-report/

@@ -7,8 +7,8 @@ export default defineConfig({
   plugins: [vue(), vueJsx()],
   test: {
     root: '.',
-    include: ['tests/{unit,components}/?(*.){test,spec}.?(c|m)[jt]s?(x)'],
-    exclude: ['**/node_modules/**', '**/dist/**', '**/.{idea,fleet,vscode,git}/**', '**/{vite,vitest}.config.*'],
+    include: ['tests/{unit,components}/**'],
+    exclude: ['node_modules/**', 'dist/**', '.{idea,fleet,vscode,git}/**', '*.config.*'],
     watch: false,
     environment: 'jsdom',
     reporters: ['default', 'json', 'html'],
@@ -19,6 +19,10 @@ export default defineConfig({
     coverage: {
       provider: 'v8',
       enabled: true,
+      reporter: ['text', 'json', 'html'],
+      reportsDirectory: './coverage-report',
+      include: ['src/**'],
+      exclude: ['*.{test,spec}.*'],
     },
     alias: {
       '~': __dirname,
