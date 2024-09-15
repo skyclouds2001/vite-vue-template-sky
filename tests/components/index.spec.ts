@@ -1,15 +1,16 @@
-import { beforeEach, describe, expect, it } from 'vitest'
+import { describe, expect, it } from 'vitest'
 import { render, screen } from '@testing-library/vue'
-import { setActivePinia, createPinia } from 'pinia'
 import MainPage from '@/views/MainPage.vue'
+import router from '@/router'
+import store from '@/stores'
 
 describe('basic tests', () => {
-  beforeEach(() => {
-    setActivePinia(createPinia())
-  })
-
   it('basic test', () => {
-    render(MainPage)
+    render(MainPage, {
+      global: {
+        plugins: [router, store],
+      },
+    })
     expect(screen.getByText('Main')).not.toBeNull()
   })
 })
