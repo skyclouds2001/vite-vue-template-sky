@@ -24,5 +24,10 @@ export default defineConfig({
       '~': __dirname,
       '@': path.resolve(__dirname, 'src'),
     },
+    setupFiles: './vitest.setup.ts',
+    typecheck: {
+      enabled: true,
+      checker: 'vue-tsc',
+    },
   },
 })
