@@ -52,6 +52,7 @@ export default defineConfig({
     },
   },
   css: {
+    preprocessorMaxWorkers: true,
     devSourcemap: true,
   },
   json: {
