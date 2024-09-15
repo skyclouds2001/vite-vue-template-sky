@@ -8,6 +8,9 @@ const router = createRouter({
       component: () => import('@/views/MainPage.vue'),
     },
   ],
+  scrollBehavior(_to, _from, savedPosition) {
+    return savedPosition ?? { top: 0, left: 0, behavior: 'smooth' }
+  },
 })
 
 export default router
