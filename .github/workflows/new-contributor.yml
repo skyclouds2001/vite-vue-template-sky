@@ -17,7 +17,7 @@ permissions:
 
 jobs:
   new-contributor:
-    name: Welcom new contributor
+    name: Welcome new contributor
     if: github.repository == 'skyclouds2001/vite-vue-template-sky'
     timeout-minutes: 60
     runs-on: ubuntu-latest
