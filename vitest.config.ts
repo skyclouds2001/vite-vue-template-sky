@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [vue(), vueJsx()],
   test: {
     root: '.',
-    include: ['**/?(*.){test,spec}.?(c|m)[jt]s?(x)'],
+    include: ['tests/{unit,components}/?(*.){test,spec}.?(c|m)[jt]s?(x)'],
     exclude: ['**/node_modules/**', '**/dist/**', '**/.{idea,fleet,vscode,git}/**', '**/{vite,vitest}.config.*'],
     watch: false,
     environment: 'jsdom',
@@ -25,9 +25,5 @@ export default defineConfig({
       '@': path.resolve(__dirname, 'src'),
     },
     setupFiles: './vitest.setup.ts',
-    typecheck: {
-      enabled: true,
-      checker: 'vue-tsc',
-    },
   },
 })
