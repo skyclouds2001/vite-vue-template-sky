@@ -24,9 +24,9 @@ export default defineConfig({
         lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx,vue}"',
         useFlatConfig: true,
       },
-      stylelint: {
-        lintCommand: 'stylelint "./src/**/*.{vue,css}"',
-      },
+      // stylelint: {
+      //   lintCommand: 'stylelint "./src/**/*.{vue,css}"',
+      // },
     }),
     visualizer() as unknown as Plugin,
   ],
