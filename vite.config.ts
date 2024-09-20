@@ -1,10 +1,12 @@
-import { type Plugin, defineConfig } from 'vite'
 import path from 'node:path'
+import url from 'node:url'
+import { type Plugin, defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import legacy from '@vitejs/plugin-legacy'
 import ElementPlus from 'unplugin-element-plus/vite'
 import { VitePWA as pwa } from 'vite-plugin-pwa'
+import i18n from '@intlify/unplugin-vue-i18n/vite'
 import { visualizer } from 'rollup-plugin-visualizer'
 import checker from 'vite-plugin-checker'
 
@@ -17,6 +19,9 @@ export default defineConfig({
     pwa({
       registerType: 'autoUpdate',
       manifest: false,
+    }),
+    i18n({
+      include: path.resolve(path.dirname(url.fileURLToPath(import.meta.url)), './src/i18n/locales/**'),
     }),
     checker({
       vueTsc: true,
