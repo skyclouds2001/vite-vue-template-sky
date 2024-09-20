@@ -30,4 +30,4 @@ locale('zh-cn')
   </el-config-provider>
 </template>
 
-<style scoped></style>
+<style module></style>

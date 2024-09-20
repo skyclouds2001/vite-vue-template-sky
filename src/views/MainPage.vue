@@ -20,6 +20,7 @@ const decrease = (): void => {
 </script>
 
 <template>
+  <div :class="$style.main">Main</div>
   <div class="w-10">Main</div>
   <main-component />
   <div>
@@ -37,4 +38,8 @@ const decrease = (): void => {
   <div class="w-10">{{ i18n.t('main.title') }}</div>
 </template>
 
-<style scoped></style>
+<style module>
+.main {
+  color: red;
+}
+</style>

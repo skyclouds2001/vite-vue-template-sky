@@ -4,4 +4,4 @@
   <div>main-component</div>
 </template>
 
-<style scoped></style>
+<style module></style>
