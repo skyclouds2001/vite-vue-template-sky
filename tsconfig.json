@@ -42,7 +42,7 @@
 
     "skipLibCheck": true
   },
-  "include": ["src/**/*", "tests/**/*", "src/**/*.vue"],
+  "include": ["src/**/*", "tests/**/*", "src/**/*.vue", "src/**/*.json"],
   "exclude": ["node_modules/**/*", "dist/**/*"],
   "references": [
     {

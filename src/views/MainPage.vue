@@ -1,9 +1,12 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import { ElButton, ElIcon } from 'element-plus'
 import { User } from '@element-plus/icons-vue'
 import { Icon } from '@iconify/vue'
 import { MainComponent } from '@/components'
 import { useMainStore } from '@/stores'
+
+const i18n = useI18n()
 
 const store = useMainStore()
 
@@ -31,6 +34,7 @@ const decrease = (): void => {
     <span>{{ store.count }}</span>
     <span @click="increase">+</span>
   </div>
+  <div class="w-10">{{ i18n.t('main.title') }}</div>
 </template>
 
 <style scoped></style>
