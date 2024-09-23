@@ -1,11 +1,42 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "vite-vue-template-sky",
+  "short_name": "vite-vue-template-sky",
   "icons": [
-    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
-    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#ffffff",
-  "display": "standalone"
+  "start_url": "/",
+  "display": "standalone",
+  "display_override": [
+    "window-controls-overlay",
+    "minimal-ui",
+    "browser"
+  ],
+  "background_color": "#FFFFFF",
+  "theme_color": "#FFFFFF",
+  "description": "an opinionated vite starter template for vue",
+  "dir": "ltr",
+  "lang": "zh-CN"
 }

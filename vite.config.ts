@@ -1,10 +1,12 @@
-import { type Plugin, defineConfig } from 'vite'
 import path from 'node:path'
+import url from 'node:url'
+import { type Plugin, defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import legacy from '@vitejs/plugin-legacy'
 import ElementPlus from 'unplugin-element-plus/vite'
 import { VitePWA as pwa } from 'vite-plugin-pwa'
+import i18n from '@intlify/unplugin-vue-i18n/vite'
 import { visualizer } from 'rollup-plugin-visualizer'
 import checker from 'vite-plugin-checker'
 
@@ -16,22 +18,10 @@ export default defineConfig({
     ElementPlus({}),
     pwa({
       registerType: 'autoUpdate',
-      manifest: {
-        start_url: '/',
-        icons: [
-          {
-            src: '/android-chrome-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/android-chrome-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-        ],
-        lang: 'zh-CN',
-      },
+      manifest: false,
+    }),
+    i18n({
+      include: path.resolve(path.dirname(url.fileURLToPath(import.meta.url)), './src/i18n/locales/**'),
     }),
     checker({
       vueTsc: true,
@@ -39,19 +29,20 @@ export default defineConfig({
         lintCommand: 'eslint "./src/**/*.{js,jsx,ts,tsx,vue}"',
         useFlatConfig: true,
       },
-      stylelint: {
-        lintCommand: 'stylelint "./src/**/*.{vue,css}"',
-      },
+      // stylelint: {
+      //   lintCommand: 'stylelint "./src/**/*.{vue,css}"',
+      // },
     }),
     visualizer() as unknown as Plugin,
   ],
   resolve: {
     alias: {
-      '~': __dirname,
+      '~': path.resolve(__dirname, '.'),
       '@': path.resolve(__dirname, 'src'),
     },
   },
   css: {
+    preprocessorMaxWorkers: true,
     devSourcemap: true,
   },
   json: {

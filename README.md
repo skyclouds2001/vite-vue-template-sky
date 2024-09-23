@@ -66,11 +66,12 @@ An opinionated vite starter template for Vue.
 - [Husky](https://typicode.github.io/husky/) and lint-staged for run lint when commits
 - [ESLint](https://eslint.org/), [Prettier](https://prettier.io/), [Stylelint](https://stylelint.io/) and MarkdownLint for lint and enforce code and documentation style
 - [Commitlint](https://commitlint.js.org/) and [Commitizen](https://commitizen-tools.github.io/commitizen/) for enforce git commit format
-- Changeset for automatically generate CHANGELOG document
-- [Vitest](https://vitest.dev/) and [Playwright](https://playwright.dev/) for unit, component and e2e test
-- Basic Configuration GitHub Actions for lint and test
-- Support for deploying on [Docker](https://www.docker.com/)
-- Support for deploying on [Vercel](https://vercel.com/)
+- Changeset for automatically generate version change documentation
+- [Vitest](https://vitest.dev/) and [Playwright](https://playwright.dev/) for unit, component and e2e test.
+- Basic Configuration for GitHub Actions
+- [Docker](https://www.docker.com/) and [Nginx](https://nginx.org/) deploy supported
+- [Vercel](https://vercel.com/) and [Netlify](https://www.netlify.com/) deploy supported
+- [StackBlitz](https://stackblitz.com/) preview supported
 
 ## Getting Started
 

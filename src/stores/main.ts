@@ -6,6 +6,7 @@ export const useMainStore = defineStore('main', {
   }),
   getters: {
     doubleCount: (state) => state.count * 2,
+    halfCount: (state) => state.count / 2,
   },
   actions: {
     increase() {

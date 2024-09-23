@@ -15,36 +15,38 @@ permissions:
 
 jobs:
   lint:
+    name: Run lint
     if: github.repository == 'skyclouds2001/vite-vue-template-sky'
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.1.7
       - name: Install pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v4.0.0
       - name: Install Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.0.3
         with:
-          node-version: 20
+          node-version-file: .nvmrc
           cache: pnpm
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
       - name: Run lint
         run: pnpm lint
   tests:
+    name: Run test
     if: github.repository == 'skyclouds2001/vite-vue-template-sky'
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v4.1.7
       - name: Install pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v4.0.0
       - name: Install Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v4.0.3
         with:
-          node-version: 20
+          node-version-file: .nvmrc
           cache: pnpm
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -53,9 +55,10 @@ jobs:
       - name: Run tests
         run: pnpm test
       - name: Upload test report
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4.4.0
         with:
           name: test-report
           path: |
             playwright-report/
             vitest-report/
+            coverage-report/
