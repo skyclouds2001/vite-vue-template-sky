@@ -41,10 +41,16 @@
 ![jsDelivr hits (npm)](https://img.shields.io/jsdelivr/npm/hy/%40sky-fly%2Fvite-template)
 ![GitHub contributors from allcontributors.org](https://img.shields.io/github/all-contributors/skyclouds2001/vite-vue-template-sky)
 
-![Node Current](https://img.shields.io/node/v/%40sky-fly%2Fvite-template)
 [![ci](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/ci.yml/badge.svg)](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/github-code-scanning/codeql)
+[![Dependabot Updates](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/dependabot/dependabot-updates)
 [![labeler](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/labeler.yml/badge.svg)](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/labeler.yml)
+[![new contributor](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/new-contributor.yml/badge.svg)](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/new-contributor.yml)
+[![project automate](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/project-automate.yml/badge.svg)](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/project-automate.yml)
+[![release](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/release.yml/badge.svg)](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/release.yml)
 [![stale](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/stale.yml/badge.svg)](https://github.com/skyclouds2001/vite-vue-template-sky/actions/workflows/stale.yml)
+
+![Node Current](https://img.shields.io/node/v/%40sky-fly%2Fvite-template)
 [![wakatime](https://wakatime.com/badge/user/bfadeccb-56c3-4aa2-abb0-89cf5f9b89be/project/f55cfd82-5efd-4c1a-b798-fac0f65900f7.svg)](https://wakatime.com/badge/user/bfadeccb-56c3-4aa2-abb0-89cf5f9b89be/project/f55cfd82-5efd-4c1a-b798-fac0f65900f7)
 
 An opinionated vite starter template for Vue.
