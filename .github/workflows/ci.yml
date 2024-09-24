@@ -13,6 +13,10 @@ permissions:
   issues: none
   pull-requests: none
 
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
 jobs:
   lint:
     name: Run lint
