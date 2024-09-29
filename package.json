@@ -47,12 +47,12 @@
   ],
   "main": "src/main.ts",
   "type": "module",
-  "packageManager": "pnpm@9.10.0",
+  "packageManager": "pnpm@9.11.0",
   "engines": {
-    "node": ">=18.13.0",
-    "npm": ">=9.6.0",
+    "node": ">=20.0.0",
+    "npm": ">=10.0.0",
     "yarn": ">=1.22.0",
-    "pnpm": ">=8.4.0"
+    "pnpm": ">=8.11.0"
   },
   "scripts": {
     "dev": "cross-env NODE_ENV=development vite",
