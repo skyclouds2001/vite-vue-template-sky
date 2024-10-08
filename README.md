@@ -3,6 +3,7 @@
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 ![NPM Type Definitions](https://img.shields.io/npm/types/chalk)
 ![Github Created At](https://img.shields.io/github/created-at/skyclouds2001/vite-vue-template-sky)
 ![GitHub last commit](https://img.shields.io/github/last-commit/skyclouds2001/vite-vue-template-sky)
