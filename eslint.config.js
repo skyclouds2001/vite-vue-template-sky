@@ -10,7 +10,7 @@ import importPlugin from 'eslint-plugin-import'
 import jsdocPlugin from 'eslint-plugin-jsdoc'
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
 import vitestPlugin from 'eslint-plugin-vitest'
-// import playwrightPlugin from 'eslint-plugin-playwright'
+import playwrightPlugin from 'eslint-plugin-playwright'
 // import testingLibraryPlugin from 'eslint-plugin-testing-library'
 import typescript from 'typescript-eslint'
 
@@ -101,6 +101,6 @@ export default [
   {
     name: 'custom-test-e2e',
     files: ['**/tests/e2e/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
-    // ...playwrightPlugin.configs.recommended,
+    ...playwrightPlugin.configs['flat/recommended'],
   },
 ]
