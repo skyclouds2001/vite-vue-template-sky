@@ -8,7 +8,7 @@ import ElementPlus from 'unplugin-element-plus/vite'
 import { VitePWA as pwa } from 'vite-plugin-pwa'
 import i18n from '@intlify/unplugin-vue-i18n/vite'
 import { visualizer } from 'rollup-plugin-visualizer'
-import checker from 'vite-plugin-checker'
+import { checker } from 'vite-plugin-checker'
 
 export default defineConfig({
   plugins: [
