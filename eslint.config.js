@@ -6,7 +6,7 @@ import vueParser from 'vue-eslint-parser'
 import vuePlugin from 'eslint-plugin-vue'
 import nodePlugin from 'eslint-plugin-n'
 import promisePlugin from 'eslint-plugin-promise'
-// import importPlugin from 'eslint-plugin-import'
+import importPlugin from 'eslint-plugin-import'
 import jsdocPlugin from 'eslint-plugin-jsdoc'
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
 import vitestPlugin from 'eslint-plugin-vitest'
@@ -21,8 +21,8 @@ export default [
   ...vuePlugin.configs['flat/recommended'],
   nodePlugin.configs['flat/recommended'],
   promisePlugin.configs['flat/recommended'],
-  // importPlugin.flatConfigs.recommended,
-  // importPlugin.flatConfigs.typescript,
+  importPlugin.flatConfigs.recommended,
+  importPlugin.flatConfigs.typescript,
   jsdocPlugin.configs['flat/recommended-typescript'],
   jsxA11yPlugin.flatConfigs.recommended,
   prettier,
