@@ -1,0 +1,21 @@
+system:
+  - changed-files:
+    - any-glob-to-any-file:
+      - .changeset/**
+      - .github/**
+      - .husky/**
+      - deploy/**
+      - '*'
+      - '!index.html'
+
+source:
+  - changed-files:
+    - any-glob-to-any-file:
+      - public/**
+      - src/**
+      - index.html
+
+test:
+  - changed-files:
+    - any-glob-to-any-file:
+      - tests/**

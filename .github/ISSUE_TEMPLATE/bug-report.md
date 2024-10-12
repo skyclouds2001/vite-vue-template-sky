@@ -23,18 +23,28 @@ A clear and concise description of what you expected to happen.
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
-**Desktop (please complete the following information):**
+**Platform (please select one option):**
 
-- OS: [e.g. iOS]
-- Browser [e.g. chrome, safari]
-- Version [e.g. 22]
+- [ ] Desktop
+- [ ] Laptop
+- [ ] Smartphone
+- [ ] Tablet
+- [ ] Others: _Please type here_
 
-**Smartphone (please complete the following information):**
+**OS (please select one option):**
 
-- Device: [e.g. iPhone6]
-- OS: [e.g. iOS8.1]
-- Browser [e.g. stock browser, safari]
-- Version [e.g. 22]
+- [ ] Windows
+- [ ] macOS
+- [ ] Linux
+- [ ] Others: _Please type here_
+
+**Browser (please select one option):**
+
+- [ ] Chrome
+- [ ] Firefox
+- [ ] Safari
+- [ ] Edge
+- [ ] Others: _Please type here_
 
 **Additional context**
 Add any other context about the problem here.
