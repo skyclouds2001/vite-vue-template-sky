@@ -6,7 +6,8 @@
   "keywords": [
     "template",
     "vite",
-    "vue"
+    "vue",
+    "typescript"
   ],
   "repository": {
     "type": "git",
