@@ -29,7 +29,7 @@
   ],
   "main": "src/main.ts",
   "type": "module",
-  "packageManager": "pnpm@9.11.0",
+  "packageManager": "pnpm@9.12.1",
   "engines": {
     "node": ">=20.0.0",
     "npm": ">=10.0.0",
@@ -116,7 +116,6 @@
     "markdownlint": "^0.36.0",
     "markdownlint-cli": "^0.42.0",
     "only-allow": "^1.2.1",
-    "pnpm": "9.12.3",
     "postcss-import": "^16.1.0",
     "postcss-load-config": "^6.0.1",
     "postcss-preset-env": "^10.0.8",
