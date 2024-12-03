@@ -49,7 +49,7 @@ export default defineConfig({
   },
   json: {
     namedExports: false,
-    stringify: true,
+    stringify: 'auto',
   },
   server: {
     host: env.VITE_DEV_SERVER_HOST ?? 'localhost',
