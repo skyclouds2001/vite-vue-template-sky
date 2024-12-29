@@ -10,8 +10,6 @@ on:
 
 permissions:
   contents: read
-  issues: none
-  pull-requests: none
 
 concurrency:
   group: ci-${{ github.workflow }}-${{ github.event.pull_request.number }}
