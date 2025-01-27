@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4.2.2
-      - uses: softprops/action-gh-release@v2.2.0
+      - uses: softprops/action-gh-release@v2.2.1
         with:
           body: |
             Please refer to [CHANGELOG.md](https://github.com/skyclouds2001/vite-vue-template-sky/blob/master/CHANGELOG.md) for details.
