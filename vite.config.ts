@@ -17,7 +17,7 @@ export default defineConfig({
     vue(),
     vueJsx(),
     legacy(),
-    ElementPlus({}),
+    ElementPlus(),
     pwa({
       registerType: 'autoUpdate',
       manifest: false,
