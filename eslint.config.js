@@ -68,10 +68,7 @@ export default [
     },
     settings: {
       'import/resolver': {
-        typescript: {
-          alwaysTryTypes: true,
-          directory: 'tsconfig.json',
-        },
+        typescript: true,
         node: true,
       },
     },
