@@ -1,10 +1,14 @@
 import { defineConfig, globalIgnores } from 'eslint/config'
 import js from '@eslint/js'
+import json from '@eslint/json'
+import markdown from '@eslint/markdown'
+import css from '@eslint/css'
+import { tailwindSyntax } from '@eslint/css/syntax'
 import globals from 'globals'
 import standardConfig from 'eslint-config-standard'
 import prettierConfig from 'eslint-config-prettier'
-import vueParser from 'vue-eslint-parser'
-import vuePlugin from 'eslint-plugin-vue'
+// import vueParser from 'vue-eslint-parser'
+// import vuePlugin from 'eslint-plugin-vue'
 import nodePlugin from 'eslint-plugin-n'
 import promisePlugin from 'eslint-plugin-promise'
 import importPlugin from 'eslint-plugin-import'
@@ -12,24 +16,19 @@ import jsdocPlugin from 'eslint-plugin-jsdoc'
 import jsxA11yPlugin from 'eslint-plugin-jsx-a11y'
 import vitestPlugin from 'eslint-plugin-vitest'
 import playwrightPlugin from 'eslint-plugin-playwright'
-// import testingLibraryPlugin from 'eslint-plugin-testing-library'
+import testingLibraryPlugin from 'eslint-plugin-testing-library'
 import typescript from 'typescript-eslint'
 
 export default defineConfig([
-  js.configs.recommended,
   ...typescript.configs.recommended,
   ...typescript.configs.stylistic,
-  ...vuePlugin.configs['flat/recommended'],
-  nodePlugin.configs['flat/recommended'],
   promisePlugin.configs['flat/recommended'],
   importPlugin.flatConfigs.recommended,
   importPlugin.flatConfigs.typescript,
-  jsdocPlugin.configs['flat/recommended-typescript'],
   jsxA11yPlugin.flatConfigs.recommended,
   {
     name: 'custom',
-    files: ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx,vue}'],
-    ignores: [],
+    files: ['**/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',
@@ -41,19 +40,12 @@ export default defineConfig([
         ...globals.node,
         ...globals.commonjs,
       },
-      parser: vueParser,
+      parser: typescript.parser,
       parserOptions: {
-        parser: typescript.parser,
         ecmaFeatures: {
           globalReturn: false,
           impliedStrict: true,
           jsx: true,
-        },
-        vueFeatures: {
-          filter: false,
-          interpolationAsNonHTML: true,
-          styleCSSVariableInjection: true,
-          customMacros: [],
         },
       },
     },
@@ -73,6 +65,43 @@ export default defineConfig([
         node: true,
       },
     },
+    ...js.configs.recommended,
+    ...nodePlugin.configs['flat/recommended'],
+    ...jsdocPlugin.configs['flat/recommended-typescript'],
+  },
+  // {
+  //   name: 'custom-vue',
+  //   files: ['**/*.vue'],
+  //   ...vuePlugin.configs['flat/recommended'].at(0),
+  //   ...vuePlugin.configs['flat/recommended'].at(1),
+  //   languageOptions: {
+  //     parser: vueParser,
+  //     parserOptions: {
+  //       parser: typescript.parser,
+  //       vueFeatures: {
+  //         filter: false,
+  //         interpolationAsNonHTML: true,
+  //         styleCSSVariableInjection: true,
+  //         customMacros: [],
+  //       },
+  //     },
+  //   },
+  // },
+  {
+    name: 'custom-json',
+    files: ['**/*.json'],
+    language: 'json/json',
+    ...json.configs.recommended,
+  },
+  ...markdown.configs.recommended,
+  {
+    name: 'custom-css',
+    files: ['**/*.css'],
+    language: 'css/css',
+    languageOptions: {
+      customSyntax: tailwindSyntax,
+    },
+    ...css.configs.recommended,
   },
   {
     name: 'custom-test-unit',
@@ -93,7 +122,7 @@ export default defineConfig([
       },
     },
     ...vitestPlugin.configs.recommended,
-    // ...testingLibraryPlugin.configs['flat/vue'],
+    ...testingLibraryPlugin.configs['flat/vue'],
   },
   {
     name: 'custom-test-e2e',
