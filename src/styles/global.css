@@ -8,6 +8,8 @@
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  /* eslint-disable-next-line css/use-baseline */
   text-size-adjust: 100%;
   color-scheme: light dark;
   background-color: #242424;
