@@ -1,3 +1,4 @@
+import { defineConfig } from 'eslint/config'
 import js from '@eslint/js'
 import globals from 'globals'
 import standardConfig from 'eslint-config-standard'
@@ -14,7 +15,7 @@ import playwrightPlugin from 'eslint-plugin-playwright'
 // import testingLibraryPlugin from 'eslint-plugin-testing-library'
 import typescript from 'typescript-eslint'
 
-export default [
+export default defineConfig([
   js.configs.recommended,
   ...typescript.configs.recommended,
   ...typescript.configs.stylistic,
@@ -104,4 +105,4 @@ export default [
     ignores: ['node_modules/**', 'dist/**', '.{idea,fleet,vscode,git}/**', '*.config.*'],
   },
   prettierConfig,
-]
+])
