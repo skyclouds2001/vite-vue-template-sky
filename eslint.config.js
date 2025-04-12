@@ -1,4 +1,4 @@
-import { defineConfig } from 'eslint/config'
+import { defineConfig, globalIgnores } from 'eslint/config'
 import js from '@eslint/js'
 import globals from 'globals'
 import standardConfig from 'eslint-config-standard'
@@ -100,9 +100,6 @@ export default defineConfig([
     files: ['**/tests/e2e/*.{js,mjs,cjs,jsx,ts,mts,cts,tsx}'],
     ...playwrightPlugin.configs['flat/recommended'],
   },
-  {
-    name: 'custom-ignore',
-    ignores: ['node_modules/**', 'dist/**', '.{idea,fleet,vscode,git}/**', '*.config.*'],
-  },
+  globalIgnores(['node_modules/**', 'dist/**', '.{idea,fleet,vscode,git}/**', '*.config.*']),
   prettierConfig,
 ])
