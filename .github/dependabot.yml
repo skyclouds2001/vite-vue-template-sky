@@ -14,8 +14,6 @@ updates:
     milestone: 1
     assignees:
       - 'skyclouds2001'
-    reviewers:
-      - 'skyclouds2001'
     open-pull-requests-limit: 5
     pull-request-branch-name:
       separator: '-'
@@ -37,8 +35,6 @@ updates:
       - 'dependencies'
     milestone: 1
     assignees:
-      - 'skyclouds2001'
-    reviewers:
       - 'skyclouds2001'
     open-pull-requests-limit: 5
     pull-request-branch-name:
