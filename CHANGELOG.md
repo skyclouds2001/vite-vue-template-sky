@@ -1,5 +1,27 @@
 # vite-vue-template-sky
 
+## 1.8.0
+
+### Minor Changes
+
+- [#1161](https://github.com/skyclouds2001/vite-vue-template-sky/pull/1161) [`06922a1`](https://github.com/skyclouds2001/vite-vue-template-sky/commit/06922a1cf2061d5d871011fa7036ca192ac92e1d) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: update eslint config
+
+- [#1159](https://github.com/skyclouds2001/vite-vue-template-sky/pull/1159) [`467796c`](https://github.com/skyclouds2001/vite-vue-template-sky/commit/467796c4aa0697ade849359e1ddbf875d7dcc060) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: update prettier config
+
+### Patch Changes
+
+- [#1160](https://github.com/skyclouds2001/vite-vue-template-sky/pull/1160) [`116f536`](https://github.com/skyclouds2001/vite-vue-template-sky/commit/116f536df76239ae975470d46797cd0343623a2d) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: use global ignore helper function
+
+- [#1160](https://github.com/skyclouds2001/vite-vue-template-sky/pull/1160) [`ee96001`](https://github.com/skyclouds2001/vite-vue-template-sky/commit/ee960014a2885a3d14efdab7445b6e9cd83ff886) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: use eslint helper function
+
+- [#1174](https://github.com/skyclouds2001/vite-vue-template-sky/pull/1174) [`0dbcc84`](https://github.com/skyclouds2001/vite-vue-template-sky/commit/0dbcc8458b4d12b2737ca01cc80fecf78efb4514) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: update dependabot config
+
+- [#1129](https://github.com/skyclouds2001/vite-vue-template-sky/pull/1129) [`349f547`](https://github.com/skyclouds2001/vite-vue-template-sky/commit/349f5473df6cc4d8f6d96c4aff4cab5c0bea4208) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - ci: remove useless permission
+
+- [#1129](https://github.com/skyclouds2001/vite-vue-template-sky/pull/1129) [`80988f3`](https://github.com/skyclouds2001/vite-vue-template-sky/commit/80988f347a7129ac6a2d698aeddf3c08d6a29ab0) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: add codeowners file
+
+- [#1156](https://github.com/skyclouds2001/vite-vue-template-sky/pull/1156) [`3263556`](https://github.com/skyclouds2001/vite-vue-template-sky/commit/32635562ab5f4ea26050425a3599620229045678) Thanks [@skyclouds2001](https://github.com/skyclouds2001)! - build: simplify eslint-import-resolver-typescript plugin config
+
 ## 1.7.0
 
 ### Minor Changes
