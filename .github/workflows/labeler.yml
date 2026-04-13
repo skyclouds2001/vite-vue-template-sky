@@ -21,7 +21,7 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v5.0.0
+      - uses: actions/labeler@v6.0.1
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
   labeler-size:
@@ -30,7 +30,7 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      - uses: codelytv/pr-size-labeler@v1.10.3
+      - uses: codelytv/pr-size-labeler@v1.10.4
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           github_api_url: https://api.github.com
